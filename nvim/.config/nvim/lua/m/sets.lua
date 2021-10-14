@@ -17,7 +17,7 @@ o.signcolumn = 'number'
 o.nu = true
 o.relativenumber = true
 o.updatetime = 27
-o.timeoutlen = 250
+o.timeoutlen = 400
 o.smartcase = true
 o.ignorecase = true
 o.incsearch = true
@@ -27,4 +27,4 @@ o.undofile = true
 -- COLORS
 o.termguicolors = true
 o.background = 'dark'
-cmd 'colorscheme beekai'
+cmd 'colorscheme melange'
