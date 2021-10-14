@@ -28,9 +28,9 @@ alias serve='python3 -m http.serve'
 alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{tools,node_modules,.git}" | fzf'
 alias ff='nvim $(fzfi)'
 # MERCURIAL
-#alias log='hg log -G'
-#alias st='hg status'
-#alias cm='hg add && hg commit -m'
+# alias log='hg log -G'
+# alias st='hg status'
+# alias cm='hg add && hg commit -m'
 # GIT
 alias cm='git add . && git commit -am'
 alias st='git status'
