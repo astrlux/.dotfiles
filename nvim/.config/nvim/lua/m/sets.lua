@@ -14,9 +14,10 @@ o.shiftwidth = 2
 o.softtabstop = 2
 o.wrap = false
 o.expandtab = true
+o.smarttab = true
 o.signcolumn = 'yes'
-o.updatetime = 10
-o.timeoutlen = 500
+o.updatetime = 27
+o.timeoutlen = 250
 o.smartcase = true
 o.ignorecase = true
 o.incsearch = true
@@ -25,5 +26,5 @@ o.backup = false
 o.undofile = true
 -- COLORS
 o.termguicolors = true
-o.background = 'dark'
+o.background = 'light'
 cmd 'colorscheme melange'

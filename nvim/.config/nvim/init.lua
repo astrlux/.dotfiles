@@ -1,3 +1,4 @@
+-- BOOT ORDER
 require 'm.plugins'
 require 'm.sets'
 require 'm.maps'
