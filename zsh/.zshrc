@@ -66,7 +66,7 @@ installDotfiles() {
 commitDotfiles() { # credit: Michael Paulson @ Netflix
   pushd $DOTFILES
   git add .
-  git commit -m "dw abt the content"
+  git commit -m "post_obfuscation"
   git push origin master
   popd
 }
