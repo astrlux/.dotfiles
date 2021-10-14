@@ -5,7 +5,6 @@ o.hidden = true
 o.showcmd = false
 o.showmode = false
 o.showmatch = true
-o.cursorline = true
 o.nu = true
 o.relativenumber = true
 o.cmdheight = 1
