@@ -2,6 +2,7 @@
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # EXPORTS
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$PATH:/usr/local/opt/llvm/bin/"
 export TERM="screen-256color"
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.5.1/share/nvim/runtime # NIGHTLY
 export DOTFILES=$HOME/dotfiles
