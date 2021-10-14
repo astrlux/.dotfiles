@@ -41,3 +41,6 @@ luac.out
 
 # MacOS idiosyncracies!
 .DS_Store
+
+# ccls & clangd droppings
+*.ccls-cache
