@@ -46,4 +46,8 @@ require('packer').startup(function()
   use 'jose-elias-alvarez/nvim-lsp-ts-utils' -- typescript specific tools
   use 'kyazdani42/nvim-tree.lua' -- file tree
   use 'savq/melange' -- Colors
+  use {
+    'Lokaltog/monotone.nvim',
+    requires = 'rktjmp/lush.nvim'
+  }
 end)
