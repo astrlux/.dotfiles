@@ -1,4 +1,4 @@
-local o, g, cmd = vim.opt, vim.g, vim.cmd
+local o, cmd = vim.opt, vim.cmd
 o.mouse = 'a'
 o.ruler = false
 o.hidden = true
@@ -27,5 +27,4 @@ o.undofile = true
 -- COLORS
 o.termguicolors = true
 o.background = 'dark'
-g.monotone_contrast = 100
-cmd 'colorscheme monotone'
+cmd 'colorscheme melange'
