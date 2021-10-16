@@ -27,6 +27,8 @@ alias top='htop'
 alias serve='python3 -m http.serve'
 alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{tools,node_modules,.git}" | fzf'
 alias ff='nvim $(fzfi)'
+# DOCKER
+alias kubectl="minikube kubectl --"
 # MERCURIAL
 # alias log='hg log -G'
 # alias st='hg status'
@@ -79,5 +81,3 @@ removeDotfiles() {
 zstyle ':completion:*' menu select # select completions with arrow keys
 zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
-# DOCKER
-alias kubectl="minikube kubectl --"

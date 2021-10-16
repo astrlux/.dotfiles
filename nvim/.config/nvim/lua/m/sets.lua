@@ -7,10 +7,11 @@ o.showmode = false
 o.showmatch = true
 o.cmdheight = 1
 o.laststatus = 0
+o.scrolloff = 8
 o.tabstop = 2
 o.shiftwidth = 2
 o.softtabstop = 2
-o.wrap = true
+o.wrap = false
 o.expandtab = true
 o.smarttab = true
 o.signcolumn = 'number'
@@ -26,5 +27,5 @@ o.backup = false
 o.undofile = true
 -- COLORS
 o.termguicolors = true
-o.background = 'light'
+o.background = 'dark'
 cmd 'colorscheme melange'
