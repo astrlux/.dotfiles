@@ -10,7 +10,7 @@ o.laststatus = 0
 o.tabstop = 2
 o.shiftwidth = 2
 o.softtabstop = 2
-o.wrap = false
+o.wrap = true
 o.expandtab = true
 o.smarttab = true
 o.signcolumn = 'number'
@@ -26,5 +26,5 @@ o.backup = false
 o.undofile = true
 -- COLORS
 o.termguicolors = true
-o.background = 'dark'
+o.background = 'light'
 cmd 'colorscheme melange'
