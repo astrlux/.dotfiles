@@ -28,4 +28,4 @@ o.undofile = true
 -- COLORS
 o.termguicolors = true
 o.background = 'dark'
-cmd 'colorscheme industry'
+cmd 'colorscheme melange'
