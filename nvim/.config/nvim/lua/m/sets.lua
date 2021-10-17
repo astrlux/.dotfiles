@@ -21,6 +21,7 @@ o.timeoutlen = 400
 o.smartcase = true
 o.ignorecase = true
 o.incsearch = true
+o.hlsearch = false
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
