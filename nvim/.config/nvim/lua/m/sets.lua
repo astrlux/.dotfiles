@@ -27,5 +27,5 @@ o.backup = false
 o.undofile = true
 -- COLORS
 o.termguicolors = true
-cmd 'colorscheme melange'
+cmd 'colorscheme industry'
 o.background = 'dark'
