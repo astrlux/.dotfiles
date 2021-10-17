@@ -26,5 +26,5 @@ o.backup = false
 o.undofile = true
 -- COLORS
 o.termguicolors = true
+cmd 'colorscheme melange'
 o.background = 'dark'
-cmd 'colorscheme monotone'
