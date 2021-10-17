@@ -27,5 +27,15 @@ o.backup = false
 o.undofile = true
 -- COLORS
 o.termguicolors = true
-cmd 'colorscheme industry'
 o.background = 'dark'
+cmd [[
+function! MyHighlights() abort
+  hi PmenuSel guibg=#2a2a2a
+  hi Pmenu guibg=#1a1a1a
+endfunction
+augroup MyColors
+  autocmd!
+  autocmd ColorScheme * call MyHighlights()
+augroup END
+]]
+cmd 'colorscheme industry'
