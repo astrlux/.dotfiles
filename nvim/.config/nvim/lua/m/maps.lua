@@ -19,9 +19,6 @@ map('v', '<', '<gv', nor)
 map('v', '>', '>gv', nor)
 -- Auto-close brackets
 map('i', '"', '""<left>', nor)
-map('i', '\'', '\'\'<left>', nor)
-map('i', '[', '[]<left>', nor)
-map('i', '(', '()<left>', nor)
 map('i', '{<CR>', '{<CR>}<ESC><S-O>', nor)
 -- Move cursor faster
 map('n', '<DOWN>', '8j', nor)
