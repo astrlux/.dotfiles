@@ -30,11 +30,13 @@ o.termguicolors = true
 o.background = 'dark'
 cmd [[
 function! MyHighlights() abort
-  hi VertSplit guifg=black guibg=gray
-  hi Pmenu guibg=#1a1a1a
-  hi PmenuSel guibg=#2a2a2a
+  hi LineNR guifg=gray
+  hi VertSplit guifg=black guibg=#2A2A2A
+  hi Pmenu guibg=#1A1A1A
+  hi PmenuSel guibg=#2A2A2A
+  hi EndOfBuffer ctermbg=NONE ctermfg=NONE
   hi TelescopeMatching guibg=none
-  hi TelescopeSelection guibg=#2a2a2a
+  hi TelescopeSelection guibg=#2A2A2A
 endfunction
 augroup MyColors
   autocmd!
