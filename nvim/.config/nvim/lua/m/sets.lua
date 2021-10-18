@@ -34,10 +34,7 @@ function! MyHighlights() abort
   hi VertSplit guifg=black guibg=#2A2A2A
   hi Pmenu guibg=#1A1A1A
   hi PmenuSel guibg=#2A2A2A
-  hi EndOfBuffer ctermbg=NONE ctermfg=NONE
-
-  hi TelescopeMatching guibg=NONE
-  hi TelescopeSelection guibg=#2A2A2A
+  hi EndOfBuffer ctermbg=black ctermfg=black
 
   hi LspDiagnosticsSignHint guifg=orange
   hi LspDiagnosticsFloatingHint guifg=orange
@@ -50,6 +47,9 @@ function! MyHighlights() abort
   hi LspDiagnosticsSignError guifg=red
   hi LspDiagnosticsFloatingError guifg=red
   hi LspDiagnosticsVirtualTextError guifg=red guibg=#330000
+
+  hi TelescopeMatching guifg=NONE guibg=NONE
+  hi TelescopeSelection guibg=#2A2A2A
 endfunction
 augroup MyColors
   autocmd!
