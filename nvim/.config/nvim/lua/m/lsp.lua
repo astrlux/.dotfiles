@@ -19,7 +19,7 @@ require'lspconfig'.efm.setup {
 vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   signs = true,
   underline = true,
-  update_in_insert = true
+  update_in_insert = false
 })
 local signs = { -- Define diagnostic signs
   Error = '✗',
@@ -112,4 +112,4 @@ require'lspconfig'.sumneko_lua.setup {
   }
 }
 
-vim.cmd 'autocmd BufWritePre *.lua,*.go,*.c,*.cpp,*.js,*.jsx,*.ts,*.tsx,*.rs,*.py lua vim.lsp.buf.formatting_sync(nil, 100)'
+vim.cmd 'autocmd BufWritePre *.lua,*.go,*.c,*.cpp,*.js,*.jsx,*.ts,*.tsx,*.rs,*.py lua vim.lsp.buf.formatting_sync(nil, 90)'
