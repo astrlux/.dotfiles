@@ -16,8 +16,8 @@ o.smarttab = true
 o.signcolumn = 'number'
 o.nu = true
 o.relativenumber = true
-o.updatetime = 27
-o.timeoutlen = 400
+o.updatetime = 45
+o.timeoutlen = 500
 o.smartcase = true
 o.ignorecase = true
 o.incsearch = true
@@ -36,7 +36,7 @@ function! MyHighlights() abort
   hi PmenuSel guibg=#2A2A2A
   hi EndOfBuffer ctermbg=NONE ctermfg=NONE
 
-  hi TelescopeMatching guibg=none
+  hi TelescopeMatching guibg=NONE
   hi TelescopeSelection guibg=#2A2A2A
 
   hi LspDiagnosticsSignHint guifg=orange
