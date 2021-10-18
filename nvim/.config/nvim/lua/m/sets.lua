@@ -15,7 +15,7 @@ o.smarttab = true
 o.signcolumn = 'number'
 o.nu = true
 o.relativenumber = true
-o.updatetime = 45
+o.updatetime = 25
 o.timeoutlen = 500
 o.smartcase = true
 o.ignorecase = true
@@ -29,16 +29,16 @@ o.termguicolors = true
 o.background = 'dark'
 cmd [[
 function! MyHighlights() abort
-  hi Visual guibg=#004142
-  hi VertSplit guifg=black guibg=#2A2A2A
-  hi Pmenu guibg=#1A1A1A
-  hi PmenuSel guibg=#2A2A2A
-  hi EndOfBuffer ctermbg=NONE ctermfg=NONE
+  "hi Visual guibg=#004142
+  "hi VertSplit guifg=black guibg=#2A2A2A
+  "hi Pmenu guibg=#1A1A1A
+  "hi PmenuSel guibg=#2A2A2A
+  "hi EndOfBuffer ctermbg=NONE ctermfg=NONE
 
-  hi DiffAdd    guibg=green  guifg=black
-  hi DiffDelete guibg=red    guifg=black
-  hi DiffChange guibg=orange guifg=black 
-  hi DiffText   guibg=yellow guifg=black
+  "hi DiffAdd    guibg=green  guifg=black
+  "hi DiffDelete guibg=red    guifg=black
+  "hi DiffChange guibg=orange guifg=black 
+  "hi DiffText   guibg=yellow guifg=black
 
   hi LspDiagnosticsSignHint guifg=orange
   hi LspDiagnosticsFloatingHint guifg=orange
@@ -52,12 +52,12 @@ function! MyHighlights() abort
   hi LspDiagnosticsFloatingError guifg=red
   hi LspDiagnosticsVirtualTextError guifg=red guibg=#330000
 
-  hi TelescopeMatching guifg=none guibg=none
-  hi TelescopeSelection guibg=#2A2A2A
+  "hi TelescopeMatching guifg=none guibg=none
+  "hi TelescopeSelection guibg=#2A2A2A
 endfunction
 augroup MyColors
   autocmd!
   autocmd ColorScheme * call MyHighlights()
 augroup END
 ]]
-cmd 'colorscheme industry'
+cmd 'colorscheme melange'
