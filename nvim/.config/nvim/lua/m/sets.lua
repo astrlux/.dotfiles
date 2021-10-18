@@ -33,7 +33,7 @@ function! MyHighlights() abort
   hi VertSplit guifg=black guibg=#2A2A2A
   hi Pmenu guibg=#1A1A1A
   hi PmenuSel guibg=#2A2A2A
-  hi EndOfBuffer ctermbg=black ctermfg=black
+  hi EndOfBuffer ctermbg=NONE ctermfg=NONE
 
   hi DiffAdd    guibg=green  guifg=black
   hi DiffDelete guibg=red    guifg=black
