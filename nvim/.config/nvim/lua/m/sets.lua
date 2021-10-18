@@ -30,7 +30,7 @@ o.termguicolors = true
 o.background = 'dark'
 cmd [[
 function! MyHighlights() abort
-  hi LineNR guifg=gray
+  hi Visual guibg=#004142
   hi VertSplit guifg=black guibg=#2A2A2A
   hi Pmenu guibg=#1A1A1A
   hi PmenuSel guibg=#2A2A2A
