@@ -6,7 +6,7 @@ export PATH="$PATH:/usr/local/opt/llvm/bin/"
 export TERM="screen-256color"
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.5.1/share/nvim/runtime # NIGHTLY
 export DOTFILES=$HOME/dotfiles
-export STOW_FOLDERS="dwm,nvim,zsh,kitty"
+export STOW_FOLDERS="nvim,zsh,kitty"
 export PROJECTS=$HOME/Projects
 export EDITOR=nvim
 # PROMPT
