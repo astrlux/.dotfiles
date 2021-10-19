@@ -19,7 +19,7 @@ require'lspconfig'.efm.setup {
 vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   signs = true,
   underline = true,
-  update_in_insert = true
+  update_in_insert = false
 })
 local signs = { -- Define diagnostic signs
   Error = '✗',
@@ -57,12 +57,12 @@ local on_attach = function(_, bufnr)
   buf_set_keymap('n', 'gi', '<CMD>lua vim.lsp.buf.implementation()<CR>', opts)
   buf_set_keymap('n', 'gf', '<CMD>lua vim.lsp.buf.formatting()<CR>', opts)
   buf_set_keymap('n', '<C-k>', '<CMD>lua vim.lsp.buf.signature_help()<CR>', opts)
-  buf_set_keymap('n', 'qd', ':Lspsaga show_line_diagnostics<CR>', opts)
+  buf_set_keymap('n', 'cd', ':Lspsaga show_line_diagnostics<CR>', opts)
   buf_set_keymap('n', '<C-p>', ':Lspsaga diagnostic_jump_prev<CR>', opts)
   buf_set_keymap('n', '<C-n>', ':Lspsaga diagnostic_jump_next<CR>', opts)
-  buf_set_keymap('n', 'qr', ':Lspsaga rename<CR>', opts)
-  buf_set_keymap('n', 'qs', '<CMD>lua vim.lsp.buf.signature_help()<CR>', opts)
-  buf_set_keymap('n', 'qa', '<CMD>lua vim.lsp.buf.code_action()<CR>', opts)
+  buf_set_keymap('n', 'cr', ':Lspsaga rename<CR>', opts)
+  buf_set_keymap('n', 'cs', '<CMD>lua vim.lsp.buf.signature_help()<CR>', opts)
+  buf_set_keymap('n', 'ca', '<CMD>lua vim.lsp.buf.code_action()<CR>', opts)
   buf_set_keymap('n', 'K', '<CMD>lua vim.lsp.buf.hover()<CR>', opts)
 end
 
