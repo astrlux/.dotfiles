@@ -29,7 +29,7 @@ o.termguicolors = true
 o.background = 'dark'
 cmd [[
 function! MyHighlights() abort
-  hi LineNr guifg=grey
+  "hi LineNr guifg=grey
   hi Visual guifg=NONE guibg=#4A4A4A
   hi Search guifg=black guibg=yellow
   hi VertSplit guifg=black guibg=#4A4A4A
