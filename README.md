@@ -1,6 +1,6 @@
 ## Configuration
 
-![]("./img/neofetch.png")
+![](./img/neofetch.png)
 
 ### Prerequisites <sup>[5 min]</sup>
 
