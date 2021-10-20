@@ -29,22 +29,34 @@ o.termguicolors = true
 o.background = 'dark'
 cmd [[
 function! MyHighlights() abort
-  hi Visual guibg=#444433
-  hi VertSplit guifg=black guibg=#4A4A4A
-  hi Pmenu guibg=#1A1A1A
-  hi PmenuSel guibg=#2A2A2A
+  hi LineNr guifg=#555555
+
+  hi Visual guibg=#333222
+  hi VertSplit guifg=black guibg=#2A2A2A
+
+  hi Pmenu guibg=#222222
+  hi PmenuSel guibg=#333333
+
   hi EndOfBuffer guibg=black guifg=black
-  hi LspDiagnosticsSignHint guifg=orange
-  hi LspDiagnosticsFloatingHint guifg=orange
-  hi LspDiagnosticsVirtualTextHint guifg=orange guibg=#4D2A00
+
+  hi LspDiagnosticsSignWarning guifg=orange
+  hi LspDiagnosticsFloatingWarning guifg=orange
+  hi LspDiagnosticsVirtualTextWarning guifg=orange guibg=#4D2A00
+
+  hi LspDiagnosticsSignHint guifg=yellow
+  hi LspDiagnosticsFloatingHint guifg=yellow
+  hi LspDiagnosticsVirtualTextHint guifg=yellow guibg=#4D2A00
+
   hi LspDiagnosticsSignInformation guifg=purple
   hi LspDiagnosticsFloatingInformation guifg=purple
   hi LspDiagnosticsVirtualTextInformation guifg=#301934
+
   hi LspDiagnosticsSignError guifg=red
   hi LspDiagnosticsFloatingError guifg=red
   hi LspDiagnosticsVirtualTextError guifg=red guibg=#330000
+
   hi TelescopeMatching guifg=none guibg=none
-  hi TelescopeSelection guibg=#2A2A2A
+  hi TelescopeSelection guibg=#333222
 endfunction
 augroup MyColors
   autocmd!
