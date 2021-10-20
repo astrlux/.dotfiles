@@ -27,8 +27,8 @@ static const char *colors[][3]      = {
 static const unsigned int borderpx = 1; /* border pixel of windows   */
 static const unsigned int gappx    = 2; /* gap pixel between windows */
 static const unsigned int snap     = 8; /* snap pixel                */
-static const Bool showbar          = 1; /* False means no bar        */
-static const Bool topbar           = 1; /* False means bottom bar    */
+static const bool showbar          = 1; /* False means no bar        */
+static const bool topbar           = 1; /* False means bottom bar    */
 
 /* tagging */
 static const char *tags[] = {
