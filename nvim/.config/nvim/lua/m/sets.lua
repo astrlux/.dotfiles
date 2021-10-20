@@ -14,7 +14,7 @@ o.expandtab = true
 o.smarttab = true
 o.signcolumn = 'number'
 o.nu = true
--- o.relativenumber = true
+o.relativenumber = true
 o.updatetime = 15
 o.timeoutlen = 500
 o.smartcase = true
@@ -29,7 +29,7 @@ o.termguicolors = true
 o.background = 'dark'
 cmd [[
 function! MyHighlights() abort
-  "hi LineNr guifg=#555555
+  hi LineNr guifg=#555555
 
   hi Visual guibg=#333222
   hi VertSplit guifg=black guibg=#2A2A2A
