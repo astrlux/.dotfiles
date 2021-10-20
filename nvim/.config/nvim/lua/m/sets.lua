@@ -29,12 +29,11 @@ o.termguicolors = true
 o.background = 'dark'
 cmd [[
 function! MyHighlights() abort
-  hi LineNr guifg=grey
   hi Visual guibg=#4A4A4A
   hi VertSplit guifg=black guibg=#4A4A4A
   hi Pmenu guibg=#1A1A1A
   hi PmenuSel guibg=#2A2A2A
-  hi EndOfBuffer ctermbg=NONE ctermfg=NONE
+  hi EndOfBuffer guibg=black guifg=black
   hi DiffAdd    guibg=green  guifg=black
   hi DiffDelete guibg=red    guifg=black
   hi DiffChange guibg=orange guifg=black
