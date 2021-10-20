@@ -20,7 +20,7 @@ o.timeoutlen = 500
 o.smartcase = true
 o.ignorecase = true
 o.incsearch = true
-o.hlsearch = true
+o.hlsearch = false
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
@@ -29,9 +29,8 @@ o.termguicolors = true
 o.background = 'dark'
 cmd [[
 function! MyHighlights() abort
-  "hi LineNr guifg=grey
-  hi Visual guifg=NONE guibg=#4A4A4A
-  hi Search guifg=black guibg=yellow
+  hi LineNr guifg=grey
+  hi Visual guibg=#4A4A4A
   hi VertSplit guifg=black guibg=#4A4A4A
   hi Pmenu guibg=#1A1A1A
   hi PmenuSel guibg=#2A2A2A
