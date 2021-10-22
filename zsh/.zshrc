@@ -12,6 +12,8 @@ export EDITOR=nvim
 # PROMPT
 PROMPT="%F{magenta}%1d %F{green}ϟ%f "
 # CONVENIENCE
+alias notes='nvim ~/Notes/todo'
+alias pnotes="pushd ~/Notes; cm 'changes'; git push; popd;"
 alias lc='cd ~/Common/CodingChallenges/LeetCode' 
 alias mr='rm'
 alias b='cd ..'
