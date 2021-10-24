@@ -14,6 +14,7 @@ o.expandtab = true
 o.smarttab = true
 o.signcolumn = 'number'
 o.nu = true
+o.relativenumber = true
 o.updatetime = 15
 o.timeoutlen = 500
 o.smartcase = true
