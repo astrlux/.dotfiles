@@ -1,5 +1,5 @@
 local o, cmd = vim.opt, vim.cmd
--- o.mouse = 'a'
+o.mouse = 'a'
 o.ruler = false
 o.hidden = true
 o.showcmd = false
@@ -14,7 +14,7 @@ o.expandtab = true
 o.smarttab = true
 o.signcolumn = 'number'
 o.nu = true
-o.relativenumber = true
+o.relativenumber = false
 o.updatetime = 15
 o.timeoutlen = 500
 o.smartcase = true
