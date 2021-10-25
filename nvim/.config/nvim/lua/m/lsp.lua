@@ -61,7 +61,7 @@ local on_attach = function(_, bufnr)
   buf_set_keymap('n', '<C-p>', ':Lspsaga diagnostic_jump_prev<CR>', opts)
   buf_set_keymap('n', '<C-n>', ':Lspsaga diagnostic_jump_next<CR>', opts)
   buf_set_keymap('n', '<LEADER>cr', '<CMD>lua vim.lsp.buf.rename()<CR>', opts)
-  buf_set_keymap('n', '<LEADER>cs', '<CMD>lua vim.lsp.buf.signature_help()<CR>', opts)
+  buf_set_keymap('n', '<LEADER>hs', '<CMD>lua vim.lsp.buf.signature_help()<CR>', opts)
   buf_set_keymap('n', '<LEADER>ca', '<CMD>lua vim.lsp.buf.code_action()<CR>', opts)
   buf_set_keymap('n', 'K', '<CMD>lua vim.lsp.buf.hover()<CR>', opts)
 end

@@ -14,7 +14,7 @@ o.expandtab = true
 o.smarttab = true
 o.signcolumn = 'number'
 o.nu = true
-o.relativenumber = false
+o.relativenumber = true
 o.updatetime = 720
 o.timeoutlen = 360
 o.smartcase = true
@@ -24,15 +24,13 @@ o.hlsearch = false
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
-o.cursorline = true
 -- COLORS
 o.termguicolors = true
 o.background = 'dark'
 
 cmd [[
-function! MyHighlights() abort
-  "hi LineNr guifg=#444444
-  hi CursorLine guibg=#454545
+function! IndustryCustoms() abort
+  hi LineNr guifg=#444444
 
   hi Visual guibg=#454545
   hi VertSplit guifg=black guibg=#2A2A2A
@@ -63,7 +61,7 @@ function! MyHighlights() abort
 endfunction
 augroup MyColors
   autocmd!
-  autocmd ColorScheme * call MyHighlights()
+  autocmd ColorScheme industry call IndustryCustoms()
 augroup END
 ]]
 cmd 'colorscheme industry'
