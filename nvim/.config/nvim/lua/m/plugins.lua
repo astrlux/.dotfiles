@@ -32,7 +32,7 @@ require('packer').startup(function()
     'blackcauldron7/surround.nvim',
     config = function()
       require'surround'.setup {
-        mappings_style = 'surround'
+        mappings_style = 'sandwich'
       }
     end
   }
@@ -45,10 +45,4 @@ require('packer').startup(function()
   use 'jose-elias-alvarez/nvim-lsp-ts-utils' -- typescript specific tools
   use 'kyazdani42/nvim-tree.lua' -- file tree
   use 'savq/melange' -- lua color theme
-  use {
-    'folke/twilight.nvim',
-    config = function()
-      require('twilight').setup {}
-    end
-  }
 end)
