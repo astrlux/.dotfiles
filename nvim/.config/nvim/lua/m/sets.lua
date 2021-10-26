@@ -15,7 +15,7 @@ o.expandtab = true
 o.smarttab = true
 o.signcolumn = 'number'
 o.nu = true
-o.relativenumber = false
+o.relativenumber = true
 o.updatetime = 720
 o.timeoutlen = 360
 o.smartcase = true
@@ -32,7 +32,6 @@ o.background = 'dark'
 cmd [[
 function! IndustryCustoms() abort
   hi LineNr guifg=#444444
-  "hi CursorLineNr guibg=#222222
   hi CursorLine guibg=#222111
   hi Visual guibg=#454545
   hi VertSplit guifg=black guibg=black
