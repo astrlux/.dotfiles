@@ -31,8 +31,8 @@ o.background = 'dark'
 
 cmd [[
 function! IndustryCustoms() abort
-  hi LineNr guifg=#444444
-  hi CursorLineNr guibg=#222111
+  hi LineNr guifg=#444444 guibg=#111122
+  hi CursorLineNr guibg=#111122
   hi Visual guibg=#454545
   hi VertSplit guifg=black guibg=black
   hi Pmenu guibg=#222222
@@ -75,4 +75,4 @@ augroup MyColors
   autocmd ColorScheme melange call MelangeCustoms()
 augroup END
 ]]
-cmd 'colorscheme melange'
+cmd 'colorscheme industry'
