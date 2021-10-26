@@ -21,7 +21,7 @@ o.timeoutlen = 360
 o.smartcase = true
 o.ignorecase = true
 o.incsearch = true
-o.hlsearch = true
+o.hlsearch = false
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
@@ -31,7 +31,7 @@ o.background = 'dark'
 
 cmd [[
 function! IndustryCustoms() abort
-  hi LineNr guifg=#444444
+  "hi LineNr guifg=#444444
 
   hi Visual guibg=#454545
   hi VertSplit guifg=black guibg=#2A2A2A
@@ -88,4 +88,4 @@ augroup MyColors
   autocmd ColorScheme melange call MelangeCustoms()
 augroup END
 ]]
-cmd 'colorscheme melange'
+cmd 'colorscheme industry'
