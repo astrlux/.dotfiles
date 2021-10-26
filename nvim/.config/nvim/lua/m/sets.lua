@@ -60,9 +60,32 @@ function! IndustryCustoms() abort
   hi TelescopeMatching guifg=none guibg=none
   hi TelescopeSelection guibg=#333222
 endfunction
+
+function! MelangeCustoms() abort
+  hi LspDiagnosticsSignWarning guifg=orange
+  hi LspDiagnosticsFloatingWarning guifg=orange
+  hi LspDiagnosticsVirtualTextWarning guifg=orange guibg=#4D2A00
+
+  hi LspDiagnosticsSignHint guifg=yellow
+  hi LspDiagnosticsFloatingHint guifg=yellow
+  hi LspDiagnosticsVirtualTextHint guifg=yellow guibg=#4D2A00
+
+  hi LspDiagnosticsSignInformation guifg=purple
+  hi LspDiagnosticsFloatingInformation guifg=purple
+  hi LspDiagnosticsVirtualTextInformation guifg=#301934
+
+  hi LspDiagnosticsSignError guifg=red
+  hi LspDiagnosticsFloatingError guifg=red
+  hi LspDiagnosticsVirtualTextError guifg=red guibg=#330000
+
+  hi TelescopeMatching guifg=none guibg=none
+  hi TelescopeSelection guibg=#444333
+endfunction
+
 augroup MyColors
   autocmd!
   autocmd ColorScheme industry call IndustryCustoms()
+  autocmd ColorScheme melange call MelangeCustoms()
 augroup END
 ]]
 cmd 'colorscheme melange'
