@@ -31,7 +31,6 @@ o.background = 'dark'
 
 cmd [[
 function! IndustryCustoms() abort
-  hi LineNr guifg=#454545
   hi Visual guibg=#454545
   hi VertSplit guifg=black guibg=black
   hi Pmenu guibg=#222222
