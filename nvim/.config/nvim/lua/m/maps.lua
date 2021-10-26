@@ -14,6 +14,8 @@ map('n', '<LEADER>1', ':luafile %<CR>', nor)
 map('n', '<LEADER>2', ':PackerUpdate<CR>', nor)
 map('n', '<LEADER>3', ':PackerInstall<CR>', nor)
 map('n', '<LEADER>4', ':PackerClean<CR>', nor)
+-- Check active LSP status
+map('n', '<LEADER>lsp', ':LspInfo<CR>', nor)
 -- Indent visual mode
 map('v', '<', '<gv', nor)
 map('v', '>', '>gv', nor)
@@ -68,4 +70,3 @@ map('n', '<LEADER>e', ':NvimTreeToggle<CR>', nor)
 -- Floating terminal
 map('n', '`t', [[<CMD>lua require('lspsaga.floaterm').open_float_terminal()<CR>]], nor)
 map('t', '`t', [[<C-\><C-n>:lua require('lspsaga.floaterm').close_float_terminal()<CR>]], nor)
-map('n', '<LEADER>lsp', ':LspInfo<CR>', nor)
