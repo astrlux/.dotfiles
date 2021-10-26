@@ -75,4 +75,4 @@ augroup MyColors
   autocmd ColorScheme melange call MelangeCustoms()
 augroup END
 ]]
-cmd 'colorscheme industry'
+cmd 'colorscheme melange'
