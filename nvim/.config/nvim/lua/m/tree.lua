@@ -7,14 +7,15 @@ require'nvim-tree'.setup {
   -- hijack netrw window on startup
   hijack_netrw = true,
   -- open the tree when running this setup function
-  open_on_setup = false,
+  open_on_setup = true,
   -- will not open on setup if the filetype is in this list
   ignore_ft_on_setup = {},
   -- closes neovim automatically when the tree is the last **WINDOW** in the view
-  auto_close = false,
+  auto_close = true,
+  auto_open = true,
   -- opens the tree when changing/opening a new tab if the tree wasn't previously opened
   open_on_tab = false,
-  close_on_open = true,
+  close_on_open = false,
   -- hijack the cursor in the tree to put it at the start of the filename
   hijack_cursor = true,
   -- updates the root directory of the tree on `DirChanged` (when your run `:cd` usually)

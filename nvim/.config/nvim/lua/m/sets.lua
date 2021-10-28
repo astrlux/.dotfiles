@@ -1,6 +1,6 @@
 local o, cmd = vim.opt, vim.cmd
 o.mouse = 'a'
--- o.guicursor = ''
+o.guicursor = ''
 o.ruler = false
 o.hidden = true
 o.showcmd = false
@@ -73,4 +73,4 @@ augroup MyColors
   autocmd ColorScheme melange call MelangeCustoms()
 augroup END
 ]]
-cmd 'colorscheme industry'
+cmd 'colorscheme melange'
