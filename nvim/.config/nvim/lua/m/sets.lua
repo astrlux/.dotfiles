@@ -103,8 +103,7 @@ require('material').setup({
       bg = '#330000'
     },
     TelescopeSelection = {
-      fg = 'none',
-      bg = 'none'
+      fg = 'orange'
     },
     TelescopePreviewBorder = {
       fg = '#333333'
