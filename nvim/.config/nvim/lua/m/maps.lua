@@ -68,3 +68,4 @@ map('n', '<LEADER>t', ':NvimTreeToggle<CR>', nor)
 -- Floating terminal
 map('n', '`t', [[<CMD>lua require('lspsaga.floaterm').open_float_terminal()<CR>]], nor)
 map('t', '`t', [[<C-\><C-n>:lua require('lspsaga.floaterm').close_float_terminal()<CR>]], nor)
+map('n', '<leader>mm', [[<Cmd>lua require('material.functions').toggle_style()<CR>]], nor)

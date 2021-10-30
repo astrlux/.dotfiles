@@ -1,4 +1,4 @@
-local o, cmd = vim.opt, vim.cmd
+local o, g, cmd = vim.opt, vim.g, vim.cmd
 o.mouse = 'a'
 o.ruler = false
 o.hidden = true
@@ -11,8 +11,10 @@ o.shiftwidth = 2
 o.softtabstop = 2
 o.expandtab = true
 o.smarttab = true
+o.wrap = false
 o.signcolumn = 'number'
 o.nu = true
+o.relativenumber = true
 o.updatetime = 720
 o.timeoutlen = 360
 o.smartcase = true
@@ -21,51 +23,93 @@ o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
-o.cursorline = true
+
 -- COLORS
 o.termguicolors = true
 o.background = 'dark'
-cmd [[
-function! IndustryCustoms() abort
-  hi Visual guibg=#454545
-  hi VertSplit guifg=black guibg=black
-  hi Pmenu guibg=#222222
-  hi PmenuSel guibg=#333333
-  hi EndOfBuffer guibg=black guifg=black
-  hi LspDiagnosticsSignWarning guifg=orange
-  hi LspDiagnosticsFloatingWarning guifg=orange
-  hi LspDiagnosticsVirtualTextWarning guifg=orange guibg=#4D2A00
-  hi LspDiagnosticsSignHint guifg=yellow
-  hi LspDiagnosticsFloatingHint guifg=yellow
-  hi LspDiagnosticsVirtualTextHint guifg=yellow guibg=#4D2A00
-  hi LspDiagnosticsSignInformation guifg=purple
-  hi LspDiagnosticsFloatingInformation guifg=purple
-  hi LspDiagnosticsVirtualTextInformation guifg=#301934
-  hi LspDiagnosticsSignError guifg=red
-  hi LspDiagnosticsFloatingError guifg=red
-  hi LspDiagnosticsVirtualTextError guifg=red guibg=#330000
-  hi TelescopeMatching guifg=none guibg=none
-  hi TelescopeSelection guibg=#333222
-endfunction
-function! MelangeCustoms() abort
-  hi LspDiagnosticsSignWarning guifg=orange
-  hi LspDiagnosticsFloatingWarning guifg=orange
-  hi LspDiagnosticsVirtualTextWarning guifg=orange guibg=#4D2A00
-  hi LspDiagnosticsSignHint guifg=yellow
-  hi LspDiagnosticsFloatingHint guifg=yellow
-  hi LspDiagnosticsVirtualTextHint guifg=yellow guibg=#4D2A00
-  hi LspDiagnosticsSignInformation guifg=purple
-  hi LspDiagnosticsFloatingInformation guifg=purple
-  hi LspDiagnosticsVirtualTextInformation guifg=#301934
-  hi LspDiagnosticsSignError guifg=red
-  hi LspDiagnosticsFloatingError guifg=red
-  hi LspDiagnosticsVirtualTextError guifg=red guibg=#330000
-  hi TelescopeMatching guifg=none guibg=none
-endfunction
-augroup MyColors
-  autocmd!
-  autocmd ColorScheme industry call IndustryCustoms()
-  autocmd ColorScheme melange call MelangeCustoms()
-augroup END
-]]
-cmd 'colorscheme melange'
+require('material').setup({
+  contrast = true, -- Enable contrast for sidebars, floating windows and popup menus like Nvim-Tree
+  borders = false, -- Enable borders between verticaly split windows
+  popup_menu = 'dark', -- Popup menu style ( can be: 'dark', 'light', 'colorful' or 'stealth' )
+  italics = {
+    comments = true, -- Enable italic comments
+    keywords = false, -- Enable italic keywords
+    functions = true, -- Enable italic functions
+    strings = false, -- Enable italic strings
+    variables = false -- Enable italic variables
+  },
+  contrast_windows = { -- Specify which windows get the contrasted (darker) background
+    'terminal', -- Darker terminal background
+    'packer', -- Darker packer background
+    'qf', -- Darker qf list background
+    'saga'
+  },
+  text_contrast = {
+    lighter = false, -- Enable higher contrast text for lighter style
+    darker = false -- Enable higher contrast text for darker style
+  },
+  disable = {
+    background = false, -- Prevent the theme from setting the background (NeoVim then uses your teminal background)
+    term_colors = false, -- Prevent the theme from setting terminal colors
+    eob_lines = true -- Hide the end-of-buffer lines
+  },
+  custom_highlights = {
+    ErrorMsg = {
+      fg = 'red',
+      bg = '#330000'
+    },
+    diffAdded = {
+      fg = '#0EFF00',
+      bg = '#013220'
+    },
+    diffRemoved = {
+      fg = 'red',
+      bg = '#330000'
+    },
+    LspDiagnosticsSignWarning = {
+      fg = 'orange'
+    },
+    LspDiagnosticsVirtualTextWarning = {
+      fg = 'orange',
+      bg = '#4D2A00'
+    },
+    LspDiagnosticsSignHint = {
+      fg = 'yellow'
+    },
+    LspDiagnosticsFloatingHint = {
+      fg = 'yellow'
+    },
+    LspDiagnosticsVirtualTextHint = {
+      fg = 'yellow',
+      bg = '#4D2A00'
+    },
+    LspDiagnosticsSignInformation = {
+      fg = 'purple'
+    },
+    LspDiagnosticsFloatingInformation = {
+      fg = 'purple'
+    },
+    LspDiagnosticsVirtualTextInformation = {
+      fg = '#301934'
+    },
+    LspDiagnosticsSignError = {
+      fg = 'red'
+    },
+    LspDiagnosticsFloatingError = {
+      fg = 'red'
+    },
+    LspDiagnosticsVirtualTextError = {
+      fg = 'red',
+      bg = '#330000'
+    },
+    TelescopeSelection = {
+      fg = 'none',
+      bg = 'none'
+    },
+    TelescopePreviewBorder = {
+      fg = '#333333'
+    }
+  }
+})
+g.material_style = 'darker'
+cmd 'colorscheme material'

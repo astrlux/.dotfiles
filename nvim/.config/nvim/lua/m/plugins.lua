@@ -44,5 +44,7 @@ require('packer').startup(function()
   use 'L3MON4D3/LuaSnip'
   use 'jose-elias-alvarez/nvim-lsp-ts-utils' -- typescript specific tools
   use 'kyazdani42/nvim-tree.lua' -- file tree
-  use 'savq/melange' -- lua color theme
+  -- lua color theme
+  use 'savq/melange'
+  use 'marko-cerovac/material.nvim'
 end)
