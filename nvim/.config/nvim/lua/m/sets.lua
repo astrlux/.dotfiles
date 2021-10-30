@@ -28,7 +28,7 @@ o.undofile = true
 -- COLORS
 o.termguicolors = true
 o.background = 'dark'
-
+cmd 'colorscheme melange'
 -- cmd [[
 -- function! IndustryCustoms() abort
 --   hi Visual guibg=#454545
@@ -56,4 +56,3 @@ o.background = 'dark'
 --   autocmd ColorScheme industry call IndustryCustoms()
 -- augroup END
 -- ]]
-cmd 'colorscheme melange'
