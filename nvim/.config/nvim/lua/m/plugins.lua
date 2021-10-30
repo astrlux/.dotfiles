@@ -32,7 +32,7 @@ require('packer').startup(function()
     'blackcauldron7/surround.nvim',
     config = function()
       require'surround'.setup {
-        mappings_style = 'sandwich'
+        mappings_style = 'surround'
       }
     end
   }
