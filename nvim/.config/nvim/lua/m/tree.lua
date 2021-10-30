@@ -1,5 +1,5 @@
 require'nvim-tree'.setup {
-  hidden = false,
+  hidden = true,
   icon_padding = ' ',
   root_folder_modifier = ':t',
   -- disables netrw completely
@@ -13,8 +13,8 @@ require'nvim-tree'.setup {
   -- closes neovim automatically when the tree is the last **WINDOW** in the view
   auto_close = false,
   -- opens the tree when changing/opening a new tab if the tree wasn't previously opened
-  open_on_tab = true,
-  close_on_open = true,
+  open_on_tab = false,
+  close_on_open = false,
   -- hijack the cursor in the tree to put it at the start of the filename
   hijack_cursor = true,
   -- updates the root directory of the tree on `DirChanged` (when your run `:cd` usually)

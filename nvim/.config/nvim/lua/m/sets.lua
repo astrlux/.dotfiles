@@ -41,8 +41,7 @@ require('material').setup({
   contrast_windows = { -- Specify which windows get the contrasted (darker) background
     'terminal', -- Darker terminal background
     'packer', -- Darker packer background
-    'qf', -- Darker qf list background
-    'saga'
+    'qf' -- Darker qf list background
   },
   text_contrast = {
     lighter = false, -- Enable higher contrast text for lighter style

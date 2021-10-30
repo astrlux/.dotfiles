@@ -47,4 +47,5 @@ require('packer').startup(function()
   -- lua color theme
   use 'savq/melange'
   use 'marko-cerovac/material.nvim'
+  use 'kyazdani42/nvim-web-devicons'
 end)
