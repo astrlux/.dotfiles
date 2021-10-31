@@ -2,6 +2,8 @@
 
 ![](./img/neofetch.png)
 
+![](./img/screen.png)
+
 ### Prerequisites <sup>[5 min]</sup>
 
 1. *nix system, GNU/[Stow](https://www.gnu.org/software/stow/), neovim [v0.5+](https://neovim.io/).
