@@ -1,7 +1,5 @@
 ## Configuration
 
-![](./img/neofetch.png)
-
 ![](./img/screen.png)
 
 ### Prerequisites <sup>[5 min]</sup>
