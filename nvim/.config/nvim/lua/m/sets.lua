@@ -4,7 +4,6 @@ o.ruler = false
 o.hidden = true
 o.showcmd = false
 o.showmode = false
-o.showmatch = true
 o.cmdheight = 1
 o.laststatus = 0
 o.tabstop = 2
