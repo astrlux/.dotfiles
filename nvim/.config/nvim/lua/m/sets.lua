@@ -4,6 +4,7 @@ o.ruler = false
 o.hidden = true
 o.showcmd = false
 o.showmode = false
+o.showmatch = true
 o.cmdheight = 1
 o.laststatus = 0
 o.tabstop = 2
@@ -50,7 +51,7 @@ require('material').setup({
   disable = {
     background = false, -- Prevent the theme from setting the background (NeoVim then uses your teminal background)
     term_colors = false, -- Prevent the theme from setting terminal colors
-    eob_lines = true -- Hide the end-of-buffer lines
+    eob_lines = false -- Hide the end-of-buffer lines
   },
   custom_highlights = {
     ErrorMsg = {
