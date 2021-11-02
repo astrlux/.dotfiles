@@ -26,7 +26,7 @@ o.undofile = true
 
 -- COLORS
 o.termguicolors = true
-o.background = 'dark'
+o.background = 'light'
 require('material').setup({
   contrast = true, -- Enable contrast for sidebars, floating windows and popup menus like Nvim-Tree
   borders = false, -- Enable borders between verticaly split windows
@@ -109,5 +109,5 @@ require('material').setup({
     }
   }
 })
-g.material_style = 'darker'
+g.material_style = 'lighter'
 cmd 'colorscheme material'
