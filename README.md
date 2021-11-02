@@ -1,6 +1,6 @@
 ## Minimal, convenient, and asynchronous. Just works.
 
-<details><summary>Sexy Image (NSFW Warning)</summary>
+<details><summary>Click Here to see a sexy picture (NSFW Warning)</summary>
 <img src="./img/screenshot.png"></img>
 </details>
 
