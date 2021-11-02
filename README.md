@@ -25,7 +25,7 @@ Quit & restart your terminal/emulator. Run `:PackerUpdate`. Finally, you're read
 
 ### Management
 
-Shell commands like `installDotfiles`, `removeDotfiles`, & `commitDotfiles` are at your disposal. For keybinding alterations, look at `.zshrc`, `maps.lua`, or `tmux.conf`. If you've opted to use [kitty](https://sw.kovidgoyal.net/kitty/) like I recommended, you don't need tmux.
+Shell commands like `installDotfiles`, `removeDotfiles`, & `commitDotfiles` are at your disposal. For keybinding alterations, look at `.zshrc`, `maps.lua`, or `tmux.conf`. If you've opted to use [kitty](https://sw.kovidgoyal.net/kitty/) like I recommended, you don't need tmux (just press `Ctrl+Shift+Enter` and watch the magic happen)
 
 ### Xtra Tooling
 
