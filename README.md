@@ -1,6 +1,6 @@
 ## Configuration
 
-<details><summary>Click Me</summary>
+<details><summary>Sexy (NSFW Warning)</summary>
 <img src="./img/screenshot.png"></img>
 </details>
 
