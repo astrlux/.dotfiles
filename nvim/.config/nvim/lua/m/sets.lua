@@ -1,5 +1,6 @@
 local o, g, cmd = vim.opt, vim.g, vim.cmd
 o.mouse = 'a'
+o.guicursor = ''
 o.ruler = false
 o.hidden = true
 o.showcmd = false
@@ -26,7 +27,7 @@ o.undofile = true
 
 -- COLORS
 o.termguicolors = true
-o.background = 'light'
+o.background = 'dark'
 require('material').setup({
   contrast = true, -- Enable contrast for sidebars, floating windows and popup menus like Nvim-Tree
   borders = false, -- Enable borders between verticaly split windows
@@ -109,5 +110,5 @@ require('material').setup({
     }
   }
 })
-g.material_style = 'lighter'
+g.material_style = 'darker'
 cmd 'colorscheme material'
