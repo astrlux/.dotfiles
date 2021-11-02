@@ -1,6 +1,6 @@
 ## Configuration
 
-<details><summary>Sexy (NSFW Warning)</summary>
+<details><summary>Sexy Image (NSFW Warning)</summary>
 <img src="./img/screenshot.png"></img>
 </details>
 
