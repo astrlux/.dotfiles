@@ -1,6 +1,6 @@
 ## Configuration
 
-<details>
+<details><summary>Click Me</summary>
 <img src="./img/screenshot.png"></img>
 </details>
 
