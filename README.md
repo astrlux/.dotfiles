@@ -1,6 +1,8 @@
 ## Configuration
 
+<details>
 ![](./img/screenshot.png)
+</details>
 
 ### Prerequisites <sup>[5 min]</sup>
 
