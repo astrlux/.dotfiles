@@ -1,7 +1,7 @@
 ## Configuration
 
 <details>
-![](./img/screenshot.png)
+<img src="./img/screenshot.png"></img>
 </details>
 
 ### Prerequisites <sup>[5 min]</sup>
