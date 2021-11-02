@@ -1,4 +1,4 @@
-## Configuration
+## Minimal, convenient, and asynchronous. Just works.
 
 <details><summary>Sexy Image (NSFW Warning)</summary>
 <img src="./img/screenshot.png"></img>
