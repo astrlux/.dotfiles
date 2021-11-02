@@ -1,4 +1,4 @@
-## Minimal, convenient, and asynchronous. Just works.
+## asynchronous & accelerated, but most of all SIMPLE. 
 
 <details><summary>Click to see a sexy pic (NSFW Warning)</summary>
 <img src="./img/screenshot.png"></img>
