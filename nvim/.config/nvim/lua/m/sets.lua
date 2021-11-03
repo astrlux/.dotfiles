@@ -1,6 +1,6 @@
 local o, g, cmd = vim.opt, vim.g, vim.cmd
 o.mouse = 'a'
-o.guicursor = ''
+o.guicursor = '' -- disable cursor GUI
 o.ruler = false
 o.hidden = true
 o.showcmd = false
