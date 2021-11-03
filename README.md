@@ -1,57 +1,57 @@
-## ASYNCHRONOUS & ACCELERATED, BUT MOST OF ALL simple. 
+## asynchronous & accelerated, but most of all SIMPLE. 
 
-<DETAILS><SUMMARY>cLICK TO SEE A SEXY PIC (nsfw wARNING)</SUMMARY>
-<IMG SRC="./IMG/SCREENSHOT.PNG"></IMG>
-</DETAILS>
+<details><summary>Click to see a sexy pic (NSFW Warning)</summary>
+<img src="./img/screenshot.png"></img>
+</details>
 
-### pREREQUISITES <SUP>[5 MIN]</SUP>
+### Prerequisites <sup>[5 min]</sup>
 
-1. *NIX SYSTEM, gnu/[sTOW](HTTPS://WWW.GNU.ORG/SOFTWARE/STOW/), NEOVIM [V0.5+](HTTPS://NEOVIM.IO/).
+1. *nix system, GNU/[Stow](https://www.gnu.org/software/stow/), neovim [v0.5+](https://neovim.io/).
 
-2. a lUA LANGUAGE SERVER (i'M USING [LUA-LANGUAGE-SERVER](HTTPS://GITHUB.COM/SUMNEKO/LUA-LANGUAGE-SERVER))
+2. A Lua language server (I'm using [lua-language-server](https://github.com/sumneko/lua-language-server))
 
-    -   bUILD THIS LANGUAGE SERVER FOLLOWING THE STEPS [HERE](HTTPS://GITHUB.COM/SUMNEKO/LUA-LANGUAGE-SERVER/WIKI/bUILD-AND-rUN-(sTANDALONE)). yOU'LL NEED [NINJA](HTTPS://GITHUB.COM/NINJA-BUILD/NINJA/WIKI/pRE-BUILT-nINJA-PACKAGES) AND c++17.
+    -   Build this language server following the steps [here](https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)). You'll need [ninja](https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages) and C++17.
 
-    -   tHE NATIVE lsp NEEDS THE PATH TO YOUR LANGUAGE SERVER'S BINARY. hARDCODE THIS PATH IN `LSP.LUA` (i KEEP MY LANGUAGE SERVER UNDER A `~/TOOLS` FOLDER).
+    -   The native LSP needs the path to your language server's binary. Hardcode this path in `lsp.lua` (I keep my language server under a `~/tools` folder).
 
-3. fOR UN-_PARALLELED_ CRISPNESS, USE A gpu-ACCELERATED EMULATOR LIKE [KITTY](HTTPS://SW.KOVIDGOYAL.NET/KITTY/) OR [ALACRITTY](HTTPS://GITHUB.COM/ALACRITTY/ALACRITTY).
+3. For un-_paralleled_ crispness, use a GPU-accelerated emulator like [kitty](https://sw.kovidgoyal.net/kitty/) or [alacritty](https://github.com/alacritty/alacritty).
 
-### iNSTALLATION <SUP>[5 SEC]</SUP>
+### Installation <sup>[5 sec]</sup>
 
-    CD && GIT CLONE GIT@GITHUB.COM:ASTRLUX/DOTFILES.GIT && SUDO SH ~/DOTFILES/SCRIPTS/FIRST_INSTALL.SH
+    cd && git clone git@github.com:astrlux/dotfiles.git && sudo sh ~/dotfiles/scripts/first_install.sh
 
 
-qUIT & RESTART YOUR TERMINAL/EMULATOR. rUN `:pACKERuPDATE`. fINALLY, YOU'RE READY TO RUMBLE.
+Quit & restart your terminal/emulator. Run `:PackerUpdate`. Finally, you're ready to rumble.
 
-### sUSTAINED uSE
+### Sustained Use
 
-sHELL COMMANDS LIKE `INSTALLdOTFILES`, `REMOVEdOTFILES`, & `COMMITdOTFILES` ARE AT YOUR DISPOSAL. fOR KEYBINDING ALTERATIONS, LOOK AT `.ZSHRC`, `MAPS.LUA`, OR `TMUX.CONF`. iF YOU'VE OPTED TO USE [KITTY](HTTPS://SW.KOVIDGOYAL.NET/KITTY/CONF/) LIKE i RECOMMENDED, YOU DON'T NEED TMUX (JUST PRESS `cTRL+sHIFT+eNTER`).
+Shell commands like `installDotfiles`, `removeDotfiles`, & `commitDotfiles` are at your disposal. For keybinding alterations, look at `.zshrc`, `maps.lua`, or `tmux.conf`. If you've opted to use [kitty](https://sw.kovidgoyal.net/kitty/conf/) like I recommended, you don't need tmux (just press `Ctrl+Shift+Enter`).
 
-### xTRA tOOLING
+### Xtra Tooling
 
-_EFM-LANGUAGE-SERVER LLVM LUAROCKS FZF RIPGREP THEFUCK CCLS PYRIGHT GOPLS ZSH-AUTOSUGGESTIONS NINJA TREE-SITTER_
+_efm-language-server llvm luarocks fzf ripgrep thefuck ccls pyright gopls zsh-autosuggestions ninja tree-sitter_
 
 ___
 
-### nEOVIM lUAjit mOTIVATION
+### Neovim LuaJIT Motivation
 
-- fEATHERWEIGHT CONFIGURATION PRIORITIZES SPEED (WITHOUT NONSENSICAL cpu USAGE)
+- Featherweight configuration prioritizes speed (without nonsensical CPU usage)
 
-- bETTER-THAN-ide EXPERIENCE IN UNDER 420 LINES OF lUA ☾
+- Better-than-IDE experience in under 420 lines of Lua ☾
 
 ```
-NVIM
-├── INIT.LUA
-└── LUA
-    └── M
-        ├── COMPLETION.LUA
-        ├── FILETREE.LUA
-        ├── FINDER.LUA
-        ├── HIGHLIGHT.LUA
-        ├── LSP.LUA
-        ├── MAPS.LUA
-        ├── PLUGINS.LUA
-        └── SETS.LUA
+nvim
+├── init.lua
+└── lua
+    └── m
+        ├── completion.lua
+        ├── filetree.lua
+        ├── finder.lua
+        ├── highlight.lua
+        ├── lsp.lua
+        ├── maps.lua
+        ├── plugins.lua
+        └── sets.lua
 
-2 DIRECTORIES, 9 FILES
+2 directories, 9 files
 ```
