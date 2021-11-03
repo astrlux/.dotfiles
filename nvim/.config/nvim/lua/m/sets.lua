@@ -11,6 +11,7 @@ o.tabstop = 2
 o.shiftwidth = 2
 o.softtabstop = 2
 o.expandtab = true
+o.autoindent = true
 o.smarttab = true
 o.wrap = false
 o.signcolumn = 'number'
@@ -100,12 +101,6 @@ require('material').setup({
     LspDiagnosticsVirtualTextError = {
       fg = 'red',
       bg = '#330000'
-    },
-    TelescopeSelection = {
-      fg = 'orange'
-    },
-    TelescopePreviewBorder = {
-      fg = '#333333'
     }
   }
 })
