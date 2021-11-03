@@ -54,9 +54,6 @@ require('material').setup({
     eob_lines = true -- Hide the end-of-buffer lines
   },
   custom_highlights = {
-    Pmenu = {
-      guifg = '#777777'
-    },
     ErrorMsg = {
       fg = 'red',
       bg = '#330000'
