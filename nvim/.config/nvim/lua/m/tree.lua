@@ -1,17 +1,17 @@
 require'nvim-tree'.setup {
   hidden = true,
   icon_padding = ' ',
-  root_folder_modifier = ':t',
+  -- root_folder_modifier = ':t',
   -- disables netrw completely
   disable_netrw = true,
   -- hijack netrw window on startup
   hijack_netrw = true,
   -- open the tree when running this setup function
-  open_on_setup = false,
+  open_on_setup = true,
   -- will not open on setup if the filetype is in this list
   ignore_ft_on_setup = {},
   -- closes neovim automatically when the tree is the last **WINDOW** in the view
-  auto_close = false,
+  auto_close = true,
   -- opens the tree when changing/opening a new tab if the tree wasn't previously opened
   open_on_tab = false,
   close_on_open = false,
@@ -38,6 +38,7 @@ require'nvim-tree'.setup {
     args = {}
   },
   view = {
-    side = 'left'
+    side = 'left',
+    hide_root_folder = true
   }
 }
