@@ -1,4 +1,4 @@
-## asynchronous & accelerated, but most of all SIMPLE. 
+## asynchronous & accelerated, but most of all _personalized_. 
 
 <details><summary>Click to see a sexy pic (NSFW Warning)</summary>
 <img src="./img/screenshot.png"></img>
