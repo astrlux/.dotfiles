@@ -3,6 +3,7 @@ o.mouse = 'a'
 o.guicursor = ''
 o.ruler = false
 o.hidden = true
+o.hlsearch = false
 o.showcmd = false
 o.showmode = false
 o.cmdheight = 1
@@ -25,7 +26,7 @@ o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
-o.cursorline = true
+o.list = true
 -- COLORS
 o.termguicolors = true
 o.background = 'light'
