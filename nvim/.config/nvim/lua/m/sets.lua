@@ -1,6 +1,5 @@
 local o, g, cmd = vim.opt, vim.g, vim.cmd
 o.mouse = 'a'
-o.guicursor = ''
 o.ruler = false
 o.hidden = true
 o.hlsearch = false
