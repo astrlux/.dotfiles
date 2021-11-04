@@ -16,7 +16,7 @@ o.smarttab = true
 o.wrap = false
 o.signcolumn = 'number'
 o.nu = true
--- o.relativenumber = true
+o.relativenumber = true
 o.updatetime = 720
 o.timeoutlen = 360
 o.smartcase = true
@@ -25,6 +25,7 @@ o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
+o.cursorline = true
 -- COLORS
 o.termguicolors = true
 o.background = 'light'
