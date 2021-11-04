@@ -105,5 +105,5 @@ require('material').setup({
     }
   }
 })
-g.material_style = 'darker'
+g.material_style = 'palenight'
 cmd 'colorscheme material'
