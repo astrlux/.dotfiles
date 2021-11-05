@@ -19,14 +19,14 @@ require('telescope').setup({
       }
     }
   },
-  -- pickers = {
-  --   find_files = {
-  --     theme = 'ivy'
-  --   },
-  --   gitfiles = {
-  --     theme = 'ivy'
-  --   }
-  -- },
+  pickers = {
+    find_files = {
+      theme = 'dropdown'
+    },
+    gitfiles = {
+      theme = 'dropdown'
+    }
+  },
   extensions = {
     fzf = {
       fuzzy = true, -- false will perform exact matches
