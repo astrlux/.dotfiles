@@ -1,5 +1,6 @@
-local o, g, cmd = vim.opt, vim.g, vim.cmd
+local o = vim.opt
 o.mouse = 'a'
+o.guicursor = ''
 o.ruler = false
 o.hidden = true
 o.hlsearch = false
@@ -31,7 +32,7 @@ o.background = 'light'
 require('github-theme').setup({
   theme_style = 'light',
   function_style = 'italic',
-  sidebars = {'nvim_tree', 'qf', 'vista_kind', 'terminal', 'packer'},
+  sidebars = {'hover', 'qf', 'vista_kind', 'terminal', 'packer'},
 
   -- Change the "hint" color to the "orange" color, and make the "error" color bright red
   colors = {
