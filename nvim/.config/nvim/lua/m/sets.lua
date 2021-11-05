@@ -26,6 +26,7 @@ o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
 o.list = true
+o.cursorline = true
 -- COLORS
 o.termguicolors = true
 o.background = 'light'
@@ -105,5 +106,5 @@ require('material').setup({
     }
   }
 })
-g.material_style = 'darker'
+g.material_style = 'lighter'
 cmd 'colorscheme material'
