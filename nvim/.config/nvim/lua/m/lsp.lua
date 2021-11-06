@@ -112,4 +112,4 @@ require'lspconfig'.sumneko_lua.setup {
   }
 }
 
-vim.cmd 'autocmd BufWritePre *.lua,*.go,*.c,*.cpp,*.js,*.jsx,*.ts,*.tsx,*.rs,*.py lua vim.lsp.buf.formatting_sync(nil, 90)'
+vim.cmd 'autocmd BufWritePre *.lua,*.go,*.c,*.cpp,*.js,*.jsx,*.ts,*.tsx,*.rs,*.py lua vim.lsp.buf.formatting_sync(nil, 250)'
