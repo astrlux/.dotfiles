@@ -104,5 +104,5 @@ require('material').setup({
     }
   }
 })
-g.material_style = 'oceanic'
+g.material_style = 'darker'
 cmd 'colorscheme material'
