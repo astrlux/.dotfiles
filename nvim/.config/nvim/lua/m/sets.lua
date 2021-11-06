@@ -1,13 +1,12 @@
 local o, g, cmd = vim.opt, vim.g, vim.cmd
 o.mouse = 'a'
-o.guicursor = ''
 o.ruler = false
 o.hidden = true
 o.hlsearch = false
 o.showcmd = false
 o.showmode = false
 o.cmdheight = 1
-o.laststatus = 0
+-- o.laststatus = 0
 o.tabstop = 2
 o.shiftwidth = 2
 o.softtabstop = 2
@@ -15,9 +14,9 @@ o.expandtab = true
 o.autoindent = true
 o.smarttab = true
 o.wrap = false
-o.signcolumn = 'number'
-o.nu = true
-o.relativenumber = true
+o.signcolumn = 'yes'
+-- o.nu = true
+-- o.relativenumber = true
 o.updatetime = 720
 o.timeoutlen = 360
 o.smartcase = true
@@ -108,3 +107,9 @@ require('material').setup({
 })
 g.material_style = 'darker'
 cmd 'colorscheme material'
+require('lualine').setup {
+  options = {
+    theme = 'material-nvim',
+    disabled_filetypes = {'packer', 'NvimTree', 'git'}
+  }
+}

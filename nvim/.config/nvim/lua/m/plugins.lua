@@ -47,4 +47,5 @@ require('packer').startup(function()
   -- colors
   use 'savq/melange'
   use 'marko-cerovac/material.nvim'
+  use 'nvim-lualine/lualine.nvim'
 end)
