@@ -1,4 +1,5 @@
 local o, g, cmd = vim.opt, vim.g, vim.cmd
+o.guicursor = ''
 o.laststatus = 0
 o.nu = true
 o.relativenumber = true
@@ -27,7 +28,7 @@ o.backup = false
 o.undofile = true
 -- COLORS
 o.termguicolors = true
-o.background = 'dark'
+o.background = 'light'
 require('material').setup({
   contrast = true, -- Enable contrast for sidebars, floating windows and popup menus like Nvim-Tree
   borders = false, -- Enable borders between verticaly split windows
