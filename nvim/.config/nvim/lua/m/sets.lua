@@ -1,5 +1,4 @@
 local o, g, cmd = vim.opt, vim.g, vim.cmd
-o.guicursor = ''
 o.laststatus = 0
 o.nu = true
 o.relativenumber = true
