@@ -27,7 +27,7 @@ o.backup = false
 o.undofile = true
 -- COLORS
 o.termguicolors = true
-o.background = 'light'
+o.background = 'dark'
 require('material').setup({
   contrast = true, -- Enable contrast for sidebars, floating windows and popup menus like Nvim-Tree
   borders = false, -- Enable borders between verticaly split windows
