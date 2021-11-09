@@ -25,6 +25,8 @@ o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
+o.scrolloff = 9
+o.cursorline = true
 -- COLORS
 o.termguicolors = true
 o.background = 'dark'
@@ -54,6 +56,9 @@ require('material').setup({
     eob_lines = true -- Hide the end-of-buffer lines
   },
   custom_highlights = {
+    Visual = {
+      bg = '#0c3953'
+    },
     ErrorMsg = {
       fg = 'red',
       bg = '#330000'
