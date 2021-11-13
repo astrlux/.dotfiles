@@ -25,6 +25,9 @@ require('telescope').setup({
     },
     gitfiles = {
       theme = 'dropdown'
+    },
+    buffers = {
+      theme = 'dropdown'
     }
   },
   extensions = {
