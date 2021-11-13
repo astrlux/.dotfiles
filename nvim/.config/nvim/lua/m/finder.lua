@@ -32,7 +32,7 @@ require('telescope').setup({
       fuzzy = true, -- false will perform exact matches
       override_generic_sorter = false,
       override_file_sorter = true,
-      case_mode = 'smart_case' -- or "ignore_case" or "respect_case"
+      case_mode = 'smart_case' -- or 'ignore_case' or 'respect_case'
     }
   }
 })
