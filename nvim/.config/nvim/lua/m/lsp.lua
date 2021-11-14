@@ -82,10 +82,6 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-require'lspconfig'.java_language_server.setup {
-  cmd = {'~/tools/java_language_server/dist/lang_server_mac.sh'}
-}
-
 -- Enable local Lua language-server
 USER = vim.fn.expand('$USER')
 local sumneko_root_path = '/Users/' .. USER .. '/tools/lua-language-server'
