@@ -1,7 +1,7 @@
 local o, g, cmd = vim.opt, vim.g, vim.cmd
 o.laststatus = 0
 o.nu = true
-o.relativenumber = true
+-- o.relativenumber = true
 o.mouse = 'a'
 o.ruler = false
 o.hidden = true
@@ -107,5 +107,5 @@ require('material').setup({
     }
   }
 })
-g.material_style = 'oceanic'
+g.material_style = 'darker'
 cmd 'colorscheme material'
