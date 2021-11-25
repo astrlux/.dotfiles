@@ -1,11 +1,11 @@
 local o, g, cmd = vim.opt, vim.g, vim.cmd
 o.laststatus = 0
 o.nu = true
--- o.relativenumber = true
+o.guicursor = ''
 o.mouse = 'a'
 o.ruler = false
 o.hidden = true
-o.hlsearch = true
+o.hlsearch = false
 o.showcmd = false
 o.showmode = false
 o.cmdheight = 1
@@ -25,6 +25,7 @@ o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
+o.cursorline = true
 -- COLORS
 o.termguicolors = true
 o.background = 'dark'
