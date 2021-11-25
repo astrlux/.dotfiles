@@ -46,8 +46,6 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua' -- file tree
   use 'savq/melange'
   use 'marko-cerovac/material.nvim'
-  use 'nvim-lualine/lualine.nvim'
-  use 'eddyekofo94/gruvbox-flat.nvim'
   use { -- organization tool.
     'nvim-neorg/neorg',
     requires = 'nvim-lua/plenary.nvim'
