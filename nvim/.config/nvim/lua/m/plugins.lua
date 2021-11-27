@@ -50,4 +50,8 @@ require('packer').startup(function()
     'nvim-neorg/neorg',
     requires = 'nvim-lua/plenary.nvim'
   }
+  use {
+    'ellisonleao/gruvbox.nvim',
+    requires = {'rktjmp/lush.nvim'}
+  }
 end)

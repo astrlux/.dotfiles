@@ -26,6 +26,7 @@ o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
+o.cursorline = true
 -- COLORS
 o.termguicolors = true
 o.background = 'dark'
@@ -112,4 +113,4 @@ require('material').setup({
   }
 })
 g.material_style = 'darker'
-cmd 'colorscheme material'
+cmd 'colorscheme gruvbox'
