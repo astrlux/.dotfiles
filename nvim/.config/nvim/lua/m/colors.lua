@@ -27,6 +27,10 @@ require('material').setup({
     eob_lines = true -- Hide the end-of-buffer lines
   },
   custom_highlights = {
+    CursorLineNr = {
+      fg = 'orange',
+      bg = 'NONE'
+    },
     Visual = {
       bg = '#0c3953'
       -- bg = '#d3d3d3'

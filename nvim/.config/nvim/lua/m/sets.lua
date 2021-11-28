@@ -1,8 +1,6 @@
 local o = vim.opt
 o.laststatus = 0
 o.nu = true
-o.relativenumber = true
-o.cursorline = true
 o.mouse = 'a'
 o.ruler = false
 o.hidden = true
@@ -26,3 +24,5 @@ o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
+o.relativenumber = true
+-- o.cursorline = true
