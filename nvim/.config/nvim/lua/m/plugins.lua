@@ -54,4 +54,5 @@ require('packer').startup(function()
     'ellisonleao/gruvbox.nvim',
     requires = {'rktjmp/lush.nvim'}
   }
+  use 'xuhdev/vim-latex-live-preview'
 end)
