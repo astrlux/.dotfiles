@@ -52,9 +52,9 @@ alias google='{read -r arr; browser "https://google.com/search?q=${arr}";} <<<'
 alias gclone='cd ${PROJECTS} git clone https://www.github.com/'
 alias gc='git clone'
 # EDITOR
-alias vim="nvim"
-alias vi="nvim"
-alias te="open -a TextEdit.app"
+alias vim='nvim'
+alias vi='nvim'
+alias te='open -a TextEdit.app'
 # DOTFILE MANAGEMENT
 alias ss='source ~/.zshrc'
 alias ac='nvim ~/.config/alacritty/alacritty.yml'
@@ -74,7 +74,7 @@ installDotfiles() {
 commitDotfiles() { # credit: Michael Paulson @ Netflix
   pushd $DOTFILES
   git add .
-  git commit -m "post_obfuscation"
+  git commit -m 'post_obfuscation'
   git push origin master
   popd
 }
