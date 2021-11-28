@@ -1,6 +1,6 @@
 local o, g, cmd = vim.opt, vim.g, vim.cmd
 o.laststatus = 0
--- o.nu = true
+o.nu = true
 -- o.relativenumber = true
 o.mouse = 'a'
 o.ruler = false
@@ -16,7 +16,7 @@ o.expandtab = true
 o.autoindent = true
 o.smarttab = true
 o.wrap = false
-o.signcolumn = 'yes'
+o.signcolumn = 'number'
 o.updatetime = 720
 o.timeoutlen = 360
 o.smartcase = true
@@ -56,6 +56,7 @@ require('material').setup({
   custom_highlights = {
     Visual = {
       bg = '#0c3953'
+      -- bg = '#d3d3d3'
     },
     ErrorMsg = {
       fg = 'red',
