@@ -2,7 +2,6 @@ local o, g, cmd = vim.opt, vim.g, vim.cmd
 o.laststatus = 0
 o.nu = true
 o.relativenumber = true
-o.guicursor = ''
 o.mouse = 'a'
 o.ruler = false
 o.hidden = true
