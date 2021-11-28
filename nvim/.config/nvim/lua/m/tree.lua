@@ -38,6 +38,6 @@ require'nvim-tree'.setup {
     args = {}
   },
   view = {
-    side = 'right'
+    side = 'left'
   }
 }
