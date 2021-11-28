@@ -1,7 +1,7 @@
 require'nvim-tree'.setup {
   hidden = true,
   icon_padding = ' ',
-  -- root_folder_modifier = ':t',
+  root_folder_modifier = ':t',
   -- disables netrw completely
   disable_netrw = true,
   -- hijack netrw window on startup
@@ -38,6 +38,6 @@ require'nvim-tree'.setup {
     args = {}
   },
   view = {
-    side = 'left'
+    side = 'right'
   }
 }
