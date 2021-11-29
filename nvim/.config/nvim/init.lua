@@ -9,6 +9,8 @@ require 'm.completion'
 require 'm.colors'
 require 'm.latex'
 require 'm.finder'
+
+-- CLEAN
 -- require 'm.norg'
 -- require 'm.status'
 -- require 'm.parsers'
