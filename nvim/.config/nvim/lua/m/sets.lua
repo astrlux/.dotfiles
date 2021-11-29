@@ -25,4 +25,3 @@ o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
 o.relativenumber = true
--- o.cursorline = true
