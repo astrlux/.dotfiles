@@ -1,7 +1,7 @@
 local o = vim.opt
 o.laststatus = 0
 o.nu = true
--- o.relativenumber = true
+o.relativenumber = true
 o.mouse = 'a'
 o.ruler = false
 o.hidden = true
