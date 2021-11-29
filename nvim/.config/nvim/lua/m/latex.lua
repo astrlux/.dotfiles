@@ -1,9 +1,6 @@
 -- LaTeX live preview
-local g = vim.g
-g.livepreview_previewer = 'open -a Preview'
 vim.api.nvim_exec([[
-  augroup LaTeX
-    autocmd!
-    autocmd Filetype tex setl updatetime=1
-  augroup end
+  autocmd FileType tex nmap <buffer> <C-T> :!xelatex %<CR>
+  autocmd FileType tex nmap <buffer> T :!open -a Skim %:r.pdf<CR><CR>
 ]], false)
+

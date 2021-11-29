@@ -46,13 +46,4 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua' -- file tree
   use 'savq/melange'
   use 'marko-cerovac/material.nvim'
-  use { -- organization tool.
-    'nvim-neorg/neorg',
-    requires = 'nvim-lua/plenary.nvim'
-  }
-  use {
-    'ellisonleao/gruvbox.nvim',
-    requires = {'rktjmp/lush.nvim'}
-  }
-  use 'xuhdev/vim-latex-live-preview'
 end)
