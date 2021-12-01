@@ -20,14 +20,14 @@ require('telescope').setup({
     }
   },
   pickers = {
-    -- find_files = {
-    --   theme = 'ivy'
-    -- },
+    find_files = {
+      theme = 'dropdown'
+    },
     gitfiles = {
       theme = 'dropdown'
     },
     buffers = {
-      theme = 'dropdown'
+      theme = 'ivy'
     }
   },
   extensions = {
