@@ -25,4 +25,3 @@ o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
-o.cursorline = true

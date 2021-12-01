@@ -1,6 +1,6 @@
 local o, _, cmd = vim.opt, vim.g, vim.cmd
 o.termguicolors = true
-o.background = 'light'
+o.background = 'dark'
 -- require('material').setup({
 --   contrast = true, -- Enable contrast for sidebars, floating windows and popup menus like Nvim-Tree
 --   borders = false, -- Enable borders between verticaly split windows
@@ -86,4 +86,4 @@ o.background = 'light'
 --   }
 -- })
 -- g.material_style = 'darker'
-cmd 'colorscheme melange'
+cmd 'colorscheme zenbones'

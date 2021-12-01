@@ -11,8 +11,7 @@ export STOW_FOLDERS="nvim,zsh,kitty,surf"
 export PROJECTS=$HOME/Projects
 export EDITOR=nvim
 # PROMPT
-#PROMPT="%F{141}%1d%F{193} ϟ%f "
-PROMPT="%F{magenta}%1d%F{green} ϟ%f "
+PROMPT="%F{141}%1d%F{193} ϟ%f "
 # CONVENIENCE
 alias notes='nvim ~/Notes/todo'
 alias pnotes="pushd ~/Notes; cm 'changes'; git push; popd;"
