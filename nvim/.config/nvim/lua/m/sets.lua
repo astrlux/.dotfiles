@@ -1,7 +1,6 @@
 local o = vim.opt
 o.nu = true
 o.relativenumber = true
-o.cursorline = true
 o.mouse = 'a'
 o.ruler = false
 o.hidden = true
