@@ -7,10 +7,10 @@ require 'm.lsp'
 require 'm.tree'
 require 'm.completion'
 require 'm.colors'
-require 'm.latex'
+require 'm.status'
 require 'm.finder'
+require 'm.latex'
 
--- CLEAN
+-- TRIAGE
 -- require 'm.norg'
--- require 'm.status'
 -- require 'm.parsers'
