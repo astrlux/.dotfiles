@@ -1,6 +1,7 @@
 local o = vim.opt
 o.nu = true
 o.relativenumber = true
+o.cursorline = true
 o.mouse = 'a'
 o.ruler = false
 o.hidden = true
@@ -15,7 +16,7 @@ o.expandtab = true
 o.autoindent = true
 o.smarttab = true
 o.wrap = false
-o.signcolumn = 'number'
+o.signcolumn = 'no'
 o.updatetime = 720
 o.timeoutlen = 360
 o.smartcase = true
