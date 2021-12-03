@@ -18,18 +18,25 @@ require('lualine').setup {
     },
     lualine_b = {
       {
-        'buffers',
-        max_length = vim.o.columns * 3 / 5,
-        mode = 0,
-        padding = {
-          right = 1
-        },
-        color = {
-          active = 'lualine_{section}_normal',
-          inactive = 'lualine_{section}_inactive'
-        }
+        'filename',
+        path = 0,
+        color = 'StatusLine'
       }
     },
+    -- lualine_b = {
+    --   {
+    --     'buffers',
+    --     max_length = vim.o.columns * 3 / 5,
+    --     mode = 0,
+    --     padding = {
+    --       right = 1
+    --     },
+    --     color = {
+    --       active = 'lualine_{section}_normal',
+    --       inactive = 'lualine_{section}_inactive'
+    --     }
+    --   }
+    -- },
     lualine_c = {
       {
         'diagnostics',
