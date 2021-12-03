@@ -26,4 +26,5 @@ o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
+o.scrolloff = 9
 -- o.laststatus = 0
