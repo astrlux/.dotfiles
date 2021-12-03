@@ -3,7 +3,7 @@ require('lualine').setup {
     theme = 'zenwritten',
     section_separators = '',
     component_separators = '',
-    disabled_filetypes = {'packer', 'NvimTree', 'git', 'quickfix'}
+    disabled_filetypes = {'packer', 'Telescope', 'NvimTree', 'git', 'quickfix'}
   },
   sections = {
     lualine_a = {
