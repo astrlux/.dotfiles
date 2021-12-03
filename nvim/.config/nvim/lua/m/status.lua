@@ -1,8 +1,9 @@
 require('lualine').setup {
   options = {
-    theme = 'zenbones',
+    theme = 'zenwritten',
     section_separators = '',
-    component_separators = ''
+    component_separators = '',
+    disabled_filetypes = {'packer', 'NvimTree', 'git', 'quickfix'}
   },
   sections = {
     lualine_a = {
@@ -17,9 +18,16 @@ require('lualine').setup {
     },
     lualine_b = {
       {
-        'filename',
-        path = 1,
-        color = 'StatusLine'
+        'buffers',
+        max_length = vim.o.columns * 3 / 5,
+        mode = 0,
+        padding = {
+          right = 1
+        },
+        color = {
+          active = 'lualine_{section}_normal',
+          inactive = 'lualine_{section}_inactive'
+        }
       }
     },
     lualine_c = {
@@ -33,8 +41,14 @@ require('lualine').setup {
         }
       }
     },
-    lualine_x = {{'filetype'}},
+    lualine_x = {
+      {
+        'diff',
+        colored = false
+      }
+    },
     lualine_y = {{'branch'}},
+    -- test line
     lualine_z = {
       {
         'location',
@@ -79,6 +93,5 @@ require('lualine').setup {
         color = 'StatusLineNC'
       }
     }
-  },
-  disabled_filetypes = {'packer', 'NvimTree', 'git'}
+  }
 }
