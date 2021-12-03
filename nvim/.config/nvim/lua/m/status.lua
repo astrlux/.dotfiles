@@ -26,7 +26,7 @@ require('lualine').setup {
     lualine_b = {
       {
         'buffers',
-        max_length = vim.o.columns * 3 / 5,
+        max_length = vim.o.columns / 1.5,
         mode = 0,
         padding = {
           right = 1
@@ -58,12 +58,6 @@ require('lualine').setup {
     -- test line
     lualine_z = {
       {
-        'location',
-        separator = '|',
-        padding = {
-          left = 1
-        }
-      }, {
         'progress',
         padding = {
           right = 1
@@ -88,11 +82,6 @@ require('lualine').setup {
     lualine_y = {},
     lualine_z = {
       {
-        'location',
-        separator = '|',
-        padding = 1,
-        color = 'StatusLineNC'
-      }, {
         'progress',
         padding = {
           right = 1
