@@ -1,4 +1,5 @@
 local o = vim.opt
+o.guicursor = ''
 o.nu = true
 o.relativenumber = true
 o.mouse = 'a'

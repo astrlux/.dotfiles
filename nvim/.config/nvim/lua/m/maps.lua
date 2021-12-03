@@ -33,10 +33,9 @@ map('n', '<LEADER>l', ':wincmd l<CR>', nor)
 -- Switch between buffers
 map('', '<C-l>', ':bnext<CR>', nor)
 map('', '<C-h>', ':bprev<CR>', nor)
--- Save/quit files faster
+-- Save files faster
+map('n', ';', ':w<CR>', nor)
 map('n', '<LEADER>q', ':q<CR>', nor)
-map('n', '<LEADER>w', ':w<CR>', nor)
-map('n', '<LEADER>x', ':x<CR>', nor)
 -- Show timestamped undo history
 map('n', '<LEADER>u', ':UndotreeShow<CR>', nor)
 -- Paste smoothly
@@ -62,12 +61,13 @@ map('n', '<LEADER>sd', [[<CMD>lua require('m.finder').search_dotfiles()<CR>]], n
 map('n', '<LEADER>ds', [[<CMD>lua require('m.finder').search_dotfiles()<CR>]], nor)
 map('n', '<LEADER>/', [[<CMD>lua require'telescope.builtin'.current_buffer_fuzzy_find{}<CR>]], nor)
 map('n', '<LEADER>cs', [[<CMD>lua require'telescope.builtin'.colorscheme{}<CR>]], nor)
-map('n', ';', [[<CMD>lua require('telescope.builtin').buffers()<CR>]], nor)
+map('n', '<LEADER>b', [[<CMD>lua require('telescope.builtin').buffers()<CR>]], nor)
 -- File tree
 map('n', '<LEADER>t', ':NvimTreeToggle<CR>', nor)
 -- Floating terminal
 map('n', '`t', [[<CMD>lua require('lspsaga.floaterm').open_float_terminal()<CR>]], nor)
 map('t', '`t', [[<C-\><C-n>:lua require('lspsaga.floaterm').close_float_terminal()<CR>]], nor)
 map('n', '<leader>mm', [[<Cmd>lua require('material.functions').toggle_style()<CR>]], nor)
--- little conveniences
+-- the little conveniences in life.
 map('n', '<LEADER>abc<CR>', 'iabcdefghijklmnopqrstuvwxyz<Esc>', nor)
+map('n', '<LEADER>pn', ':silent !pushd ~/Notes; git commit -am \'changes\'; git push; popd;<CR>', nor)
