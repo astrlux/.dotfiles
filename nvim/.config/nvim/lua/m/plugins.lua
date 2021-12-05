@@ -47,6 +47,7 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua' -- file tree
   use 'savq/melange'
   use 'marko-cerovac/material.nvim'
+  use 'doums/darcula'
   use {
     'mcchrish/zenbones.nvim',
     -- Optionally install Lush. Allows for more configuration or extending the colorscheme
