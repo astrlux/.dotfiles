@@ -3,7 +3,7 @@ require('lualine').setup {
     theme = 'zenwritten',
     section_separators = '',
     component_separators = '',
-    disabled_filetypes = {'packer', 'Telescope', 'NvimTree', 'git', 'quickfix'}
+    disabled_filetypes = {'packer', 'Telescope', 'NvimTree', 'git', 'quickfix', 'Fugitive'}
   },
   sections = {
     lualine_a = {
@@ -66,28 +66,11 @@ require('lualine').setup {
     }
   },
   inactive_sections = {
-    lualine_a = {
-      {
-        'filename',
-        path = 1,
-        padding = {
-          left = 2
-        },
-        color = 'StatusLineNC'
-      }
-    },
+    lualine_a = {},
     lualine_b = {},
     lualine_c = {},
     lualine_x = {},
     lualine_y = {},
-    lualine_z = {
-      {
-        'progress',
-        padding = {
-          right = 1
-        },
-        color = 'StatusLineNC'
-      }
-    }
+    lualine_z = {}
   }
 }
