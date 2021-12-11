@@ -1,5 +1,5 @@
 local o = vim.opt
-o.laststatus = 0
+o.guicursor = ''
 o.cursorline = true
 -- o.nu = true
 -- o.relativenumber = true

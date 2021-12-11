@@ -52,7 +52,6 @@ alias google='{read -r arr; browser "https://google.com/search?q=${arr}";} <<<'
 alias gclone='cd ${PROJECTS} git clone https://www.github.com/'
 alias gc='git clone'
 # EDITOR
-alias vim='nvim'
 alias vi='nvim'
 alias te='open -a TextEdit.app'
 # DOTFILE MANAGEMENT
