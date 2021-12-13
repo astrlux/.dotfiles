@@ -1,4 +1,4 @@
--- INIT ORDER
+-- ORDER OF INITIALIZATION
 require 'm.plugins'
 require 'm.sets'
 require 'm.maps'
