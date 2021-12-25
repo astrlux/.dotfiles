@@ -1,7 +1,7 @@
 local o = vim.opt
 o.guicursor = ''
 o.cursorline = true
-o.nu = true
+-- o.nu = true
 -- o.relativenumber = true
 o.mouse = 'a'
 o.ruler = false
@@ -28,4 +28,4 @@ o.backup = false
 o.undofile = true
 o.scrolloff = 4
 o.foldmethod = 'manual'
--- o.laststatus = 0
+o.laststatus = 0
