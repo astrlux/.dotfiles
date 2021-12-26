@@ -1,5 +1,5 @@
 local o = vim.opt
-o.guicursor = ''
+o.gcr = ''
 o.cursorline = true
 o.nu = true
 o.relativenumber = true
@@ -14,7 +14,7 @@ o.tabstop = 2
 o.shiftwidth = 2
 o.softtabstop = 2
 o.expandtab = true
-o.autoindent = true
+o.ai = true
 o.smarttab = true
 o.wrap = false
 o.signcolumn = 'no'
