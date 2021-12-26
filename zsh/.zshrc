@@ -1,5 +1,6 @@
 # SOURCES
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # EXPORTS
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:/usr/local/opt/llvm/bin/"
@@ -10,8 +11,10 @@ export DOTFILES=$HOME/dotfiles
 export STOW_FOLDERS="nvim,zsh,kitty,hammerspoon"
 export PROJECTS=$HOME/Projects
 export EDITOR=nvim
+
 # PROMPT
 PROMPT="%F{141}%1d%F{193} ϟ%f "
+
 # CONVENIENCE
 alias notes='nvim ~/Notes/todo'
 alias pnotes="pushd ~/Notes; cm 'changes'; git push; popd;"
@@ -32,12 +35,14 @@ alias top='htop'
 alias serve='python3 -m http.serve'
 alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{tools,node_modules,.git}" | fzf'
 alias ff='nvim $(fzfi)'
+
 # DOCKER
 alias kubectl="minikube kubectl --"
 # MERCURIAL
 # alias log='hg log -G'
 # alias st='hg status'
 # alias cm='hg add && hg commit -m'
+
 # GIT
 alias cm='git add . && git commit -am'
 alias st='git status'
@@ -45,15 +50,18 @@ alias co='git checkout'
 alias pullom='git pull origin master'
 alias br='git branch';
 alias log="git log --first-parent --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %C(cyan)(%cr) %Cresetby %C(bold blue)%aN%Creset' --abbrev-commit --date=relative --branches"
+
 # WWW
 alias brave='{read -r arr; open -a "Brave Browser" "${arr}"} <<<'
 alias browser='{read -r arr; brave ${arr} } <<<'
 alias google='{read -r arr; browser "https://google.com/search?q=${arr}";} <<<'
 alias gclone='cd ${PROJECTS} git clone https://www.github.com/'
 alias gc='git clone'
+
 # EDITOR
 alias vi='nvim'
 alias te='open -a TextEdit.app'
+
 # DOTFILE MANAGEMENT
 alias ss='source ~/.zshrc'
 alias ac='nvim ~/.config/alacritty/alacritty.yml'

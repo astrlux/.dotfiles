@@ -45,14 +45,13 @@ require('packer').startup(function()
   use 'L3MON4D3/LuaSnip'
   use 'jose-elias-alvarez/nvim-lsp-ts-utils' -- typescript specific tools
   use 'kyazdani42/nvim-tree.lua' -- file tree
+  -- COLORS
   use 'savq/melange'
   use 'marko-cerovac/material.nvim'
   use 'doums/darcula'
   use {
     'mcchrish/zenbones.nvim',
-    -- Optionally install Lush. Allows for more configuration or extending the colorscheme
-    -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
-    -- In Vim, compat mode is turned on as Lush only works in Neovim.
     requires = 'rktjmp/lush.nvim'
   }
+  use 'jpo/vim-railscasts-theme'
 end)
