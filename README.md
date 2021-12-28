@@ -1,7 +1,7 @@
 ## asynchronous & accelerated, but also _personalized!_ 
 
 <details><summary>Click to see a sexy pic (NSFW Warning)</summary>
-<img src="./img/desktop.png"></img>
+<img src="./img/desktop.png" width="90%"></img>
 <img src="./img/screenshot.png"></img>
 </details>
 
