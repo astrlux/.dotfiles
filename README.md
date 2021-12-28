@@ -1,6 +1,6 @@
 ## asynchronous & accelerated, but also _personalized!_ 
 
-<details><summary>Click to see a sexy pic (NSFW Warning)</summary>
+<details><summary>Click for Pictures!</summary>
 <img src="./img/desktop.png" />
 <img src="./img/tiled.png" />
 </details>
