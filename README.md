@@ -1,8 +1,8 @@
 ## asynchronous & accelerated, but also _personalized!_ 
 
 <details><summary>Click to see a sexy pic (NSFW Warning)</summary>
-<img src="./img/screenshot.png" width=300em></img>
-<img src="./img/desktop.png" width=300em></img>
+<img src="./img/screenshot.png" width="300em"></img>
+<img src="./img/desktop.png" width="300em"></img>
 </details>
 
 ### Prerequisites <sup>[5 min]</sup>
