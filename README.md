@@ -2,6 +2,7 @@
 
 <details><summary>Click to see a sexy pic (NSFW Warning)</summary>
 <img src="./img/screenshot.png"></img>
+<img src="./img/desktop.png"></img>
 </details>
 
 ### Prerequisites <sup>[5 min]</sup>
