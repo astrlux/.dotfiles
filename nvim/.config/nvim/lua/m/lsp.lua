@@ -4,7 +4,7 @@ require'lspconfig'.efm.setup {
   },
   filetypes = {'lua'},
   settings = {
-    rootMarkers = {'.git/'},
+    rootMarkers = {'.', '.git/'},
     languages = {
       lua = {
         {
