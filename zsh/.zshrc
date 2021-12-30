@@ -8,13 +8,12 @@ export TERM="screen-256color"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.0/share/nvim/runtime # NIGHTLY
 export DOTFILES=$HOME/dotfiles
-export STOW_FOLDERS="nvim,zsh,kitty,hammerspoon"
+export STOW_FOLDERS="nvim,zsh,kitty"
 export PROJECTS=$HOME/Projects
 export EDITOR=nvim
 
 # PROMPT
-#PROMPT="%F{141}%1d%F{193} ϟ%f "
-PROMPT="%F{magenta}%1d%F{blue} ϟ%f "
+PROMPT="%F{141}%1d%F{193} ϟ%f "
 
 # CONVENIENCE
 alias notes='nvim ~/Notes/TODO.md'
