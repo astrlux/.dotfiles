@@ -14,18 +14,19 @@ require('telescope').setup({
       }
     },
     layout_config = { -- place preview on top
+      height = 18,
       flex = {
         flip_columns = 270 -- remove preview under these columns
       }
     }
   },
   pickers = {
-    find_files = {
-      theme = 'ivy'
-    },
-    gitfiles = {
-      theme = 'ivy'
-    }
+    -- find_files = {
+    --   theme = 'ivy'
+    -- },
+    -- gitfiles = {
+    --   theme = 'ivy'
+    -- },
     -- buffers = {
     --   theme = 'dropdown'
     -- }
