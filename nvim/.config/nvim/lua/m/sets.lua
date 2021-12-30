@@ -1,8 +1,8 @@
 local o = vim.opt
 o.gcr = ''
-o.cursorline = true
+o.cul = true
 o.nu = true
-o.relativenumber = true
+o.rnu = false
 o.mouse = 'a'
 o.ruler = false
 o.hidden = true

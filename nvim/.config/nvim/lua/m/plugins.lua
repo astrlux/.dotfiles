@@ -54,4 +54,5 @@ require('packer').startup(function()
     requires = 'rktjmp/lush.nvim'
   }
   use 'jpo/vim-railscasts-theme'
+  use 'arzg/vim-colors-xcode'
 end)

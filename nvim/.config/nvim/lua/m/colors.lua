@@ -1,4 +1,4 @@
 local o, _, cmd = vim.opt, vim.g, vim.cmd
-o.termguicolors = true
-o.background = 'dark'
-cmd 'colorscheme duckbones'
+o.tgc = true -- termguicolors
+o.bg = 'light' -- background [dark/light]
+cmd 'colorscheme xcodelight'
