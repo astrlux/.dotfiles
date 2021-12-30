@@ -15,7 +15,7 @@ require('telescope').setup({
     },
     layout_config = { -- place preview on top
       flex = {
-        flip_columns = 200 -- remove preview under these columns
+        flip_columns = 270 -- remove preview under these columns
       }
     }
   },
