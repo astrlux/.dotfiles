@@ -50,4 +50,5 @@ require('packer').startup(function()
     'mcchrish/zenbones.nvim',
     requires = 'rktjmp/lush.nvim'
   }
+  use 'arzg/vim-colors-xcode'
 end)
