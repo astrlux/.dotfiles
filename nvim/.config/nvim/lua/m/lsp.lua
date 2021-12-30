@@ -51,19 +51,19 @@ local on_attach = function(_, bufnr)
     silent = true
   }
   -- See `:help vim.lsp.*` for documentation on any of the below functions
-  buf_set_keymap('n', 'gd', '<CMD>lua vim.lsp.buf.definition()<CR>', opts)
-  buf_set_keymap('n', 'gD', '<CMD>lua vim.lsp.buf.declaration()<CR>', opts)
-  buf_set_keymap('n', 'gr', '<CMD>lua vim.lsp.buf.references()<CR>', opts)
-  buf_set_keymap('n', 'gi', '<CMD>lua vim.lsp.buf.implementation()<CR>', opts)
-  buf_set_keymap('n', 'gf', '<CMD>lua vim.lsp.buf.formatting()<CR>', opts)
-  buf_set_keymap('n', '<C-k>', '<CMD>lua vim.lsp.buf.signature_help()<CR>', opts)
-  buf_set_keymap('n', '<LEADER>cd', ':Lspsaga show_line_diagnostics<CR>', opts)
-  buf_set_keymap('n', '<C-p>', ':Lspsaga diagnostic_jump_prev<CR>', opts)
-  buf_set_keymap('n', '<C-n>', ':Lspsaga diagnostic_jump_next<CR>', opts)
-  buf_set_keymap('n', '<LEADER>cr', '<CMD>lua vim.lsp.buf.rename()<CR>', opts)
-  -- buf_set_keymap('n', '<LEADER>hs', '<CMD>lua vim.lsp.buf.signature_help()<CR>', opts)
-  buf_set_keymap('n', '<LEADER>ca', '<CMD>lua vim.lsp.buf.code_action()<CR>', opts)
-  buf_set_keymap('n', 'K', '<CMD>lua vim.lsp.buf.hover()<CR>', opts)
+  buf_set_keymap('n', 'gd', [[<CMD>lua vim.lsp.buf.definition()<CR>]], opts)
+  buf_set_keymap('n', 'gD', [[<CMD>lua vim.lsp.buf.declaration()<CR>]], opts)
+  buf_set_keymap('n', 'gr', [[<CMD>lua vim.lsp.buf.references()<CR>]], opts)
+  buf_set_keymap('n', 'gi', [[<CMD>lua vim.lsp.buf.implementation()<CR>]], opts)
+  buf_set_keymap('n', 'gf', [[<CMD>lua vim.lsp.buf.formatting()<CR>]], opts)
+  buf_set_keymap('n', '<C-k>', [[<CMD>lua vim.lsp.buf.signature_help()<CR>]], opts)
+  buf_set_keymap('n', '<LEADER>cd',
+                 [[<CMD>lua vim.diagnostic.open_float(0, { scope = "line", border = "single" })<CR>]], opts)
+  buf_set_keymap('n', '<C-n>', [[<CMD>lua vim.diagnostic.goto_prev({ float =  { border = "single" }})<CR>]], opts)
+  buf_set_keymap('n', '<C-p>', [[<CMD>lua vim.diagnostic.goto_next({ float =  { border = "single" }})<CR>]], opts)
+  -- buf_set_keymap('n', '<LEADER>hs', [[<CMD>lua vim.lsp.buf.signature_help()<CR>]], opts)
+  buf_set_keymap('n', '<LEADER>ca', [[<CMD>lua vim.lsp.buf.code_action()<CR>]], opts)
+  buf_set_keymap('n', 'K', [[<CMD>lua vim.lsp.buf.hover()<CR>]], opts)
 end
 
 -- nvim-cmp supports additional completion capabilities
