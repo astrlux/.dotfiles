@@ -21,15 +21,15 @@ require('telescope').setup({
     }
   },
   pickers = {
-    -- find_files = {
-    --   theme = 'ivy'
-    -- },
-    -- gitfiles = {
-    --   theme = 'ivy'
-    -- },
-    -- buffers = {
-    --   theme = 'dropdown'
-    -- }
+    find_files = {
+      theme = 'ivy'
+    },
+    gitfiles = {
+      theme = 'dropdown'
+    },
+    buffers = {
+      theme = 'dropdown'
+    }
   },
   extensions = {
     fzf = {
