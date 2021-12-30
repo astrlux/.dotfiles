@@ -8,7 +8,7 @@ export TERM="screen-256color"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.0/share/nvim/runtime # NIGHTLY
 export DOTFILES=$HOME/dotfiles
-export STOW_FOLDERS="nvim,zsh,kitty"
+export STOW_FOLDERS="nvim,zsh,kitty,prog"
 export PROJECTS=$HOME/Projects
 export EDITOR=nvim
 

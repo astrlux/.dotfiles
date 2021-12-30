@@ -27,5 +27,5 @@ o.backup = false
 o.undofile = true
 o.foldmethod = 'manual'
 o.laststatus = 0
-o.gcr = ''
+o.gcr = 'n-v-c-sm:block,i-ci-ve:ver100,r-cr-o:hor100'
 -- o.scrolloff = 4
