@@ -46,7 +46,7 @@ require('packer').startup(function()
   use 'jose-elias-alvarez/nvim-lsp-ts-utils' -- typescript specific tools
   use 'kyazdani42/nvim-tree.lua' -- file tree
   -- colors
-  use 'arzg/vim-colors-xcode'
+  use 'severij/vadelma'
   use {
     'mcchrish/zenbones.nvim',
     requires = 'rktjmp/lush.nvim'
