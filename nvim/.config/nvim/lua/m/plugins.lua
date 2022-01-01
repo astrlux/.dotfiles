@@ -55,4 +55,5 @@ require('packer').startup(function()
     'ellisonleao/gruvbox.nvim',
     requires = {'rktjmp/lush.nvim'}
   }
+  use 'Mofiqul/vscode.nvim'
 end)
