@@ -50,4 +50,3 @@ cmp.setup {
     }
   }
 }
--- test if we can see this or not
