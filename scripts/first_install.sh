@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-# basic warning message
+# Assurance message
 echo "Hey there! Thx for giving my configuration a spin\n-- WARNING --\nThis will irrevocably ERASE your current configuration\nStill wanna proceed? (y/n)"
 read CONTINUE
 if [ $CONTINUE = "y" ]
