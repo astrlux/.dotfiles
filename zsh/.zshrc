@@ -1,3 +1,6 @@
+# PROMPT
+PROMPT="%F{141}%1d%F{193} ϟ%f "
+
 # EXPORTS
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:/usr/local/opt/llvm/bin/"
@@ -8,9 +11,6 @@ export DOTFILES=$HOME/dotfiles
 export STOW_FOLDERS="nvim,zsh,kitty,prog"
 export PROJECTS=$HOME/Projects
 export EDITOR=nvim
-
-# PROMPT
-PROMPT="%F{141}%1d%F{193} ϟ%f "
 
 # THE LITTLE THINGS IN LIFE
 alias notes='nvim ~/Notes/TODO.md'
