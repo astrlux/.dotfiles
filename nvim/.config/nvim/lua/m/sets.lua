@@ -1,6 +1,6 @@
 local o = vim.opt
 o.gcr = ''
-o.cul = false
+o.cul = true
 o.nu = true
 o.rnu = false
 o.mouse = 'a'
@@ -28,4 +28,4 @@ o.backup = false
 o.undofile = true
 o.foldmethod = 'manual'
 o.laststatus = 1
-o.scrolloff = 4
+o.scrolloff = 9
