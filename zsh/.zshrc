@@ -1,6 +1,3 @@
-# SOURCES
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # EXPORTS
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:/usr/local/opt/llvm/bin/"
@@ -15,7 +12,7 @@ export EDITOR=nvim
 # PROMPT
 PROMPT="%F{141}%1d%F{193} ϟ%f "
 
-# CONVENIENCE
+# THE LITTLE THINGS IN LIFE
 alias notes='nvim ~/Notes/TODO.md'
 alias pnotes="pushd ~/Notes; cm 'changes'; git push; popd;"
 alias lc='nvim ~/Notes/codingChallenges/Challenges.md' 
@@ -92,6 +89,7 @@ removeDotfiles() {
 }
 
 # ZSH AUTO-COMPLETION
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 zstyle ':completion:*' menu select # select completions with arrow keys
 zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
