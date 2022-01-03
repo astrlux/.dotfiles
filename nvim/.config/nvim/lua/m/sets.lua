@@ -1,6 +1,6 @@
 local o = vim.opt
 o.gcr = ''
-o.cul = true
+o.cul = false
 o.nu = true
 o.rnu = false
 o.mouse = 'a'
@@ -18,7 +18,7 @@ o.ai = true
 o.smarttab = true
 o.wrap = false
 o.signcolumn = 'yes'
-o.updatetime = 720
+o.updatetime = 500
 o.timeoutlen = 360
 o.smartcase = true
 o.ignorecase = true
