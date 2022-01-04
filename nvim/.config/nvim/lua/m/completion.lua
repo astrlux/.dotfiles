@@ -45,8 +45,6 @@ cmp.setup {
       name = 'luasnip'
     }, {
       name = 'buffer'
-    }, {
-      name = 'neorg'
     }
   }
 }
