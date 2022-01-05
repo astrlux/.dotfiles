@@ -1,3 +1,4 @@
+# rk!90
 # PROMPT
 PROMPT="%F{141}%1d%F{193} ϟ%f "
 
@@ -93,3 +94,5 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 zstyle ':completion:*' menu select # select completions with arrow keys
 zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
+
+alias lab='ssh cs120wi22jp@ieng6.ucsd.edu' 
