@@ -1,5 +1,4 @@
 local o = vim.opt
-o.gcr = ''
 o.cul = true
 o.nu = true
 o.rnu = false
