@@ -47,6 +47,7 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua' -- file tree
   -- colors
   use 'joshdick/onedark.vim'
+  use 'Mofiqul/vscode.nvim'
   use {
     'mcchrish/zenbones.nvim',
     requires = 'rktjmp/lush.nvim'
