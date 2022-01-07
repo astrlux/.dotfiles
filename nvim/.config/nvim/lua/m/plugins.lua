@@ -46,7 +46,6 @@ require('packer').startup(function()
   use 'jose-elias-alvarez/nvim-lsp-ts-utils' -- typescript specific tools
   use 'kyazdani42/nvim-tree.lua' -- file tree
   -- colors
-  use 'joshdick/onedark.vim'
   use 'Mofiqul/vscode.nvim'
   use {
     'mcchrish/zenbones.nvim',

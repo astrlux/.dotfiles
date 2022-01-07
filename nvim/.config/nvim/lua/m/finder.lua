@@ -14,7 +14,7 @@ require('telescope').setup({
       }
     },
     layout_config = { -- place preview on top
-      height = 20,
+      height = 18,
       flex = {
         flip_columns = 270 -- remove preview under these columns
       }
@@ -22,7 +22,7 @@ require('telescope').setup({
   },
   pickers = {
     find_files = {
-      theme = 'dropdown'
+      theme = 'ivy'
     },
     gitfiles = {
       theme = 'dropdown'
