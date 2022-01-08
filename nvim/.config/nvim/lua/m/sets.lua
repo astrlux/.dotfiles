@@ -27,4 +27,4 @@ o.backup = false
 o.undofile = true
 o.foldmethod = 'manual'
 o.laststatus = 0 -- preferred is 1
-o.scrolloff = 5
+-- o.scrolloff = 5

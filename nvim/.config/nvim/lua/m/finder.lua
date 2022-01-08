@@ -14,23 +14,23 @@ require('telescope').setup({
       }
     },
     layout_config = { -- place preview on top
-      height = 18,
+      height = 13,
       flex = {
-        flip_columns = 270 -- remove preview under these columns
+        flip_columns = 720 -- remove preview under these columns
       }
     }
   },
-  pickers = {
-    find_files = {
-      theme = 'ivy'
-    },
-    gitfiles = {
-      theme = 'dropdown'
-    },
-    buffers = {
-      theme = 'dropdown'
-    }
-  },
+  -- pickers = {
+  --   find_files = {
+  --     theme = 'dropdown'
+  --   },
+  --   gitfiles = {
+  --     theme = 'dropdown'
+  --   },
+  --   buffers = {
+  --     theme = 'ivy'
+  --   }
+  -- },
   extensions = {
     fzf = {
       fuzzy = true, -- false will perform exact matches
