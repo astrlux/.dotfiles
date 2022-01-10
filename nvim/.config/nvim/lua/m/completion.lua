@@ -1,7 +1,4 @@
--- luasnip setup
-local luasnip = require 'luasnip'
--- nvim-cmp setup
-local cmp = require 'cmp'
+local cmp, luasnip = require 'cmp', require 'luasnip'
 cmp.setup {
   snippet = {
     expand = function(args)
