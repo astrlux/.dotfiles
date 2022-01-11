@@ -1,4 +1,5 @@
 local o = vim.opt
+o.gcr = ''
 o.cul = true
 o.nu = true
 o.rnu = false
@@ -26,5 +27,5 @@ o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
 o.foldmethod = 'manual'
-o.laststatus = 0 -- preferred is 1
+o.laststatus = 1 -- 0 is none
 -- o.scrolloff = 5
