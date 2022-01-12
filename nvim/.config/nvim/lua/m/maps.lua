@@ -69,5 +69,6 @@ map('n', '`t', [[<CMD>lua require('lspsaga.floaterm').open_float_terminal()<CR>]
 map('t', '`t', [[<C-\><C-n>:lua require('lspsaga.floaterm').close_float_terminal()<CR>]], nor)
 map('n', '<leader>mm', [[<Cmd>lua require('material.functions').toggle_style()<CR>]], nor)
 -- the little conveniences in life.
-map('n', '<LEADER>abc<CR>', 'iabcdefghijklmnopqrstuvwxyz<Esc>', nor)
+-- map('n', '<LEADER>abc<CR>', 'iabcdefghijklmnopqrstuvwxyz<Esc>', nor)
+map('n', '<LEADER>abc<CR>', 'i#include "/Users/astrlux/stdc++.h"<CR>using namespace std;<Esc>o', nor)
 map('n', '<LEADER>pn', ':silent !pushd ~/Notes; git add .; git commit -am \'changes\'; git push; popd;<CR>', nor)
