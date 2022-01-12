@@ -1,6 +1,7 @@
 <details><summary>Click for Pictures!</summary>
 <img src="./img/desktop.png" />
 <img src="./img/tiled.png" />
+<img src="./img/vscode-like.png" />
 </details>
 
 ### Prerequisites <sup>[5 min]</sup>
