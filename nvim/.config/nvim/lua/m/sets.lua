@@ -26,5 +26,5 @@ o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
 o.foldmethod = 'manual'
--- o.laststatus = 1 -- 0 is none
+o.laststatus = 1 -- 0 is none
 o.scrolloff = 12

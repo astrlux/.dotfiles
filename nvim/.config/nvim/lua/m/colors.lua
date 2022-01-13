@@ -1,5 +1,5 @@
 local o, g, cmd = vim.opt, vim.g, vim.cmd
 o.tgc = true -- termguicolors
-o.bg = 'dark'
-g.vscode_style = 'dark'
+o.bg = 'light'
+g.vscode_style = 'light'
 cmd 'colorscheme vscode'
