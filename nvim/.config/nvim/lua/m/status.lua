@@ -12,7 +12,7 @@ require('lualine').setup {
         icons_enabled = false,
         padding = 0,
         fmt = function()
-          return ' '
+          return ''
         end
       }
     },
