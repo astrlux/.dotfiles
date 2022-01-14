@@ -37,10 +37,25 @@ require('telescope').setup({
       override_generic_sorter = false,
       override_file_sorter = true,
       case_mode = 'smart_case' -- or 'ignore_case' or 'respect_case'
+    },
+    file_browser = {
+      theme = 'ivy',
+      mappings = {
+        ['i'] = {
+          -- your custom insert mode mappings
+        },
+        ['n'] = {
+          -- your custom normal mode mappings
+        }
+      }
     }
   }
 })
-require('telescope').load_extension('fzf')
+
+-- load extensions after setup
+require'telescope'.load_extension 'fzf'
+require'telescope'.load_extension 'file_browser'
+
 local M = {}
 M.search_dotfiles = function()
   require('telescope.builtin').find_files({

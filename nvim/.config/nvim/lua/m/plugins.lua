@@ -45,6 +45,7 @@ require('packer').startup(function()
   use 'L3MON4D3/LuaSnip'
   use 'jose-elias-alvarez/nvim-lsp-ts-utils' -- typescript specific tools
   use 'kyazdani42/nvim-tree.lua' -- file tree
+  use 'nvim-telescope/telescope-file-browser.nvim'
   -- colors
   use 'Mofiqul/vscode.nvim'
   use {

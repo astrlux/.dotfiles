@@ -64,6 +64,7 @@ map('n', '<LEADER>cs', [[<CMD>lua require'telescope.builtin'.colorscheme{}<CR>]]
 map('n', '<LEADER>b', [[<CMD>lua require('telescope.builtin').buffers()<CR>]], nor)
 -- File tree
 map('n', '<LEADER>t', ':NvimTreeToggle<CR>', nor)
+map('n', '<LEADER>fb', ':Telescope file_browser<CR>', nor)
 -- Floating terminal
 map('n', '`t', [[<CMD>lua require('lspsaga.floaterm').open_float_terminal()<CR>]], nor)
 map('t', '`t', [[<C-\><C-n>:lua require('lspsaga.floaterm').close_float_terminal()<CR>]], nor)
