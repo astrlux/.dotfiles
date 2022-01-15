@@ -28,6 +28,7 @@ alias sl=ls
 alias q='exit'
 alias top='htop'
 alias serve='python3 -m http.serve'
+alias jn='jupyter-notebook'
 alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{tools,node_modules,.git}" | fzf'
 alias ff='nvim $(fzfi)'
 # DOCKER
