@@ -48,6 +48,7 @@ require('packer').startup(function()
   use 'nvim-telescope/telescope-file-browser.nvim'
   -- colors
   use 'Mofiqul/vscode.nvim'
+  use 'marko-cerovac/material.nvim'
   use {
     'mcchrish/zenbones.nvim',
     requires = 'rktjmp/lush.nvim'
