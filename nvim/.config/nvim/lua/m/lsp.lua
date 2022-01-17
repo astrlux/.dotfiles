@@ -112,7 +112,6 @@ require'lspconfig'.sumneko_lua.setup {
   }
 }
 
--- vim.cmd 'autocmd BufWritePre *.lua,*.go,*.c,*.cpp,*.js,*.jsx,*.ts,*.tsx,*.rs,*.py lua vim.lsp.buf.formatting_sync(nil, 250)'
 vim.cmd [[
 augroup formatFile
     autocmd!
