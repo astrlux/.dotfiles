@@ -1,7 +1,7 @@
 local o = vim.opt
 o.nu = true
+o.rnu = true
 o.cul = true
-o.rnu = false
 o.mouse = 'a'
 o.ruler = false
 o.hidden = true

@@ -118,9 +118,14 @@ augroup formatFile
     autocmd!
     autocmd BufWritePre *.lua,*.go,*.c,*.cpp,*.js,*.jsx,*.ts,*.tsx,*.rs,*.py lua vim.lsp.buf.formatting_sync(nil, 250)
 augroup END
-augroup wordProcessor
+augroup textWordProcessor
     autocmd!
     autocmd FileType text setlocal spell linebreak wrap
     autocmd BufRead,BufNewFile *.txt setlocal spell linebreak wrap
+augroup END
+augroup markdownWordProcessor
+    autocmd!
+    autocmd FileType markdown setlocal spell linebreak wrap
+    autocmd BufRead,BufNewFile *.md setlocal spell linebreak wrap
 augroup END
 ]]
