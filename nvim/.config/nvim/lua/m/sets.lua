@@ -1,6 +1,6 @@
 local o = vim.opt
 o.nu = true
-o.rnu = true
+-- o.rnu = false
 o.cul = true
 o.mouse = 'a'
 o.ruler = false
