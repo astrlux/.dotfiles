@@ -47,6 +47,7 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua' -- file tree
   use 'nvim-telescope/telescope-file-browser.nvim'
   -- colors
+  use 'NLKNguyen/papercolor-theme'
   use 'Mofiqul/vscode.nvim'
   use 'marko-cerovac/material.nvim'
   use {
