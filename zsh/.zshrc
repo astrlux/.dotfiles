@@ -1,5 +1,6 @@
 # PROMPT
 PROMPT="%F{141}%1d%F{193} ϟ%f "
+
 # EXPORTS
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:/usr/local/opt/llvm/bin/"
@@ -10,6 +11,7 @@ export DOTFILES=$HOME/dotfiles
 export STOW_FOLDERS="nvim,zsh,kitty,prog"
 export PROJECTS=$HOME/Projects
 export EDITOR=nvim
+
 # THE LITTLE THINGS IN LIFE
 alias notes='nvim ~/Notes/TODO.md'
 alias pnotes="pushd ~/Notes; cm 'changes'; git push; popd;"
@@ -31,6 +33,7 @@ alias serve='python3 -m http.serve'
 alias jn='jupyter-notebook'
 alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{tools,node_modules,.git}" | fzf'
 alias ff='nvim $(fzfi)'
+
 # DOCKER
 alias kubectl="minikube kubectl --"
 # GIT
@@ -44,15 +47,18 @@ alias log="git log --first-parent --graph --pretty=format:'%C(yellow)%h%Creset -
 #alias log='hg log -G'
 #alias st='hg status'
 #alias cm='hg add && hg commit -m'
+#
 # WWW
 alias brave='{read -r arr; open -a "Brave Browser" "${arr}"} <<<'
 alias browser='{read -r arr; brave ${arr} } <<<'
 alias google='{read -r arr; browser "https://google.com/search?q=${arr}";} <<<'
 alias gclone='cd ${PROJECTS} git clone https://www.github.com/'
 alias gc='git clone'
+
 # EDITOR
 alias vi='nvim'
 alias te='open -a TextEdit.app'
+
 # DOTFILE MANAGEMENT
 alias ss='source ~/.zshrc'
 alias ac='nvim ~/.config/alacritty/alacritty.yml'
@@ -81,6 +87,7 @@ removeDotfiles() {
   sh scripts/clean.sh
   popd
 }
+
 # ZSH AUTO-COMPLETION
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 zstyle ':completion:*' menu select # select completions with arrow keys
