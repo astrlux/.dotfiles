@@ -46,6 +46,10 @@ require('packer').startup(function()
   use 'jose-elias-alvarez/nvim-lsp-ts-utils' -- typescript specific tools
   use 'kyazdani42/nvim-tree.lua' -- file tree
   use 'nvim-telescope/telescope-file-browser.nvim'
+  use {
+    'scalameta/nvim-metals',
+    requires = 'nvim-lua/plenary.nvim'
+  }
   -- colors
   use 'NLKNguyen/papercolor-theme'
   use 'Mofiqul/vscode.nvim'
