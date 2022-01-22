@@ -51,13 +51,7 @@ require('packer').startup(function()
     requires = 'nvim-lua/plenary.nvim'
   }
   -- colors
-  use 'NLKNguyen/papercolor-theme'
   use 'Mofiqul/vscode.nvim'
-  use 'marko-cerovac/material.nvim'
-  use {
-    'mcchrish/zenbones.nvim',
-    requires = 'rktjmp/lush.nvim'
-  }
   use {
     'ellisonleao/gruvbox.nvim',
     requires = {'rktjmp/lush.nvim'}

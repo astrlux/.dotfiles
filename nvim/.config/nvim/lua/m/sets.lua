@@ -27,4 +27,4 @@ o.completeopt = 'menuone,noselect'
 o.backup = false
 o.undofile = true
 o.foldmethod = 'manual'
-o.scrolloff = 9
+o.scrolloff = 5
