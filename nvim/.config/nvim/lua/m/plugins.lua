@@ -52,6 +52,7 @@ require('packer').startup(function()
   }
   -- colors
   use 'Mofiqul/vscode.nvim'
+  use 'sainnhe/everforest'
   use 'NLKNguyen/papercolor-theme'
   use {
     'ellisonleao/gruvbox.nvim',
