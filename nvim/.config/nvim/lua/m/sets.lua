@@ -1,7 +1,5 @@
 local o = vim.opt
 o.nu = true
--- o.rnu = true
-o.gcr = ''
 o.ls = 1
 o.mouse = 'a'
 o.ruler = false
@@ -13,7 +11,7 @@ o.cmdheight = 1
 o.tabstop = 2
 o.shiftwidth = 2
 o.softtabstop = 2
-o.expandtab = true
+o.et = false
 o.ai = true
 o.smarttab = true
 o.wrap = false
