@@ -1,7 +1,7 @@
 local o = vim.opt
-o.gcr = ''
+o.ru = false
 o.nu = true
-o.ls = 2
+o.ls = 0
 o.hid = true
 o.hls = false
 o.sc = false

@@ -11,6 +11,7 @@ vim.api.nvim_exec([[
 ]], false)
 local use = require('packer').use
 require('packer').startup(function()
+  -- use 'kyazdani42/nvim-web-devicons'
   use 'wbthomason/packer.nvim' -- Package manager
   use { -- Syntax highlighting
     'nvim-treesitter/nvim-treesitter',

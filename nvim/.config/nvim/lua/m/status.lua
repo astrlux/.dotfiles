@@ -6,6 +6,7 @@ require('lualine').setup {
     disabled_filetypes = {'packer', 'Telescope', 'NvimTree', 'git', 'quickfix', 'Fugitive'}
   },
   sections = {
+    -- lualine_a = {},
     lualine_b = {
       {
         'filename',
