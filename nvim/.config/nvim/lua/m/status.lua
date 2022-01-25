@@ -6,16 +6,6 @@ require('lualine').setup {
     disabled_filetypes = {'packer', 'Telescope', 'NvimTree', 'git', 'quickfix', 'Fugitive'}
   },
   sections = {
-    lualine_a = {
-      {
-        'mode',
-        icons_enabled = false,
-        padding = 0,
-        fmt = function()
-          return ' '
-        end
-      }
-    },
     lualine_b = {
       {
         'filename',
@@ -23,20 +13,6 @@ require('lualine').setup {
         color = 'StatusLine'
       }
     },
-    -- lualine_b = {
-    --   {
-    --     'buffers',
-    --     max_length = vim.o.columns / 1.5,
-    --     mode = 0,
-    --     padding = {
-    --       right = 1
-    --     },
-    --     color = {
-    --       active = 'lualine_{section}_normal',
-    --       inactive = 'lualine_{section}_inactive'
-    --     }
-    --   }
-    -- },
     lualine_c = {
       {
         'diagnostics',

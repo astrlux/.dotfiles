@@ -1,6 +1,7 @@
 local o = vim.opt
+o.gcr = ''
 o.nu = true
-o.ls = 1
+o.ls = 2
 o.hid = true
 o.hls = false
 o.sc = false
@@ -23,4 +24,3 @@ o.cot = 'menuone,noselect'
 o.bk = false
 o.udf = true
 o.fdm = 'manual'
-o.so = 5
