@@ -54,7 +54,8 @@ local config = {
           bg = colors.bg
         }
       }
-    }
+    },
+    disabled_filetypes = {'NvimTree', 'Telescope', 'FZF', 'Fugitive'}
   },
   sections = {
     -- these are to remove the defaults
@@ -144,7 +145,7 @@ ins_left({
     end
     return msg
   end,
-  icon = ' ',
+  icon = 'LSP:',
   color = {
     fg = '#D0D0D0',
     gui = 'bold'
@@ -181,15 +182,6 @@ ins_left({
 })
 
 ins_right({
-  'branch',
-  icon = '',
-  color = {
-    fg = colors.magenta,
-    gui = 'italic'
-  }
-})
-
-ins_right({
   'diff',
   -- Is it me or the symbol for modified us really weird
   symbols = {
@@ -199,16 +191,25 @@ ins_right({
   },
   diff_color = {
     added = {
-      fg = colors.green
+      fg = colors.fg
     },
     modified = {
-      fg = colors.orange
+      fg = colors.fg
     },
     removed = {
-      fg = colors.red
+      fg = colors.fg
     }
   },
   cond = conditions.hide_in_width
+})
+
+ins_right({
+  'branch',
+  icon = '',
+  color = {
+    fg = colors.magenta,
+    gui = 'italic'
+  }
 })
 
 ins_right({
