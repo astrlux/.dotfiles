@@ -49,8 +49,8 @@ require('packer').startup(function()
   use 'nvim-telescope/telescope-file-browser.nvim'
   -- colors
   use 'Mofiqul/vscode.nvim'
-  use 'sainnhe/everforest'
-  use 'NLKNguyen/papercolor-theme'
+  use 'arzg/vim-colors-xcode'
+  use 'navarasu/onedark.nvim'
   use {
     'ellisonleao/gruvbox.nvim',
     requires = {'rktjmp/lush.nvim'}

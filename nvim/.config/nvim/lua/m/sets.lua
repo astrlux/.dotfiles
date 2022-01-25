@@ -1,9 +1,10 @@
 local o = vim.opt
+o.mouse = 'a'
 o.ru = false
 o.nu = true
-o.ls = 0
+o.cul = true
+o.ls = 1
 o.hid = true
-o.hls = false
 o.sc = false
 o.smd = false
 o.ch = 1

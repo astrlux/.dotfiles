@@ -73,3 +73,10 @@ map('n', '<leader>mm', [[<Cmd>lua require('material.functions').toggle_style()<C
 -- map('n', '<LEADER>abc<CR>', 'iabcdefghijklmnopqrstuvwxyz<Esc>', nor)
 map('n', '<LEADER>abc<CR>', 'i#include "/Users/astrlux/stdc++.h"<CR>using namespace std;<Esc>o', nor)
 map('n', '<LEADER>pn', ':silent !pushd ~/Notes; git add .; git commit -am \'changes\'; git push; popd;<CR>', nor)
+vim.cmd [[
+augroup pythonNoDedent
+  autocmd!
+  autocmd FileType python setlocal indentkeys-=<:>
+  autocmd FileType python setlocal indentkeys-=:
+augroup END
+]]
