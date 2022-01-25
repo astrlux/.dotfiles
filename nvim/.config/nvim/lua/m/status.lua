@@ -94,10 +94,10 @@ ins_left({
     -- auto change color according to neovims mode
     local mode_color = {
       n = colors.blue,
-      i = colors.orange,
+      i = colors.magenta,
       v = colors.red,
       [''] = colors.magenta,
-      V = colors.magenta,
+      V = colors.orange,
       c = colors.green,
       no = colors.red,
       s = colors.orange,
@@ -128,7 +128,11 @@ ins_left({
   cond = conditions.buffer_not_empty,
   color = {
     fg = colors.magenta,
-    gui = 'bold'
+    bg = '#444444'
+  },
+  padding = {
+    right = 1,
+    left = 1
   }
 })
 
@@ -152,14 +156,6 @@ ins_left({
   }
 })
 
--- Insert mid section. You can make any number of sections in neovim :)
--- for lualine it's any number greater then 2
-ins_left({
-  function()
-    return '%='
-  end
-})
-
 ins_left({
   'diagnostics',
   sources = {'nvim_diagnostic'},
@@ -179,6 +175,14 @@ ins_left({
       fg = colors.cyan
     }
   }
+})
+
+-- Insert mid section. You can make any number of sections in neovim :)
+-- for lualine it's any number greater then 2
+ins_left({
+  function()
+    return '%='
+  end
 })
 
 ins_right({
