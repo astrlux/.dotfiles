@@ -51,7 +51,7 @@ require('lualine').setup {
     lualine_x = {
       {
         'diff',
-        colored = false
+        colored = true
       }
     },
     lualine_y = {{'branch'}},
