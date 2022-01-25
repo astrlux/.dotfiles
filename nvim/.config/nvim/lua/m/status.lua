@@ -135,7 +135,7 @@ ins_left({
 ins_left({
   -- Lsp server name .
   function()
-    local msg = 'LSP Inactive'
+    local msg = 'inactive'
     local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
     local clients = vim.lsp.get_active_clients()
     if next(clients) == nil then return msg end
@@ -145,11 +145,19 @@ ins_left({
     end
     return msg
   end,
-  icon = 'LSP:',
+  icon = '⚙',
   color = {
     fg = '#D0D0D0',
     gui = 'bold'
   }
+})
+
+-- Insert mid section. You can make any number of sections in neovim :)
+-- for lualine it's any number greater then 2
+ins_left({
+  function()
+    return '%='
+  end
 })
 
 ins_left({
@@ -173,14 +181,6 @@ ins_left({
   }
 })
 
--- Insert mid section. You can make any number of sections in neovim :)
--- for lualine it's any number greater then 2
-ins_left({
-  function()
-    return '%='
-  end
-})
-
 ins_right({
   'diff',
   -- Is it me or the symbol for modified us really weird
@@ -191,13 +191,13 @@ ins_right({
   },
   diff_color = {
     added = {
-      fg = colors.fg
+      fg = colors.green
     },
     modified = {
-      fg = colors.fg
+      fg = colors.orange
     },
     removed = {
-      fg = colors.fg
+      fg = colors.red
     }
   },
   cond = conditions.hide_in_width
