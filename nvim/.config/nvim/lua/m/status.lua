@@ -128,7 +128,7 @@ ins_left({
   cond = conditions.buffer_not_empty,
   color = {
     fg = colors.magenta,
-    bg = '#444444'
+    bg = '#333333'
   },
   padding = {
     right = 1,
@@ -149,7 +149,7 @@ ins_left({
     end
     return msg
   end,
-  icon = '⚙',
+  icon = 'LSP:',
   color = {
     fg = '#D0D0D0',
     gui = 'bold'
