@@ -79,4 +79,10 @@ augroup pythonNoDedent
   autocmd FileType python setlocal indentkeys-=<:>
   autocmd FileType python setlocal indentkeys-=:
 augroup END
+augroup LastPositionJump
+  autocmd!
+  autocmd BufRead * autocmd FileType <buffer> ++once
+        \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
+augroup END
 ]]
+

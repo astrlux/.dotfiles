@@ -96,4 +96,4 @@ zstyle ':completion:::::' completer _expand _complete _ignored _approximate #ena
 
 alias lab='ssh cs120wi22jp@ieng6.ucsd.edu' # RK!90
 alias scppull='scp -r cs120wi22jp@ieng6.ucsd.edu:~/pa2/mycode2.c ~/cse120/pa2_Jan25_2' 
-alias scppush='scp -r ~/cse120/pa2_Jan25_1/mycode2.c cs120wi22jp@ieng6.ucsd.edu:~/' 
+alias scppush='scp -r ~/mycode2.c cs120wi22jp@ieng6.ucsd.edu:~/pa2/' 
