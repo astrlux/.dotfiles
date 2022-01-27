@@ -73,16 +73,11 @@ map('n', '<leader>mm', [[<Cmd>lua require('material.functions').toggle_style()<C
 -- map('n', '<LEADER>abc<CR>', 'iabcdefghijklmnopqrstuvwxyz<Esc>', nor)
 map('n', '<LEADER>abc<CR>', 'i#include "/Users/astrlux/stdc++.h"<CR>using namespace std;<Esc>o', nor)
 map('n', '<LEADER>pn', ':silent !pushd ~/Notes; git add .; git commit -am \'changes\'; git push; popd;<CR>', nor)
+-- jump to last spot of cursor on file_open
 vim.cmd [[
-augroup pythonNoDedent
-  autocmd!
-  autocmd FileType python setlocal indentkeys-=<:>
-  autocmd FileType python setlocal indentkeys-=:
-augroup END
 augroup LastPositionJump
   autocmd!
   autocmd BufRead * autocmd FileType <buffer> ++once
         \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
 augroup END
 ]]
-
