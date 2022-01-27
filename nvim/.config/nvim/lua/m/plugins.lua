@@ -11,7 +11,6 @@ vim.api.nvim_exec([[
 ]], false)
 local use = require('packer').use
 require('packer').startup(function()
-  use 'kyazdani42/nvim-web-devicons'
   use 'wbthomason/packer.nvim' -- Package manager
   use { -- Syntax highlighting
     'nvim-treesitter/nvim-treesitter',
@@ -38,6 +37,7 @@ require('packer').startup(function()
     end
   }
   use 'nvim-lualine/lualine.nvim' -- Lua status line
+  -- use 'lukas-reineke/indent-blankline.nvim' -- indent blankline
   use 'glepnir/lspsaga.nvim'
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-buffer'
@@ -48,6 +48,8 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua' -- file tree
   use 'nvim-telescope/telescope-file-browser.nvim'
   -- colors
+  use 'kyazdani42/nvim-web-devicons'
+  use 'marko-cerovac/material.nvim'
   use 'Mofiqul/vscode.nvim'
   use 'arzg/vim-colors-xcode'
   use 'navarasu/onedark.nvim'
