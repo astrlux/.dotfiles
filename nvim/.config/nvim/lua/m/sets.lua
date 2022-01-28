@@ -1,29 +1,43 @@
 local o = vim.opt
 o.mouse = 'a'
-o.nu = true
-o.rnu = true
-o.cul = true
-o.ls = 0
-o.ru = false
-o.hls = false
-o.hid = true
-o.sc = false
-o.smd = false
-o.ch = 1
-o.ts = 2
-o.sw = 2
-o.sts = 2
-o.et = true
-o.sta = true
+o.number = true
+o.relativenumber = true
+o.cursorline = true
+o.laststatus = 0
+o.ruler = false
+o.hlsearch = true
+o.hidden = true
+o.showcmd = false
+o.showmode = false
+o.cmdheight = 1
+o.tabstop = 2
+o.shiftwidth = 2
+o.softtabstop = 2
+o.expandtab = true
+o.copyindent = true
+o.smarttab = true
+o.autoindent = true
+o.smartindent = true
 o.wrap = false
-o.scl = 'number'
-o.ut = 500
-o.tm = 360
-o.scs = true
-o.ic = true
-o.is = true
-o.cot = 'menuone,noselect'
-o.bk = false
-o.udf = true
-o.fdm = 'manual'
-o.so = 5
+o.signcolumn = 'number'
+o.updatetime = 500
+o.smartcase = true
+o.showmatch = true
+o.incsearch = true
+o.completeopt = 'menuone,noselect'
+o.undofile = true
+o.foldmethod = 'syntax'
+
+vim.cmd 'filetype plugin indent on'
+-- jump to last spot of cursor on file_open
+vim.cmd [[
+augroup PythonPreventDedent
+  autocmd!
+  autocmd FileType python setlocal smartindent
+augroup END
+augroup LastPositionJump
+  autocmd!
+  autocmd BufRead * autocmd FileType <buffer> ++once
+        \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
+augroup END
+]]

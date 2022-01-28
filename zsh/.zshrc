@@ -6,7 +6,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:/usr/local/opt/llvm/bin/"
 export TERM="screen-256color"
 export JAVA_HOME=$(/usr/libexec/java_home)
-export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.0/share/nvim/runtime # NIGHTLY
+export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
 export DOTFILES=$HOME/dotfiles
 export STOW_FOLDERS="nvim,zsh,kitty,prog"
 export PROJECTS=$HOME/Projects
@@ -68,7 +68,9 @@ alias zc='nvim ~/.zshrc'
 alias tc='nvim ~/.config/tmux/tmux.conf'
 alias ic='nvim ~/.inputrc'
 alias vc='nvim ~/.config/nvim/init.lua'
-alias nvc='cd ~/dotfiles/nvim/.config/nvim/'
+alias init='nvim ~/dotfiles/nvim/.config/nvim/init.lua'
+alias colors='nvim ~/dotfiles/nvim/.config/nvim/lua/m/colors.lua'
+alias sets='nvim ~/dotfiles/nvim/.config/nvim/lua/m/sets.lua'
 alias luamake=~/tools/lua-language-server/3rd/luamake/luamake
 installDotfiles() {
   pushd $DOTFILES
