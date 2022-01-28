@@ -18,8 +18,6 @@ static const char col2[] = "#1C1C1C";
 static const char col3[] = "#696969";
 static const char col0[] = "#C0C0C0";
 
-static const char col4[] = "#C09123";
-
 static const char *colors[][3]      = {
 	/*               fg    bg    border   */
 	[SchemeNorm] = { col3, col2, col1},
@@ -54,7 +52,7 @@ static const Rule rules[] = {
 /* layout(s) */
 static const float mfact      = 0.55; /* factor of master area size [0.05..0.95]         */
 static const int nmaster      = 1;    /* number of clients in master area                */
-static const bool resizehints = 0;    /* True means respect size hints in tiled resizals */
+static const Bool resizehints = 0;    /* True means respect size hints in tiled resizals */
 
 static const Layout layouts[] = {
   /* symbol     arrange function */
@@ -62,6 +60,10 @@ static const Layout layouts[] = {
   {"\uE011" , NULL}    ,
   {"[M]"    , monocle} ,
 };
+
+// remove this declaration
+static const TestLayout layouts[] = {
+}
 
 /* key definitions */
 #define MODKEY Mod1Mask

@@ -18,7 +18,8 @@ map('n', '<LEADER>4', ':PackerClean<CR>', nor)
 map('v', '<', '<gv', nor)
 map('v', '>', '>gv', nor)
 -- Auto-close brackets
--- map('i', '"', '""<left>', nor) -- autoclose double quote
+map('i', '(', '()<left>', nor)
+map('i', '[', '[]<left>', nor)
 map('i', '{<CR>', '{<CR>}<ESC><S-O>', nor)
 -- Move cursor faster
 map('n', '<DOWN>', '9j', nor)
@@ -75,6 +76,11 @@ map('n', '<LEADER>abc<CR>', 'i#include "/Users/astrlux/stdc++.h"<CR>using namesp
 map('n', '<LEADER>pn', ':silent !pushd ~/Notes; git add .; git commit -am \'changes\'; git push; popd;<CR>', nor)
 -- jump to last spot of cursor on file_open
 vim.cmd [[
+augroup PythonPreventDedent
+  autocmd!
+  autocmd FileType python setlocal indentkeys-=<:>
+  autocmd FileType python setlocal indentkeys-=:
+augroup END
 augroup LastPositionJump
   autocmd!
   autocmd BufRead * autocmd FileType <buffer> ++once
