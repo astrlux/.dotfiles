@@ -37,7 +37,6 @@ require('packer').startup(function()
     end
   }
   use 'nvim-lualine/lualine.nvim' -- Lua status line
-  use 'lukas-reineke/indent-blankline.nvim' -- indent blankline
   use 'glepnir/lspsaga.nvim'
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-buffer'

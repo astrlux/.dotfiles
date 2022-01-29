@@ -6,10 +6,10 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:/usr/local/opt/llvm/bin/"
 export TERM="screen-256color"
 export JAVA_HOME=$(/usr/libexec/java_home)
-export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
 export DOTFILES=$HOME/dotfiles
 export STOW_FOLDERS="nvim,zsh,kitty,prog"
 export PROJECTS=$HOME/Projects
+export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
 export EDITOR=nvim
 
 # THE LITTLE THINGS IN LIFE
