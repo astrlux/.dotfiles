@@ -48,7 +48,6 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua' -- file tree
   use 'nvim-telescope/telescope-file-browser.nvim'
   -- colors
-  use 'kyazdani42/nvim-web-devicons'
   use 'marko-cerovac/material.nvim'
   use 'Mofiqul/vscode.nvim'
   use 'arzg/vim-colors-xcode'
@@ -57,4 +56,5 @@ require('packer').startup(function()
     'ellisonleao/gruvbox.nvim',
     requires = {'rktjmp/lush.nvim'}
   }
+  -- use 'kyazdani42/nvim-web-devicons'
 end)

@@ -14,7 +14,6 @@ o.tabstop = 2
 o.shiftwidth = 2
 o.softtabstop = 2
 o.expandtab = true
-o.copyindent = true
 o.smarttab = true
 o.autoindent = true
 o.smartindent = true
@@ -26,18 +25,12 @@ o.showmatch = true
 o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.undofile = true
-o.foldmethod = 'syntax'
-
+-- o.foldmethod = 'manual'
 vim.cmd 'filetype plugin indent on'
--- jump to last spot of cursor on file_open
-vim.cmd [[
-augroup PythonPreventDedent
-  autocmd!
-  autocmd FileType python setlocal smartindent
-augroup END
-augroup LastPositionJump
-  autocmd!
-  autocmd BufRead * autocmd FileType <buffer> ++once
-        \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
-augroup END
-]]
+-- vim.cmd [[
+-- augroup JumpCursorLastPosition
+--   autocmd!
+--   autocmd BufRead * autocmd FileType <buffer> ++once
+--         \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
+-- augroup END
+-- ]]

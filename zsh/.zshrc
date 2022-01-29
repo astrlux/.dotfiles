@@ -43,11 +43,11 @@ alias co='git checkout'
 alias pullom='git pull origin master'
 alias br='git branch';
 alias log="git log --first-parent --graph --pretty=format:'%C(yellow)%h%Creset -%C(auto)%d%Creset %s %C(cyan)(%cr) %Cresetby %C(bold blue)%aN%Creset' --abbrev-commit --date=relative --branches"
-# MERCURIAL
+#MERCURIAL
 #alias log='hg log -G'
 #alias st='hg status'
 #alias cm='hg add && hg commit -m'
-#
+
 # WWW
 alias brave='{read -r arr; open -a "Brave Browser" "${arr}"} <<<'
 alias browser='{read -r arr; brave ${arr} } <<<'
