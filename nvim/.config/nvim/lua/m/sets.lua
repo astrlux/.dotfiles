@@ -2,7 +2,7 @@ local o = vim.opt
 o.mouse = 'a'
 o.number = true
 o.relativenumber = false
-o.cursorline = true
+o.cursorline = false
 o.laststatus = 0
 o.ruler = false
 o.hlsearch = true
@@ -25,8 +25,6 @@ o.showmatch = true
 o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.undofile = true
-o.foldmethod = 'manual'
-
 -- vim.cmd [[
 -- augroup JumpCursorLastPosition
 --   autocmd!
