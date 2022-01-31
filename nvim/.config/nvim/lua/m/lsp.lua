@@ -8,7 +8,7 @@ require'lspconfig'.efm.setup {
     languages = {
       lua = {
         {
-          formatCommand = 'lua-format -i --no-keep-simple-function-one-line --no-break-after-operator --column-limit=120 --break-after-table-lb --indent-width=2 --double-quote-to-single-quote',
+          formatCommand = 'lua-format -i --no-keep-simple-function-one-line --no-break-after-operator --column-limit=80 --break-after-table-lb --indent-width=2 --double-quote-to-single-quote',
           formatStdin = true
         }
       }
@@ -16,11 +16,12 @@ require'lspconfig'.efm.setup {
   }
 }
 
-vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-  signs = true,
-  underline = true,
-  update_in_insert = false
-})
+vim.lsp.handlers['textDocument/publishDiagnostics'] =
+    vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+      signs = true,
+      underline = true,
+      update_in_insert = false
+    })
 local signs = { -- Define diagnostic signs
   Error = '✗',
   Warning = '!',
@@ -57,13 +58,20 @@ local on_attach = function(_, bufnr)
   buf_set_keymap('n', 'gi', [[<CMD>lua vim.lsp.buf.implementation()<CR>]], opts)
   buf_set_keymap('n', 'gf', [[<CMD>lua vim.lsp.buf.formatting()<CR>]], opts)
   buf_set_keymap('n', 'qr', [[<CMD>lua vim.lsp.buf.rename()<CR>]], opts)
-  buf_set_keymap('n', '<C-k>', [[<CMD>lua vim.lsp.buf.signature_help()<CR>]], opts)
+  buf_set_keymap('n', '<C-k>', [[<CMD>lua vim.lsp.buf.signature_help()<CR>]],
+                 opts)
   buf_set_keymap('n', '<LEADER>cd',
-                 [[<CMD>lua vim.diagnostic.open_float(0, { scope = "line", border = "single" })<CR>]], opts)
-  buf_set_keymap('n', '<C-n>', [[<CMD>lua vim.diagnostic.goto_prev({ float =  { border = "single" }})<CR>]], opts)
-  buf_set_keymap('n', '<C-p>', [[<CMD>lua vim.diagnostic.goto_next({ float =  { border = "single" }})<CR>]], opts)
+                 [[<CMD>lua vim.diagnostic.open_float(0, { scope = "line", border = "single" })<CR>]],
+                 opts)
+  buf_set_keymap('n', '<C-n>',
+                 [[<CMD>lua vim.diagnostic.goto_prev({ float =  { border = "single" }})<CR>]],
+                 opts)
+  buf_set_keymap('n', '<C-p>',
+                 [[<CMD>lua vim.diagnostic.goto_next({ float =  { border = "single" }})<CR>]],
+                 opts)
   -- buf_set_keymap('n', '<LEADER>hs', [[<CMD>lua vim.lsp.buf.signature_help()<CR>]], opts)
-  buf_set_keymap('n', '<LEADER>ca', [[<CMD>lua vim.lsp.buf.code_action()<CR>]], opts)
+  buf_set_keymap('n', '<LEADER>ca', [[<CMD>lua vim.lsp.buf.code_action()<CR>]],
+                 opts)
   buf_set_keymap('n', 'K', [[<CMD>lua vim.lsp.buf.hover()<CR>]], opts)
 end
 
@@ -86,7 +94,8 @@ end
 -- Enable local Lua language-server
 USER = vim.fn.expand('$USER')
 local sumneko_root_path = '/Users/' .. USER .. '/tools/lua-language-server'
-local sumneko_binary_path = '/Users/' .. USER .. '/tools/lua-language-server/bin/macOS/lua-language-server'
+local sumneko_binary_path = '/Users/' .. USER
+                                .. '/tools/lua-language-server/bin/macOS/lua-language-server'
 
 local runtime_path = vim.split(package.path, ';')
 table.insert(runtime_path, 'lua/?.lua')

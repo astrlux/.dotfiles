@@ -52,25 +52,45 @@ map('v', '<LEADER>d', '"_d', nor)
 map('v', 'J', ':m \'>+1<CR>gv=gv', nor)
 map('v', 'K', ':m \'<-2<CR>gv=gv', nor)
 -- Fuzzy Finder
-map('n', '<LEADER>pp', [[<CMD>lua require'telescope.builtin'.builtin{}<CR>]], nor)
+map('n', '<LEADER>pp', [[<CMD>lua require'telescope.builtin'.builtin{}<CR>]],
+    nor)
 map('n', '<LEADER>sf', ':Telescope find_files<CR>', nor)
 map('n', '<LEADER>sl', ':Telescope live_grep<CR>', nor)
 map('n', '<LEADER>sg', ':Telescope git_files<CR>', nor)
-map('n', '<LEADER>so', [[<CMD>lua require('telescope.builtin').oldfiles()<CR>]], nor)
-map('n', '<LEADER>sh', [[<CMD>lua require('telescope.builtin').help_tags()<CR>]], nor)
-map('n', '<LEADER>sd', [[<CMD>lua require('m.finder').search_dotfiles()<CR>]], nor)
-map('n', '<LEADER>ds', [[<CMD>lua require('m.finder').search_dotfiles()<CR>]], nor)
-map('n', '<LEADER>/', [[<CMD>lua require'telescope.builtin'.current_buffer_fuzzy_find{}<CR>]], nor)
-map('n', '<LEADER>cs', [[<CMD>lua require'telescope.builtin'.colorscheme{}<CR>]], nor)
-map('n', '<LEADER>b', [[<CMD>lua require('telescope.builtin').buffers()<CR>]], nor)
+map('n', '<LEADER>so', [[<CMD>lua require('telescope.builtin').oldfiles()<CR>]],
+    nor)
+map('n', '<LEADER>sh',
+    [[<CMD>lua require('telescope.builtin').help_tags()<CR>]], nor)
+map('n', '<LEADER>sd', [[<CMD>lua require('m.finder').search_dotfiles()<CR>]],
+    nor)
+map('n', '<LEADER>ds', [[<CMD>lua require('m.finder').search_dotfiles()<CR>]],
+    nor)
+map('n', '<LEADER>/',
+    [[<CMD>lua require'telescope.builtin'.current_buffer_fuzzy_find{}<CR>]], nor)
+map('n', '<LEADER>cs',
+    [[<CMD>lua require'telescope.builtin'.colorscheme{}<CR>]], nor)
+map('n', '<LEADER>b', [[<CMD>lua require('telescope.builtin').buffers()<CR>]],
+    nor)
 -- File tree
 map('n', '<LEADER>t', ':NvimTreeToggle<CR>', nor)
 map('n', '<LEADER>fb', ':Telescope file_browser<CR>', nor)
 -- Floating terminal
-map('n', '`t', [[<CMD>lua require('lspsaga.floaterm').open_float_terminal()<CR>]], nor)
-map('t', '`t', [[<C-\><C-n>:lua require('lspsaga.floaterm').close_float_terminal()<CR>]], nor)
-map('n', '<leader>mm', [[<Cmd>lua require('material.functions').toggle_style()<CR>]], nor)
--- the little conveniences in life.
+map('n', '`t',
+    [[<CMD>lua require('lspsaga.floaterm').open_float_terminal()<CR>]], nor)
+map('t', '`t',
+    [[<C-\><C-n>:lua require('lspsaga.floaterm').close_float_terminal()<CR>]],
+    nor)
+map('n', '<leader>mm',
+    [[<Cmd>lua require('material.functions').toggle_style()<CR>]], nor)
+
 -- map('n', '<LEADER>abc<CR>', 'iabcdefghijklmnopqrstuvwxyz<Esc>', nor)
-map('n', '<LEADER>abc<CR>', 'i#include "/Users/astrlux/stdc++.h"<CR>using namespace std;<Esc>o', nor)
-map('n', '<LEADER>pn', ':silent !pushd ~/Notes; git add .; git commit -am \'changes\'; git push; popd;<CR>', nor)
+
+map('n', '<LEADER>abc<CR>',
+
+    'i#include "/Users/astrlux/stdc++.h"<CR>using namespace std;<Esc>o', nor)
+
+map('n', '<LEADER>pn',
+
+    ':silent !pushd ~/Notes; git add .; git commit -am \'changes\'; git push; popd;<CR>',
+
+    nor)

@@ -1,3 +1,4 @@
+local g, cmd = vim.g, vim.cmd
 require('material').setup({
   contrast = {
     sidebars = true, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )
@@ -6,7 +7,7 @@ require('material').setup({
     sign_column = false, -- Enable contrast background for the sign column
     cursor_line = false, -- Enable darker background for the cursor line
     non_current_windows = false, -- Enable darker background for non-current windows
-    popup_menu = false -- Enable lighter background for the popup menu
+    popup_menu = true -- Enable lighter background for the popup menu
   },
   popup_menu = 'dark', -- Popup menu style ( can be: 'dark', 'light', 'colorful' or 'stealth' )
   italics = {
@@ -19,7 +20,8 @@ require('material').setup({
   contrast_windows = { -- Specify which windows get the contrasted (darker) background
     'terminal', -- Darker terminal background
     'packer', -- Darker packer background
-    'qf' -- Darker qf list background
+    'qf', -- Darker qf list background
+    'NvimTree'
   },
   high_visibility = {
     lighter = false, -- Enable higher contrast text for lighter style
@@ -38,7 +40,6 @@ require('material').setup({
     },
     Visual = {
       bg = '#0c3953'
-      -- bg = '#d3d3d3'
     },
     ErrorMsg = {
       fg = 'red',
@@ -85,7 +86,7 @@ require('material').setup({
       fg = 'red'
     },
     LspDiagnosticsVirtualTextError = {
-      fg = 'red',
+      fg = 'purple',
       bg = '#330000'
     }
   }
