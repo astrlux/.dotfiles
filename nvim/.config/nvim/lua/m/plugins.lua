@@ -46,11 +46,16 @@ require('packer').startup(function()
   use 'jose-elias-alvarez/nvim-lsp-ts-utils' -- typescript specific tools
   use 'kyazdani42/nvim-tree.lua' -- file tree
   use 'nvim-telescope/telescope-file-browser.nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
   -- colors
   use 'marko-cerovac/material.nvim'
   use 'Mofiqul/vscode.nvim'
   use 'arzg/vim-colors-xcode'
   use 'navarasu/onedark.nvim'
+  use {
+    'metalelf0/jellybeans-nvim',
+    requires = {'rktjmp/lush.nvim'}
+  }
   use {
     'ellisonleao/gruvbox.nvim',
     requires = {'rktjmp/lush.nvim'}
