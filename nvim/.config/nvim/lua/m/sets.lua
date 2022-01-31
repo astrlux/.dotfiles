@@ -1,7 +1,7 @@
 local o = vim.opt
 o.mouse = 'a'
 o.number = true
-o.relativenumber = true
+o.relativenumber = false
 o.cursorline = true
 o.laststatus = 0
 o.ruler = false
@@ -25,11 +25,12 @@ o.showmatch = true
 o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.undofile = true
--- o.foldmethod = 'manual'
-vim.cmd [[
-augroup JumpCursorLastPosition
-  autocmd!
-  autocmd BufRead * autocmd FileType <buffer> ++once
-        \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
-augroup END
-]]
+o.foldmethod = 'manual'
+
+-- vim.cmd [[
+-- augroup JumpCursorLastPosition
+--   autocmd!
+--   autocmd BufRead * autocmd FileType <buffer> ++once
+--         \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
+-- augroup END
+-- ]]
