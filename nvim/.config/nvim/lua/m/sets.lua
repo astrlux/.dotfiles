@@ -1,8 +1,8 @@
 local o = vim.opt
 o.mouse = 'a'
 o.number = true
-o.relativenumber = false
-o.cursorline = false
+o.relativenumber = true
+o.cursorline = true
 o.laststatus = 0
 o.ruler = false
 o.hlsearch = true
