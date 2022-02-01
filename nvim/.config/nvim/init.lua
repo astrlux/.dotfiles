@@ -1,4 +1,3 @@
--- ORDER OF INITIALIZATION
 require 'm.plugins'
 require 'm.sets'
 require 'm.lsp'

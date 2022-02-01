@@ -37,12 +37,18 @@ require('material').setup({
     borders = true
   },
   custom_highlights = {
+    Pmenu = {
+      bg = '#282828'
+    },
+    PmenuSel = {
+      bg = '#0C3953'
+    },
     MatchParen = {
       fg = 'orange',
       bg = '#444444'
     },
     TelescopeSelection = {
-      bg = '#0C3953'
+      bg = 'NONE'
     },
     TelescopeMatching = {
       fg = 'orange'

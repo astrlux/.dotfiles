@@ -1,8 +1,7 @@
-local g, cmd = vim.g, vim.cmd
 require('material').setup({
   contrast = {
     sidebars = true, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )
-    floating_windows = true, -- Enable contrast for floating windows
+    floating_windows = false, -- Enable contrast for floating windows
     line_numbers = false, -- Enable contrast background for line numbers
     sign_column = false, -- Enable contrast background for the sign column
     cursor_line = false, -- Enable darker background for the cursor line
@@ -34,6 +33,22 @@ require('material').setup({
     borders = true
   },
   custom_highlights = {
+    Pmenu = {
+      bg = '#282828'
+    },
+    PmenuSel = {
+      bg = '#0C3953'
+    },
+    MatchParen = {
+      fg = 'orange',
+      bg = '#444444'
+    },
+    TelescopeSelection = {
+      bg = '#0C3953'
+    },
+    TelescopeMatching = {
+      fg = 'orange'
+    },
     CursorLine = {
       bg = '#282828'
     },
@@ -42,7 +57,7 @@ require('material').setup({
       bg = 'NONE'
     },
     Visual = {
-      bg = '#0c3953'
+      bg = '#0C3953'
     },
     ErrorMsg = {
       fg = 'red',
@@ -64,13 +79,13 @@ require('material').setup({
       bg = '#4D2A00'
     },
     DiagnosticSignHint = {
-      fg = 'yellow'
+      fg = '#e6e600'
     },
     DiagnosticFloatingHint = {
-      fg = 'yellow'
+      fg = '#e6e600'
     },
     DiagnosticVirtualTextHint = {
-      fg = 'yellow',
+      fg = '#E6E600',
       bg = '#4D2A00'
     },
     DiagnosticSignInformation = {
