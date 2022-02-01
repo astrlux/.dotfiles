@@ -37,6 +37,10 @@ require('material').setup({
     borders = true
   },
   custom_highlights = {
+    MatchParen = {
+      fg = 'orange',
+      bg = '#444444'
+    },
     TelescopeSelection = {
       bg = 'NONE'
     },
@@ -51,7 +55,7 @@ require('material').setup({
       bg = 'NONE'
     },
     Visual = {
-      bg = '#0c3953'
+      bg = '#0C3953'
     },
     ErrorMsg = {
       fg = 'red',
@@ -73,13 +77,13 @@ require('material').setup({
       bg = '#4D2A00'
     },
     DiagnosticSignHint = {
-      fg = 'yellow'
+      fg = '#e6e600'
     },
     DiagnosticFloatingHint = {
-      fg = 'yellow'
+      fg = '#e6e600'
     },
     DiagnosticVirtualTextHint = {
-      fg = 'yellow',
+      fg = '#E6E600',
       bg = '#4D2A00'
     },
     DiagnosticSignInformation = {
