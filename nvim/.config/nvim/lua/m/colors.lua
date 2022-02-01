@@ -5,7 +5,7 @@ g.vscode_style = 'dark'
 require('material').setup({
   contrast = {
     sidebars = true, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )
-    floating_windows = true, -- Enable contrast for floating windows
+    floating_windows = false, -- Enable contrast for floating windows
     line_numbers = false, -- Enable contrast background for line numbers
     sign_column = false, -- Enable contrast background for the sign column
     cursor_line = false, -- Enable darker background for the cursor line
@@ -42,7 +42,7 @@ require('material').setup({
       bg = '#444444'
     },
     TelescopeSelection = {
-      bg = 'NONE'
+      bg = '#0C3953'
     },
     TelescopeMatching = {
       fg = 'orange'
