@@ -34,6 +34,9 @@ require('material').setup({
     borders = true
   },
   custom_highlights = {
+    CursorLine = {
+      bg = '#282828'
+    },
     CursorLineNr = {
       fg = 'orange',
       bg = 'NONE'
@@ -53,40 +56,40 @@ require('material').setup({
       fg = 'red',
       bg = '#330000'
     },
-    LspDiagnosticsSignWarning = {
+    DiagnosticSignWarn = {
       fg = 'orange'
     },
-    LspDiagnosticsVirtualTextWarning = {
+    DiagnosticVirtualTextWarn = {
       fg = 'orange',
       bg = '#4D2A00'
     },
-    LspDiagnosticsSignHint = {
+    DiagnosticSignHint = {
       fg = 'yellow'
     },
-    LspDiagnosticsFloatingHint = {
+    DiagnosticFloatingHint = {
       fg = 'yellow'
     },
-    LspDiagnosticsVirtualTextHint = {
+    DiagnosticVirtualTextHint = {
       fg = 'yellow',
       bg = '#4D2A00'
     },
-    LspDiagnosticsSignInformation = {
+    DiagnosticSignInformation = {
       fg = 'purple'
     },
-    LspDiagnosticsFloatingInformation = {
+    DiagnosticFloatingInformation = {
       fg = 'purple'
     },
-    LspDiagnosticsVirtualTextInformation = {
+    DiagnosticVirtualTextInformation = {
       fg = '#301934'
     },
-    LspDiagnosticsSignError = {
+    DiagnosticSignError = {
       fg = 'red'
     },
-    LspDiagnosticsFloatingError = {
+    DiagnosticFloatingError = {
       fg = 'red'
     },
-    LspDiagnosticsVirtualTextError = {
-      fg = 'purple',
+    DiagnosticVirtualTextError = {
+      fg = 'red',
       bg = '#330000'
     }
   }
