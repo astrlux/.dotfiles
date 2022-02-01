@@ -21,6 +21,7 @@ o.wrap = false
 o.signcolumn = 'yes'
 o.updatetime = 180
 o.smartcase = true
+o.ignorecase = true
 o.showmatch = true
 o.incsearch = true
 o.completeopt = 'menuone,noselect'
