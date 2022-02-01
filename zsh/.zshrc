@@ -27,6 +27,7 @@ alias clearls='clear'
 alias sl='ls -ltG'
 alias ls='ls -lG'
 alias lsl='ls -lG'
+alias llsl='ls -lG'
 alias sl=ls
 alias q='exit'
 alias top='htop'
