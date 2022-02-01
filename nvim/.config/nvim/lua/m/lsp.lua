@@ -137,4 +137,9 @@ augroup markdownWordProcessor
     autocmd FileType markdown setlocal spell linebreak wrap
     autocmd BufRead,BufNewFile *.md setlocal spell linebreak wrap
 augroup END
+augroup latexWordProcessor
+    autocmd!
+    autocmd FileType latex setlocal spell linebreak wrap
+    autocmd BufRead,BufNewFile *.tex setlocal spell linebreak wrap
+augroup END
 ]]
