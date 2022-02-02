@@ -26,7 +26,6 @@ o.showmatch = true
 o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.undofile = true
-o.scrolloff = 3
 vim.cmd [[
 augroup JumpCursorLastPosition
   autocmd!
