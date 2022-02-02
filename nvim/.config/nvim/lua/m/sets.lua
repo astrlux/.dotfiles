@@ -26,10 +26,11 @@ o.showmatch = true
 o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.undofile = true
--- vim.cmd [[
--- augroup JumpCursorLastPosition
---   autocmd!
---   autocmd BufRead * autocmd FileType <buffer> ++once
---         \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
--- augroup END
--- ]]
+o.scrolloff = 3
+vim.cmd [[
+augroup JumpCursorLastPosition
+  autocmd!
+  autocmd BufRead * autocmd FileType <buffer> ++once
+        \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
+augroup END
+]]

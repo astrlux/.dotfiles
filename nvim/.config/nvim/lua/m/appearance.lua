@@ -54,10 +54,7 @@ require('material').setup({
       fg = 'orange'
     },
     CursorLine = {
-      bg = '#282828'
-    },
-    CursorLineNr = {
-      fg = 'orange',
+      -- bg = '#282828'
       bg = 'NONE'
     },
     Visual = {
