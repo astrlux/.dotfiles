@@ -71,11 +71,16 @@ alias bc='nvim ~/.bashrc'
 alias zc='nvim ~/.zshrc'
 alias tc='nvim ~/.config/tmux/tmux.conf'
 alias ic='nvim ~/.inputrc'
-alias vc='nvim ~/.config/nvim/init.lua'
-alias init='nvim ~/dotfiles/nvim/.config/nvim/init.lua'
-alias colors='nvim ~/dotfiles/nvim/.config/nvim/lua/m/colors.lua'
-alias sets='nvim ~/dotfiles/nvim/.config/nvim/lua/m/sets.lua'
-alias luamake=~/tools/lua-language-server/3rd/luamake/luamake
+alias init='nvim ~/.config/nvim/init.lua'
+alias appearance='nvim ~/.config/nvim/lua/m/appearance.lua'
+alias sets='nvim ~/.config/nvim/lua/m/sets.lua'
+alias plugins='nvim ~/.config/nvim/lua/m/plugins.lua'
+luaMake() {
+  pushd
+  cd ~/tools/lua-language-server/3rd/luamake
+  ./luamake
+  popd
+}
 installDotfiles() {
   pushd $DOTFILES
   sh scripts/install.sh
@@ -101,5 +106,5 @@ zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
 
 alias lab='ssh cs120wi22jp@ieng6.ucsd.edu' # RK!90
-alias scppull='scp -r cs120wi22jp@ieng6.ucsd.edu:~/pa2/mycode2.c ~/cse120/pa2_Jan25_2' 
-alias scppush='scp -r ~/mycode2.c cs120wi22jp@ieng6.ucsd.edu:~/pa2/' 
+alias scppull='scp -r cs120wi22jp@ieng6.ucsd.edu:~/pa2/mycode2.c ~/cse120/pa2_Jan25_2'
+alias scppush='scp -r ~/mycode2.c cs120wi22jp@ieng6.ucsd.edu:~/pa2/'

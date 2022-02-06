@@ -49,6 +49,7 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua' -- file tree
   use 'nvim-telescope/telescope-file-browser.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
+  use 'iamcco/markdown-preview.nvim'
   -- colors
   use 'marko-cerovac/material.nvim'
   use 'Mofiqul/vscode.nvim'

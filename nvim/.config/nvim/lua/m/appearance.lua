@@ -44,6 +44,7 @@ require('material').setup({
       bg = '#0C3953'
     },
     MatchParen = {
+      cterm = 'bold',
       fg = 'orange',
       bg = '#444444'
     },
@@ -54,7 +55,8 @@ require('material').setup({
       fg = 'orange'
     },
     -- CursorLine = {
-    --   bg = '#282828'
+    --   bg = 'NONE'
+    --   -- bg = '#282828'
     -- },
     Visual = {
       bg = '#0C3953'
@@ -72,17 +74,20 @@ require('material').setup({
       bg = '#330000'
     },
     DiagnosticSignWarn = {
-      fg = 'orange'
+      fg = 'orange',
+      bg = '#4D2A00'
     },
     DiagnosticVirtualTextWarn = {
       fg = 'orange',
       bg = '#4D2A00'
     },
     DiagnosticSignHint = {
-      fg = '#e6e600'
+      fg = '#e6e600',
+      bg = '#4D2A00'
     },
     DiagnosticFloatingHint = {
-      fg = '#e6e600'
+      fg = '#e6e600',
+      bg = '#4D2A00'
     },
     DiagnosticVirtualTextHint = {
       fg = '#E6E600',
@@ -98,10 +103,12 @@ require('material').setup({
       fg = '#301934'
     },
     DiagnosticSignError = {
-      fg = 'red'
+      fg = 'red',
+      bg = '#330000'
     },
     DiagnosticFloatingError = {
-      fg = 'red'
+      fg = 'red',
+      bg = '#330000'
     },
     DiagnosticVirtualTextError = {
       fg = 'red',
