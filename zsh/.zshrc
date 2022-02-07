@@ -37,6 +37,7 @@ alias serve='python3 -m http.serve'
 alias jn='jupyter-notebook'
 alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{tools,node_modules,.git}" | fzf'
 alias ff='nvim $(fzfi)'
+alias resetDock='defaults delete com.apple.dock; killall Dock'
 
 # DOCKER
 alias kubectl="minikube kubectl --"
@@ -106,5 +107,5 @@ zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
 
 alias lab='ssh cs120wi22jp@ieng6.ucsd.edu' # RK!90
-alias scppull='scp -r cs120wi22jp@ieng6.ucsd.edu:~/pa2/mycode2.c ~/cse120/pa2_Jan25_2'
-alias scppush='scp -r ~/mycode2.c cs120wi22jp@ieng6.ucsd.edu:~/pa2/'
+alias scppull='scp -r cs120wi22jp@ieng6.ucsd.edu:~/pa3/ ~/cse120/pa3'
+alias scppush='scp -r ~/cse120/pa3/ cs120wi22jp@ieng6.ucsd.edu:~/pa3/'
