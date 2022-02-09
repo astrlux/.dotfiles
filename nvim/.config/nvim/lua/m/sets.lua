@@ -2,7 +2,6 @@ local o = vim.opt
 o.mouse = 'a'
 o.number = true
 o.relativenumber = true
-o.cursorline = true
 o.laststatus = 0
 o.ruler = false
 o.hlsearch = false
@@ -26,10 +25,12 @@ o.showmatch = true
 o.incsearch = true
 o.completeopt = 'menuone,noselect'
 o.undofile = true
-vim.cmd [[
-  augroup JumpCursorLastPosition
-    autocmd!
-    autocmd BufRead * autocmd FileType <buffer> ++once
-          \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
-  augroup END
-]]
+-- o.cursorline = true
+-- o.colorcolumn = '80'
+-- vim.cmd [[
+--   augroup JumpCursorLastPosition
+--     autocmd!
+--     autocmd BufRead * autocmd FileType <buffer> ++once
+--           \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
+--   augroup END
+-- ]]

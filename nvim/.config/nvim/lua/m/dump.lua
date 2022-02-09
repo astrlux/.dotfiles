@@ -49,13 +49,6 @@ require('material').setup({
     TelescopeMatching = {
       fg = 'orange'
     },
-    CursorLine = {
-      bg = '#282828'
-    },
-    CursorLineNr = {
-      fg = 'orange',
-      bg = 'NONE'
-    },
     Visual = {
       bg = '#0C3953'
     },
