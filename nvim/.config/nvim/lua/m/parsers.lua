@@ -9,5 +9,5 @@ parser_configs.norg = {
 }
 
 require('nvim-treesitter.configs').setup {
-    ensure_installed = {'python', 'cpp', 'c', 'typescript', 'rust'}
+    ensure_installed = {'cpp', 'c'}
 }
