@@ -4,6 +4,7 @@ o.wrap = false
 o.number = true
 o.hidden = true
 o.ruler = false
+o.cursorline = true
 o.laststatus = 0
 o.undofile = true
 o.hlsearch = false
@@ -26,7 +27,6 @@ o.signcolumn = 'yes'
 o.relativenumber = true
 o.completeopt = 'menuone,noselect'
 o.scrolloff = 9
-o.cursorline = false
 -- vim.cmd [[
 --   augroup JumpCursorLastPosition
 --     autocmd!
