@@ -1,7 +1,7 @@
 local map = vim.api.nvim_set_keymap
 local nor = {
-  noremap = true,
-  silent = true
+    noremap = true,
+    silent = true
 }
 vim.g.mapleader = ' '
 -- Esc into normal mode faster
