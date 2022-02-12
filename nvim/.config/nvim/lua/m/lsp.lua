@@ -1,3 +1,33 @@
+-- -- Enable local Lua language-server
+-- USER = vim.fn.expand('$USER')
+-- local sumneko_root_path = '/Users/' .. USER .. '/tools/lua-language-server'
+-- local sumneko_binary_path = '/Users/' .. USER
+--                                 .. '/tools/lua-language-server/bin/macOS/lua-language-server'
+-- 
+-- local runtime_path = vim.split(package.path, ';')
+-- table.insert(runtime_path, 'lua/?.lua')
+-- table.insert(runtime_path, 'lua/?/init.lua')
+-- 
+-- require'lspconfig'.sumneko_lua.setup {
+--     cmd = {sumneko_binary_path, '-E', sumneko_root_path .. '/main.lua'},
+--     settings = {
+--         Lua = {
+--             runtime = {
+--                 version = 'LuaJIT',
+--                 path = runtime_path
+--             },
+--             diagnostics = { -- Get language server to recognize `vim` global
+--                 globals = {'vim'}
+--             },
+--             workspace = { -- Make server aware of Neovim runtime files
+--                 library = vim.api.nvim_get_runtime_file('', true)
+--             },
+--             telemetry = { -- Don't send telemetry data containing unique identifier
+--                 enable = false
+--             }
+--         }
+--     }
+-- }
 require'lspconfig'.efm.setup {
     init_options = {
         documentFormatting = true
@@ -15,7 +45,6 @@ require'lspconfig'.efm.setup {
         }
     }
 }
-
 vim.lsp.handlers['textDocument/publishDiagnostics'] =
     vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
         signs = true,
@@ -91,37 +120,6 @@ for _, lsp in ipairs(servers) do
         }
     }
 end
-
--- Enable local Lua language-server
-USER = vim.fn.expand('$USER')
-local sumneko_root_path = '/Users/' .. USER .. '/tools/lua-language-server'
-local sumneko_binary_path = '/Users/' .. USER
-                                .. '/tools/lua-language-server/bin/macOS/lua-language-server'
-
-local runtime_path = vim.split(package.path, ';')
-table.insert(runtime_path, 'lua/?.lua')
-table.insert(runtime_path, 'lua/?/init.lua')
-
-require'lspconfig'.sumneko_lua.setup {
-    cmd = {sumneko_binary_path, '-E', sumneko_root_path .. '/main.lua'},
-    settings = {
-        Lua = {
-            runtime = {
-                version = 'LuaJIT',
-                path = runtime_path
-            },
-            diagnostics = { -- Get language server to recognize `vim` global
-                globals = {'vim'}
-            },
-            workspace = { -- Make server aware of Neovim runtime files
-                library = vim.api.nvim_get_runtime_file('', true)
-            },
-            telemetry = { -- Don't send telemetry data containing unique identifier
-                enable = false
-            }
-        }
-    }
-}
 
 vim.cmd [[
 augroup formatFile
