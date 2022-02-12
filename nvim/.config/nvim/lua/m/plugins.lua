@@ -52,11 +52,12 @@ require('packer').startup(function()
     use 'iamcco/markdown-preview.nvim'
     -- colors
     use 'marko-cerovac/material.nvim'
+    use 'relastle/bluewery.vim'
     use 'Mofiqul/vscode.nvim'
     -- use 'kyazdani42/nvim-web-devicons'
     use 'arzg/vim-colors-xcode'
     use 'navarasu/onedark.nvim'
-    use 'doums/darcula'
+    use 'n1ghtmare/noirblaze-vim'
     use {
         'metalelf0/jellybeans-nvim',
         requires = {'rktjmp/lush.nvim'}

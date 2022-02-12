@@ -1,11 +1,12 @@
 local o = vim.opt
 o.mouse = 'a'
+o.wrap = false
 o.number = true
-o.relativenumber = true
-o.laststatus = 0
-o.ruler = false
-o.hlsearch = false
 o.hidden = true
+o.ruler = false
+o.laststatus = 0
+o.undofile = true
+o.hlsearch = false
 o.showcmd = false
 o.showmode = false
 o.cmdheight = 1
@@ -16,17 +17,16 @@ o.expandtab = true
 o.smarttab = true
 o.autoindent = true
 o.smartindent = true
-o.wrap = false
-o.signcolumn = 'yes'
 o.updatetime = 180
 o.smartcase = true
-o.ignorecase = true
 o.showmatch = true
 o.incsearch = true
+o.ignorecase = true
+o.signcolumn = 'yes'
+o.relativenumber = true
 o.completeopt = 'menuone,noselect'
-o.undofile = true
 o.scrolloff = 9
-o.cursorline = true
+o.cursorline = false
 -- vim.cmd [[
 --   augroup JumpCursorLastPosition
 --     autocmd!
