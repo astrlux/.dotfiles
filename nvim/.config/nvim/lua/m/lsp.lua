@@ -143,4 +143,8 @@ augroup latexWordProcessor
     autocmd FileType latex setlocal spell linebreak wrap
     autocmd BufRead,BufNewFile *.tex setlocal spell linebreak wrap
 augroup END
+augroup autoHi
+    autocmd!
+    autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+augroup END
 ]]
