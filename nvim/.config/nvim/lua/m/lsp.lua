@@ -145,6 +145,6 @@ augroup latexWordProcessor
 augroup END
 augroup autoHi
     autocmd!
-    autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+    autocmd CursorMoved *.cpp,*.py exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 augroup END
 ]]
