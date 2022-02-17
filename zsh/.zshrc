@@ -110,3 +110,4 @@ zstyle ':completion:::::' completer _expand _complete _ignored _approximate #ena
 alias lab='ssh cs120wi22jp@ieng6.ucsd.edu' # RK!90
 alias scppull='scp -r cs120wi22jp@ieng6.ucsd.edu:~/pa3/ ~/cse120/pa3'
 alias scppush='scp -r ~/cse120/pa3/ cs120wi22jp@ieng6.ucsd.edu:/pa3/'
+alias labmount='sshfs -o default_permissions cs120wi22jp@ieng6.ucsd.edu:pa1 ~/120'
