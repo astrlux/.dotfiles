@@ -1,5 +1,6 @@
 # PROMPT
-PROMPT="%F{141}%1d%F{193} ϟ%f "
+#PROMPT="%F{141}%1d%F{193} ϟ%f "
+PROMPT="$ "
 
 # EXPORTS
 export PATH="/usr/local/sbin:$PATH"
