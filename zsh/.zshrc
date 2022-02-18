@@ -28,9 +28,9 @@ alias caeler='clear'
 alias claer='clear'
 alias clearls='clear && ls'
 alias sl='ls -ltG'
-alias ls='ls -lG'
-alias lsl='ls -lG'
-alias llsl='ls -lG'
+alias ls='ls -ltG'
+alias lsl='ls -ltG'
+alias llsl='ls -ltG'
 alias sl=ls
 alias q='exit'
 alias top='htop'
@@ -107,7 +107,18 @@ zstyle ':completion:*' menu select # select completions with arrow keys
 zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
 
+# LAB
 alias lab='ssh cs120wi22jp@ieng6.ucsd.edu' # RK!90
 alias scppull='scp -r cs120wi22jp@ieng6.ucsd.edu:~/pa3/ ~/cse120/pa3'
 alias scppush='scp -r ~/cse120/pa3/ cs120wi22jp@ieng6.ucsd.edu:/pa3/'
-alias labmount='sshfs -o default_permissions cs120wi22jp@ieng6.ucsd.edu:pa1 ~/120'
+openLab() {
+  mkdir -p ~/Desktop/lab
+  fuser -c ~/Desktop/lab
+  sshfs -o default_permissions cs120wi22jp@ieng6.ucsd.edu:/home/linux/ieng6/cs120wi22/cs120wi22jp/pa4 ~/Desktop/lab
+  cd ~/Desktop/lab
+}
+closeLab() {
+  cd
+  umount -f ~/Desktop/lab 
+  rm -rf ~/Desktop/lab
+}
