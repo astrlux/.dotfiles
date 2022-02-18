@@ -114,7 +114,7 @@ alias scppush='scp -r ~/cse120/pa3/ cs120wi22jp@ieng6.ucsd.edu:/pa3/'
 openLab() {
   mkdir -p ~/Desktop/lab
   fuser -c ~/Desktop/lab
-  sshfs -o default_permissions cs120wi22jp@ieng6.ucsd.edu:/home/linux/ieng6/cs120wi22/cs120wi22jp/pa4 ~/Desktop/lab
+  sshfs -o default_permissions cs120wi22jp@ieng6.ucsd.edu:/home/linux/ieng6/cs120wi22/cs120wi22jp/pa"$1" ~/Desktop/lab
   cd ~/Desktop/lab
 }
 closeLab() {
