@@ -40,11 +40,10 @@ brew install amethyst
 # https://github.com/ianyh/Amethyst/issues/301#issuecomment-604133418
 # Set windows to always stay in floating mode
 defaults write com.amethyst.Amethyst.plist floating '(
-   {
-       id = "com.apple.systempreferences";
-       "window-titles" =         (
-       );
-   },
+  {
+    id = "com.apple.systempreferences";
+    "window-titles" = ();
+  },
 )'
 defaults write com.amethyst.Amethyst.plist floating-is-blacklist 1
 
