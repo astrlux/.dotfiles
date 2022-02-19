@@ -76,6 +76,7 @@ alias ic='nvim ~/.inputrc'
 alias init='nvim ~/.config/nvim/init.lua'
 alias appearance='nvim ~/.config/nvim/lua/m/appearance.lua'
 alias sets='nvim ~/.config/nvim/lua/m/sets.lua'
+alias maps='nvim ~/.config/nvim/lua/m/maps.lua'
 alias plugins='nvim ~/.config/nvim/lua/m/plugins.lua'
 luaMake() {
   pushd
