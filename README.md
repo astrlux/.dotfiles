@@ -44,14 +44,18 @@ nvim
 ├── init.lua
 └── lua
     └── m
+        ├── appearance.lua
         ├── completion.lua
-        ├── filetree.lua
         ├── finder.lua
         ├── highlight.lua
+        ├── indent.lua
+        ├── latex.lua
         ├── lsp.lua
         ├── maps.lua
+        ├── parsers.lua
         ├── plugins.lua
-        └── sets.lua
-
-2 directories, 9 files
+        ├── sets.lua
+        ├── status.lua
+        ├── temp.lua
+        └── tree.lua
 ```
