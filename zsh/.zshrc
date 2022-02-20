@@ -79,6 +79,7 @@ alias appearance='nvim ~/.config/nvim/lua/m/appearance.lua'
 alias sets='nvim ~/.config/nvim/lua/m/sets.lua'
 alias maps='nvim ~/.config/nvim/lua/m/maps.lua'
 alias plugins='nvim ~/.config/nvim/lua/m/plugins.lua'
+alias lsp='nvim ~/.config/nvim/lua/m/lsp.lua'
 luaMake() {
   pushd
   cd ~/tools/lua-language-server/3rd/luamake
