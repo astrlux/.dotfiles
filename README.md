@@ -13,7 +13,7 @@
     cd && git clone git@github.com:astrlux/dotfiles.git && sudo sh ~/dotfiles/scripts/first_install.sh
 
 
-Quit & restart your terminal/emulator. Run `:PackerUpdate`. Finally, you're ready to rumble.
+Quit & restart your terminal/emulator. Run `:PackerSync`. Finally, you're ready to rumble.
 
 ### Sustained Use
 
