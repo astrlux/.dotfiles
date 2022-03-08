@@ -1,5 +1,8 @@
 <details><summary>Click for Pictures!</summary>
 <img src="./img/terms.png" />
+<img src="./img/one.png" />
+<img src="./img/two.png" />
+<img src="./img/three.png" />
 </details>
 
 ### Requirements <sup>[5 min]</sup>
