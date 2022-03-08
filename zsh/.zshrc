@@ -16,7 +16,7 @@ export EDITOR=nvim
 # THE LITTLE THINGS IN LIFE
 alias notes='nvim ~/Notes/TODO.md'
 alias pnotes="pushd ~/Notes; cm 'changes'; git push; popd;"
-alias lc='nvim ~/Notes/codingChallenges/Challenges.md' 
+alias lc='nvim ~/pzls/README.md' 
 alias mr='rm'
 alias b='cd ..'
 alias dc='cd'
