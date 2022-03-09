@@ -72,12 +72,9 @@ alias te='open -a TextEdit.app'
 
 # DOTFILE MANAGEMENT
 alias ss='source ~/.zshrc'
-alias ac='nvim ~/.config/alacritty/alacritty.yml'
 alias kc='nvim ~/.config/kitty/kitty.conf'
 alias bc='nvim ~/.bashrc'
 alias zc='nvim ~/.zshrc'
-alias tc='nvim ~/.config/tmux/tmux.conf'
-alias ic='nvim ~/.inputrc'
 alias init='nvim ~/.config/nvim/init.lua'
 alias appearance='nvim ~/.config/nvim/lua/m/appearance.lua'
 alias sets='nvim ~/.config/nvim/lua/m/sets.lua'
