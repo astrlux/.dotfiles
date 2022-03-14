@@ -15,7 +15,7 @@ export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
 export EDITOR=nvim
 
 # THE LITTLE THINGS IN LIFE
-alias notes='nvim ~/Notes/TODO.md'
+alias notes='nvim ~/dotfiles/notes/TODO.md'
 alias pnotes="pushd ~/Notes; cm 'changes'; git push; popd;"
 alias lc='nvim ~/pzls/README.md' 
 alias mr='rm'
