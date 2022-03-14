@@ -106,7 +106,17 @@ removeDotfiles() {
   sh scripts/clean.sh
   popd
 }
-
+reset() {
+  pushd $DOTFILES
+  rm -rf ~/.cache
+  rm -rf ~/.local
+  rm -rf ~/.DS_Store
+  rm -rf ~/.zsh_history
+  rm -rf ~/.ipython
+  rm -rf ~/.python_history
+  rm -rf ~/.sqlite_history
+  popd
+}
 # ZSH AUTO-COMPLETION
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 zstyle ':completion:*' menu select # select completions with arrow keys
