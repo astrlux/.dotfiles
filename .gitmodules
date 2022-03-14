@@ -1,0 +1,9 @@
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:astrlux/nvim.git
+[submodule "notes"]
+	path = notes
+	url = git@github.com:astrlux/notes.git
+[submodule "firefox"]
+	path = firefox
+	url = git@github.com:astrlux/firefox.git
