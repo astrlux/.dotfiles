@@ -13,7 +13,7 @@
 
 ### Installation <sup>[5 sec]</sup>
 
-    cd && git clone git@github.com:astrlux/dotfiles.git && sudo sh ~/dotfiles/scripts/first_install.sh
+    cd && git clone git@github.com:astrlux/dotfiles && sudo sh ~/dotfiles/scripts/first_install.sh
 
 
 Quit & restart your terminal/emulator. Run `:PackerSync`. Finally, you're ready to rumble.
