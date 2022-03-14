@@ -1,12 +1,3 @@
-[submodule "lua-language-server"]
-	path = lua-language-server
-	url = https://github.com/sumneko/lua-language-server
 [submodule "nvim"]
 	path = nvim
 	url = https://github.com/astrlux/nvim
-[submodule "FF"]
-	path = FF
-	url = https://github.com/astrlux/FF
-[submodule "Notes"]
-	path = Notes
-	url = git@github.com:astrlux/Notes.git
