@@ -19,22 +19,11 @@ def filter_youtube_ads(info: interceptor.Request):
 interceptor.register(filter_youtube_ads)
 
 # Fonts
-c.fonts.default_family = "JetBrains Mono"
-
-# Session save/restore
-c.auto_save.session = True
-c.auto_save.interval = 15000
-
-# Search engines
-c.url.searchengines = {
-    'DEFAULT':  'https://google.com/search?hl=en&q={}',
-    '!a':       'https://www.amazon.es/s?k={}',
-    '!gh':      'https://github.com/search?o=desc&q={}&s=stars',
-}
+c.fonts.default_family = "IBM Plex Mono"
 
 # Default page and new tab
-c.url.default_page = "https://miniflux.fmartingr.dev"
-c.url.start_pages = ["https://miniflux.fmartingr.dev"]
+c.url.default_page = "https://duckduckgo.com"
+c.url.start_pages = ["https://duckduckgo.com"]
 
 # Keybindings
 config.bind("1pc", ":spawn --userscript ~/Code/qute-1password/qute_1pass.py --cache-session --auto-submit fill_credentials")
