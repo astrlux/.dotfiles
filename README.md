@@ -1,8 +1,8 @@
 <details><summary>Click for Pictures!</summary>
-<img src="./deprecated/img/terms.png"/>
-<img src="./deprecated/img/one.png"  />
-<img src="./deprecated/img/two.png"  />
-<img src="./deprecated/img/three.png"/>
+<img src="./_deprecated/img/terms.png"/>
+<img src="./_deprecated/img/one.png"  />
+<img src="./_deprecated/img/two.png"  />
+<img src="./_deprecated/img/three.png"/>
 </details>
 
 ### Requirements <sup>[5 min]</sup>
