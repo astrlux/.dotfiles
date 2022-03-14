@@ -7,3 +7,6 @@
 [submodule "FF"]
 	path = FF
 	url = https://github.com/astrlux/FF
+[submodule "Notes"]
+	path = Notes
+	url = git@github.com:astrlux/Notes.git
