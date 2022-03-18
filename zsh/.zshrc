@@ -117,6 +117,10 @@ reset() {
   rm -rf ~/.sqlite_history
   popd
 }
+greetMyFriend() {
+  echo "Hi there, I don't know you yet. Give me a second";
+  say Hello Bilal
+}
 # ZSH AUTO-COMPLETION
 #source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 #zstyle ':completion:*' menu select # select completions with arrow keys

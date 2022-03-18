@@ -1,0 +1,74 @@
+# sourced from ~ https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+sudo -v
+
+# Disable Notification Center and remove the menu bar icon
+launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+# Trackpad: enable tap to click for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# Trackpad: map bottom right corner to right-click
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+
+# Open Desktop
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Dock
+defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock show-process-indicators -bool true
+defaults write com.apple.dock minimize-to-application -bool true
+defaults write com.apple.dock show-recents -bool false
+
+# Terminal utf-8
+defaults write com.apple.terminal StringEncodings -array 4
+
+# Left corner to screensaver
+defaults write com.apple.dock wvous-bl-corner -int 5
+
+# Avoid create DS_Store to USB
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# AMETHYST WINDOW MANAGER
+brew install amethyst
+
+# https://github.com/ianyh/Amethyst/issues/301#issuecomment-604133418
+# Set windows to always stay in floating mode
+defaults write com.amethyst.Amethyst.plist floating '(
+   {
+       id = "com.apple.systempreferences";
+       "window-titles" =         (
+       );
+   },
+)'
+defaults write com.amethyst.Amethyst.plist floating-is-blacklist 1
+
+# Follow window when moved to different workspace
+defaults write com.amethyst.Amethyst.plist follow-space-thrown-windows 1
+
+# Configure layouts
+defaults write com.amethyst.Amethyst.plist layouts '(
+	tall, wide, floating, fullscreen
+)'
+
+# Restore layouts when application starts
+defaults write com.amethyst.Amethyst.plist restore-layouts-on-launch 1
+
+# Set window margins
+defaults write com.amethyst.Amethyst.plist window-margins 1
+defaults write com.amethyst.Amethyst.plist window-margin-size 6
+
+# Do not display layout names
+defaults write com.amethyst.Amethyst.plist enables-layout-hud 0
+defaults write com.amethyst.Amethyst.plist enables-layout-hud-on-space-change 0
+
+# Disable automatic update check as it is done by Homebrew
+defaults write com.amethyst.Amethyst.plist SUEnableAutomaticChecks 0
+
+# Delete the plist cache - MUST ALWAYS BE LAST
+defaults read com.amethyst.Amethyst.plist > /dev/null 2>&1
