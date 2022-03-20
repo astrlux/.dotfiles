@@ -1,7 +1,7 @@
 # PROMPT
 #PROMPT="%F{11}%1d%F{14} λ%f "
-#PROMPT="%F{11}λ%f "
-PROMPT="λ "
+PROMPT="%F{11}λ%f "
+#PROMPT="λ "
 
 # EXPORTS
 export PATH="/usr/local/sbin:$PATH"
@@ -116,10 +116,6 @@ reset() {
   rm -rf ~/.python_history
   rm -rf ~/.sqlite_history
   popd
-}
-greetMyFriend() {
-  echo "Hi there, I don't know you yet. Give me a second";
-  say Hello Bilal
 }
 # ZSH AUTO-COMPLETION
 #source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
