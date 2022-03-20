@@ -1,5 +1,5 @@
 # PROMPT
-PROMPT="%F{11}%1d%F{145} ϟ%f "
+PROMPT="%F{11}%1d%F{14} λ%f "
 #PROMPT="%F{11}λ%f "
 #PROMPT="λ "
 
