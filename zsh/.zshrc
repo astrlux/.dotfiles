@@ -1,8 +1,8 @@
 bindkey -v
 # PROMPT
 #PROMPT="%F{11}%1d%F{14} λ%f "
-PROMPT="%F{11}λ%f "
-#PROMPT="λ "
+#PROMPT="%F{11}λ%f "
+PROMPT="λ "
 
 # EXPORTS
 export PATH="/usr/local/sbin:$PATH"
