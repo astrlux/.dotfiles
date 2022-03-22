@@ -1,4 +1,3 @@
-bindkey -v
 # PROMPT
 #PROMPT="%F{11}%1d%F{14} λ%f "
 #PROMPT="%F{11}λ%f "
@@ -119,20 +118,21 @@ reset() {
   popd
 }
 # ZSH AUTO-COMPLETION
-#source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-#zstyle ':completion:*' menu select # select completions with arrow keys
-#zstyle ':completion:*' group-name '' # group results by category
-#zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+zstyle ':completion:*' menu select # select completions with arrow keys
+zstyle ':completion:*' group-name '' # group results by category
+zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
+bindkey -v
 
 # LAB
-#alias lab='<remote_url>' # RKbang90
-#openLab() {
-#  mkdir -p ~/Desktop/lab
-#  fuser -c ~/Desktop/lab
-#  sshfs -o default_permissions #remote_url ~/Desktop/lab
-#  cd ~/Desktop/lab
-#}
-#closeLab() {
-#  cd; umount -f ~/Desktop/lab 
-#  rm -rf ~/Desktop/lab
-#}
+alias lab='<remote_url>' # RKbang90
+openLab() {
+  mkdir -p ~/Desktop/lab
+  fuser -c ~/Desktop/lab
+  sshfs -o default_permissions #remote_url ~/Desktop/lab
+  cd ~/Desktop/lab
+}
+closeLab() {
+  cd; umount -f ~/Desktop/lab 
+  rm -rf ~/Desktop/lab
+}
