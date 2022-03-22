@@ -67,7 +67,7 @@ alias gclone='cd ${PROJECTS} git clone https://www.github.com/'
 alias gc='git clone'
 
 # EDITOR
-alias vi='nvim'
+alias e='nvim'
 alias te='open -a TextEdit.app'
 
 # DOTFILE MANAGEMENT
