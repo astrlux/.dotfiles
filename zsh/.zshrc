@@ -1,3 +1,4 @@
+bindkey -v
 # PROMPT
 #PROMPT="%F{11}%1d%F{14} λ%f "
 PROMPT="%F{11}λ%f "
