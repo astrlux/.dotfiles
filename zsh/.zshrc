@@ -105,7 +105,7 @@ removeDotfiles() {
   sh scripts/clean.sh
   popd
 }
-reset() {
+clean() {
   pushd $DOTFILES
   rm -rf ~/.cache
   rm -rf ~/.local
