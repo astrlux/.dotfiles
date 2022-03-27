@@ -1,6 +1,6 @@
 # PROMPT
-#PROMPT="%F{11}%1d%F{14} λ%f "
-PROMPT="%F{46}λ%f "
+#PROMPT="%F{162}%1d%F{11} λ%f "
+PROMPT="%F{162}λ%f "
 
 # EXPORTS
 export PATH="/usr/local/sbin:$PATH"
