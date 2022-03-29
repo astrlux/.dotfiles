@@ -108,7 +108,6 @@ removeDotfiles() {
 clean() {
   pushd $DOTFILES
   rm -rf ~/.cache
-  rm -rf ~/.local
   rm -rf ~/.DS_Store
   rm -rf ~/.zsh_history
   rm -rf ~/.ipython
