@@ -121,7 +121,8 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 zstyle ':completion:*' menu select # select completions with arrow keys
 zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
-bindkey -v
+
+bindkey -v # "vim-mode" in zsh shell
 
 # LAB
 alias lab='<remote_url>' # RKbang90
