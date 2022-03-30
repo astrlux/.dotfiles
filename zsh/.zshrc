@@ -135,3 +135,5 @@ closeLab() {
   cd; umount -f ~/Desktop/lab 
   rm -rf ~/Desktop/lab
 }
+
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
