@@ -1,5 +1,5 @@
 <details><summary>Click for Pictures!</summary>
-<img src="https://github.com/astrlux/assets/blob/master/img/terms.png?raw=true" width="100%"/>
+<img src="https://github.com/astrlux/assets/blob/master/img/terms.png?raw=true" width="90%"/>
 <img src="https://github.com/astrlux/assets/blob/master/img/one.png?raw=true"  />
 <img src="https://github.com/astrlux/assets/blob/master/img/two.png?raw=true"  />
 <img src="https://github.com/astrlux/assets/blob/master/img/three.png?raw=true"/>
