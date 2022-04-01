@@ -121,12 +121,12 @@ bindkey -v # "vim-mode" in zsh shell
 
 # LAB
 LAB=$SCHOOL/127/lab
-alias scppush=scp -P 2222
-alias scppull=
+alias scppush="scp -P 2222 -r $LAB student@127.0.0.1:/home/student"
+alias scppull="scp -P 2222 -r student@127.0.0.1:/home/student $LAB"
 openLab() {
   mkdir -p $LAB
   fuser -c $LAB
-  sshfs -o default_permissions student@127.0.0.1:/ $LAB
+  sshfs -o default_permissions -p 2222 student@127.0.0.1:/home/student $LAB
   cd $LAB
 }
 closeLab() {
