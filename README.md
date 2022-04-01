@@ -1,5 +1,5 @@
+<!---
 <details><summary>Click for Pictures!</summary>
-<img src="https://github.com/astrlux/assets/blob/master/img/terms.png?raw=true" width="90%"/>
 <img src="https://github.com/astrlux/assets/blob/master/img/one.png?raw=true"  />
 <img src="https://github.com/astrlux/assets/blob/master/img/two.png?raw=true"  />
 <img src="https://github.com/astrlux/assets/blob/master/img/three.png?raw=true"/>
@@ -10,6 +10,7 @@
 <img src="https://github.com/astrlux/assets/blob/master/img/4.png?raw=true"/>
 <img src="https://user-images.githubusercontent.com/37908451/160299518-e15db47d-473d-4ed1-b560-1623c2acc018.png"/>
 </details>
+-->
 
 ### Requirements <sup>[5 min]</sup>
 
