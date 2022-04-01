@@ -1,6 +1,5 @@
 #PROMPT="%F{162}%1d%F{11} λ%f "
 PROMPT="%F{162}λ%f "
-
 # EXPORTS
 export TERM="screen-256color"
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
@@ -9,7 +8,6 @@ export DOTFILES=$HOME/dotfiles
 export SCHOOL=$DOTFILES/notes/school
 export STOW_FOLDERS="nvim,zsh,kitty"
 export EDITOR=nvim
-
 # THE LITTLE THINGS IN LIFE
 alias school='cd $SCHOOL'
 alias notes='nvim $DOTFILES/notes/README.md'
@@ -40,7 +38,6 @@ alias jn='jupyter-notebook'
 alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{tools,node_modules,.git}" | fzf'
 alias ff='nvim $(fzfi)'
 alias resetDock='defaults delete com.apple.dock; killall Dock'
-
 # DOCKER
 alias kubectl="minikube kubectl --"
 # GIT
@@ -54,17 +51,14 @@ alias log="git log --first-parent --graph --pretty=format:'%C(yellow)%h%Creset -
 #alias log='hg log -G'
 #alias st='hg status'
 #alias cm='hg add && hg commit -m'
-
 # WWW
 alias brave='{read -r arr; open -a "Brave Browser" "${arr}"} <<<'
 alias browser='{read -r arr; brave ${arr} } <<<'
 alias google='{read -r arr; browser "https://google.com/search?q=${arr}";} <<<'
 alias gc='git clone'
-
 # EDITOR
 alias e='nvim'
 alias te='open -a TextEdit.app'
-
 # DOTFILE MANAGEMENT
 alias ss='source ~/.zshrc'
 alias kc='nvim ~/.config/kitty/kitty.conf'
@@ -116,9 +110,8 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 zstyle ':completion:*' menu select # select completions with arrow keys
 zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
-
-bindkey -v # "vim-mode" in zsh shell
-
+# ZSH VIM MODE
+bindkey -v
 # LAB
 LAB=$SCHOOL/127/lab
 alias scppush="scp -P 2222 -r $LAB student@127.0.0.1:/home/student"
@@ -135,5 +128,5 @@ closeLab() {
 }
 
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
-
+# RUN COMMAND ON START
 school
