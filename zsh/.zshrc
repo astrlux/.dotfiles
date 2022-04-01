@@ -6,13 +6,14 @@ export TERM="screen-256color"
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
 export JAVA_HOME=$(/usr/libexec/java_home)
 export DOTFILES=$HOME/dotfiles
+export SCHOOL=$DOTFILES/notes/school
 export STOW_FOLDERS="nvim,zsh,kitty"
 export EDITOR=nvim
 
 # THE LITTLE THINGS IN LIFE
-alias school='cd ~/dotfiles/notes/school'
-alias notes='nvim ~/dotfiles/notes/README.md'
-alias pnotes="pushd ~/dotfiles/notes; cm 'changes'; git push; popd;"
+alias school='cd $SCHOOL'
+alias notes='nvim $DOTFILES/notes/README.md'
+alias pnotes="pushd $DOTFILES/notes; cm 'changes'; git push; popd;"
 alias lc='nvim ~/pzls/README.md' 
 alias mr='rm'
 alias b='cd ..'
@@ -33,7 +34,6 @@ alias ls='ls -ltG'
 alias lsl='ls -ltG'
 alias llsl='ls -ltG'
 alias sl=ls
-alias q='exit'
 alias top='htop'
 alias serve='python3 -m http.serve'
 alias jn='jupyter-notebook'
@@ -120,16 +120,18 @@ zstyle ':completion:::::' completer _expand _complete _ignored _approximate #ena
 bindkey -v # "vim-mode" in zsh shell
 
 # LAB
-alias lab='<remote_url>' # RKbang90
+LAB=$SCHOOL/127/lab
+alias scppush=scp -P 2222
+alias scppull=
 openLab() {
-  mkdir -p ~/Desktop/lab
-  fuser -c ~/Desktop/lab
-  sshfs -o default_permissions student@127.0.0.1:2222 ~/Desktop/lab
-  cd ~/Desktop/lab
+  mkdir -p $LAB
+  fuser -c $LAB
+  sshfs -o default_permissions student@127.0.0.1:/ $LAB
+  cd $LAB
 }
 closeLab() {
-  cd; umount -f ~/Desktop/lab 
-  rm -rf ~/Desktop/lab
+  cd; umount -f $LAB
+  rm -rf $LAB
 }
 
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
