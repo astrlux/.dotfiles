@@ -1,16 +1,12 @@
-# PROMPT
 #PROMPT="%F{162}%1d%F{11} λ%f "
 PROMPT="%F{162}λ%f "
 
 # EXPORTS
-export PATH="/usr/local/sbin:$PATH"
-export PATH="$PATH:/usr/local/opt/llvm/bin/"
 export TERM="screen-256color"
+export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
 export JAVA_HOME=$(/usr/libexec/java_home)
 export DOTFILES=$HOME/dotfiles
 export STOW_FOLDERS="nvim,zsh,kitty"
-export PROJECTS=$HOME/Projects
-export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
 export EDITOR=nvim
 
 # THE LITTLE THINGS IN LIFE
@@ -63,7 +59,6 @@ alias log="git log --first-parent --graph --pretty=format:'%C(yellow)%h%Creset -
 alias brave='{read -r arr; open -a "Brave Browser" "${arr}"} <<<'
 alias browser='{read -r arr; brave ${arr} } <<<'
 alias google='{read -r arr; browser "https://google.com/search?q=${arr}";} <<<'
-alias gclone='cd ${PROJECTS} git clone https://www.github.com/'
 alias gc='git clone'
 
 # EDITOR
@@ -138,3 +133,5 @@ closeLab() {
 }
 
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
+
+school
