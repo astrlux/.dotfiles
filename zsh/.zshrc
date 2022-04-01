@@ -14,8 +14,9 @@ export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
 export EDITOR=nvim
 
 # THE LITTLE THINGS IN LIFE
-alias notes='nvim ~/dotfiles/notes/TODO.md'
-alias pnotes="pushd ~/Notes; cm 'changes'; git push; popd;"
+alias school='cd ~/dotfiles/notes/school'
+alias notes='nvim ~/dotfiles/notes/README.md'
+alias pnotes="pushd ~/dotfiles/notes; cm 'changes'; git push; popd;"
 alias lc='nvim ~/pzls/README.md' 
 alias mr='rm'
 alias b='cd ..'
@@ -128,7 +129,7 @@ alias lab='<remote_url>' # RKbang90
 openLab() {
   mkdir -p ~/Desktop/lab
   fuser -c ~/Desktop/lab
-  sshfs -o default_permissions #remote_url ~/Desktop/lab
+  sshfs -o default_permissions student@127.0.0.1:2222 ~/Desktop/lab
   cd ~/Desktop/lab
 }
 closeLab() {
