@@ -3,7 +3,6 @@ PROMPT="%F{162}λ%f "
 # EXPORTS
 export TERM="screen-256color"
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
-export JAVA_HOME=$(/usr/libexec/java_home)
 export DOTFILES=$HOME/dotfiles
 export SCHOOL=$DOTFILES/notes/school
 export STOW_FOLDERS="nvim,zsh,kitty"
@@ -128,5 +127,4 @@ closeLab() {
 }
 
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
-# RUN COMMAND ON START
-school
+export PATH="$PATH:/Users/astrlux/.local/bin"
