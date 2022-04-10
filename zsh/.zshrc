@@ -31,7 +31,6 @@ alias ls='ls -ltG'
 alias lsl='ls -ltG'
 alias llsl='ls -ltG'
 alias sl=ls
-alias top='htop'
 alias serve='python3 -m http.serve'
 alias jn='jupyter-notebook'
 alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{tools,node_modules,.git}" | fzf'
@@ -113,8 +112,8 @@ zstyle ':completion:::::' completer _expand _complete _ignored _approximate #ena
 bindkey -v
 # LAB
 LAB=$SCHOOL/127/lab
-alias scppush="scp -P 2222 -r $LAB student@127.0.0.1:/home/student"
-alias scppull="scp -P 2222 -r student@127.0.0.1:/home/student $LAB"
+alias scppush="scp -P 4127 -r $LAB cse127@127.0.0.1:/home/cse127"
+alias scppull="scp -P 4127 -r cse127@127.0.0.1:/home/cse127 $LAB"
 openLab() {
   mkdir -p $LAB
   fuser -c $LAB
@@ -128,3 +127,4 @@ closeLab() {
 
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
 export PATH="$PATH:/Users/astrlux/.local/bin"
+export PATH=$PATH:./node_modules/.bin
