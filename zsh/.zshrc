@@ -1,5 +1,5 @@
-#PROMPT="%F{162}%1d%F{11} λ%f "
-PROMPT="%F{162}λ%f "
+#PROMPT="%F{162}λ%f "
+PROMPT="%F{133}λ%f "
 # EXPORTS
 export TERM="screen-256color"
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
@@ -104,10 +104,11 @@ clean() {
   popd
 }
 # ZSH AUTO-COMPLETION
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-zstyle ':completion:*' menu select # select completions with arrow keys
-zstyle ':completion:*' group-name '' # group results by category
-zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
+# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# zstyle ':completion:*' menu select # select completions with arrow keys
+# zstyle ':completion:*' group-name '' # group results by category
+# zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
+
 # ZSH VIM MODE
 bindkey -v
 # LAB
