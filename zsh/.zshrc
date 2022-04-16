@@ -1,5 +1,4 @@
-#PROMPT="%F{162}λ%f "
-PROMPT="%F{133}λ%f "
+PROMPT="%F{162}λ%f "
 # EXPORTS
 export TERM="screen-256color"
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
@@ -7,8 +6,7 @@ export DOTFILES=$HOME/dotfiles
 export SCHOOL=$DOTFILES/notes/school
 export STOW_FOLDERS="nvim,zsh,kitty"
 export EDITOR=nvim
-# THE LITTLE THINGS IN LIFE
-alias school='cd $SCHOOL'
+# THE LITTLE THINGS IN LIFE alias school='cd $SCHOOL'
 alias notes='nvim $DOTFILES/notes/README.md'
 alias pnotes="pushd $DOTFILES/notes; cm 'changes'; git push; popd;"
 alias lc='nvim $DOTFILES/notes/code/README.md' 
@@ -103,12 +101,6 @@ clean() {
   rm -rf ~/.sqlite_history
   popd
 }
-# ZSH AUTO-COMPLETION
-# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-# zstyle ':completion:*' menu select # select completions with arrow keys
-# zstyle ':completion:*' group-name '' # group results by category
-# zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
-
 # ZSH VIM MODE
 bindkey -v
 # LAB
