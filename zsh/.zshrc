@@ -1,8 +1,8 @@
 PROMPT="%F{162}λ%f "
 # EXPORTS
 export TERM="screen-256color"
-export VIMRUNTIME=/usr/local/Cellar/neovim/0.6.1/share/nvim/runtime # NIGHTLY
-export DOTFILES=$HOME/dotfiles
+export VIMRUNTIME=/usr/local/Cellar/neovim/0.7.0/share/nvim/runtime # NIGHTLY
+export DOTFILES=$HOME/.dotfiles
 export SCHOOL=$DOTFILES/notes/school
 export STOW_FOLDERS="nvim,zsh,kitty"
 export EDITOR=nvim

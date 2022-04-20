@@ -6,8 +6,8 @@ read CONTINUE
 if [ $CONTINUE = "y" ]
 then
   echo "OK, proceeding with installation"
-  source ~/dotfiles/zsh/.zshrc
-  sh ~/dotfiles/scripts/install.sh
+  source ~/.dotfiles/zsh/.zshrc
+  sh ~/.dotfiles/scripts/install.sh
   echo "-> RESTART YOUR TERMINAL!"
 elif [ $CONTINUE = "n" ]
 then
