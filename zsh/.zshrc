@@ -7,6 +7,7 @@ export SCHOOL=$DOTFILES/notes/school
 export STOW_FOLDERS="nvim,zsh,kitty"
 export EDITOR=nvim
 # THE LITTLE THINGS IN LIFE alias school='cd $SCHOOL'
+alias school='cd $DOTFILES/notes/school/'
 alias notes='nvim $DOTFILES/notes/README.md'
 alias pnotes="pushd $DOTFILES/notes; cm 'changes'; git push; popd;"
 alias lc='nvim $DOTFILES/notes/code/README.md' 
