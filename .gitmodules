@@ -1,12 +1,6 @@
 [submodule "nvim"]
 	path = nvim
 	url = git@github.com:astrlux/nvim.git
-[submodule "notes"]
-	path = notes
-	url = git@github.com:astrlux/notes.git
-[submodule "browser"]
-	path = browser
-	url = https://github.com/astrlux/browser.git
 [submodule "zsh/.zsh/zsh-autosuggestions"]
 	path = zsh/.zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
