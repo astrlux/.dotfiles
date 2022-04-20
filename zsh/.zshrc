@@ -111,7 +111,7 @@ alias scppull="scp -P 4127 -r cse127@127.0.0.1:/home/cse127 $LAB"
 openLab() {
   mkdir -p $LAB
   fuser -c $LAB
-  sshfs -o default_permissions -p 2222 student@127.0.0.1:/home/student $LAB
+  sshfs -o default_permissions -p 4127 cse127@127.0.0.1:/home/cse127 $LAB
   cd $LAB
 }
 closeLab() {
