@@ -20,7 +20,7 @@
 
 ### Installation <sup>[5 sec]</sup>
 
-    git clone --recurse-submodules -j8 git@github.com:astrlux/.dotfiles && sudo sh ~/.dotfiles/scripts/first_install.sh
+    cd && git clone --recurse-submodules -j8 git@github.com:astrlux/.dotfiles && sudo sh ~/.dotfiles/scripts/first_install.sh
 
 Quit & restart your terminal/emulator. Run `:PackerSync`. Finally, you're ready to rumble.
 
