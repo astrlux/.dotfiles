@@ -3,14 +3,14 @@ PROMPT="%F{162}λ%f "
 export TERM="screen-256color"
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.7.0/share/nvim/runtime # NIGHTLY
 export DOTFILES=$HOME/.dotfiles
-export SCHOOL=$DOTFILES/notes/school
+export SCHOOL=$HOME/notes/school
 export STOW_FOLDERS="nvim,zsh,kitty"
 export EDITOR=nvim
-# THE LITTLE THINGS IN LIFE alias school='cd $SCHOOL'
-alias school='cd $DOTFILES/notes/school/'
-alias notes='nvim $DOTFILES/notes/README.md'
-alias pnotes="pushd $DOTFILES/notes; cm 'changes'; git push; popd;"
-alias lc='nvim $DOTFILES/notes/code/README.md' 
+# THE LITTLE THINGS IN LIFE
+alias school='cd $SCHOOL'
+alias notes='nvim $HOME/notes/README.md'
+alias pnotes="pushd $HOME/notes; cm 'changes'; git push; popd;"
+alias lc='nvim $HOME/notes/code/README.md' 
 alias mr='rm'
 alias b='cd ..'
 alias dc='cd'
@@ -118,7 +118,3 @@ closeLab() {
   cd; umount -f $LAB
   rm -rf $LAB
 }
-
-[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
-export PATH="$PATH:/Users/astrlux/.local/bin"
-export PATH=$PATH:./node_modules/.bin
