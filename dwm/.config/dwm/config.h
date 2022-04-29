@@ -2,7 +2,6 @@
 
 /* appearance */
 #include "movestack.c"
-
 static const char *fonts[]    = { "Wuncon Siji:size=10", "xos4 Terminus:size=9" };
 static const char dmenufont[] = "xos4 Terminus:size=9";
 
