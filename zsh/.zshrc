@@ -1,12 +1,13 @@
-PROMPT="(%F{163}%c%f) %F{183}λ%f "
+PROMPT="%F{163}%c%f %F{183}λ%f "
 #PROMPT="%F{163}λ%f "
-# EXPORTS
-export TERM="screen-256color" export VIMRUNTIME=/usr/local/Cellar/neovim/0.7.0/share/nvim/runtime # NIGHTLY
+#EXPORTS
+export TERM="screen-256color"
+export VIMRUNTIME=/usr/local/Cellar/neovim/0.7.0/share/nvim/runtime # NIGHTLY
 export DOTFILES=$HOME/.dotfiles
 export SCHOOL=$HOME/notes/school
 export STOW_FOLDERS="nvim,zsh,kitty"
 export EDITOR=nvim
-# THE LITTLE THINGS IN LIFE
+#THE LITTLE THINGS IN LIFE
 alias school='cd $SCHOOL'
 alias notes='nvim $HOME/notes/README.md'
 alias pnotes="pushd $HOME/notes; cm 'changes'; git push; popd;"
@@ -35,9 +36,9 @@ alias jn='jupyter-notebook'
 alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{tools,node_modules,.git}" | fzf'
 alias ff='nvim $(fzfi)'
 alias resetDock='defaults delete com.apple.dock; killall Dock'
-# DOCKER
+#DOCKER
 alias kubectl="minikube kubectl --"
-# GIT
+#GIT
 alias cm='git add . && git commit -am'
 alias st='git status'
 alias co='git checkout'
@@ -48,15 +49,15 @@ alias log="git log --first-parent --graph --pretty=format:'%C(yellow)%h%Creset -
 #alias log='hg log -G'
 #alias st='hg status'
 #alias cm='hg add && hg commit -m'
-# WWW
+#WWW
 alias brave='{read -r arr; open -a "Brave Browser" "${arr}"} <<<'
 alias browser='{read -r arr; brave ${arr} } <<<'
 alias google='{read -r arr; browser "https://google.com/search?q=${arr}";} <<<'
 alias gc='git clone'
-# EDITOR
+#EDITOR
 alias e='nvim'
 alias te='open -a TextEdit.app'
-# DOTFILE MANAGEMENT
+#DOTFILE MANAGEMENT
 alias ss='source ~/.zshrc'
 alias kc='nvim ~/.config/kitty/kitty.conf'
 alias bc='nvim ~/.bashrc'
@@ -80,7 +81,7 @@ installDotfiles() {
   sh scripts/install.sh
   popd
 }
-commitDotfiles() { # credit: Michael Paulson @ Netflix
+commitDotfiles() { #credit: Michael Paulson @ Netflix
   pushd $DOTFILES
   git add .
   git commit -m 'post_obfuscation'
