@@ -1,5 +1,4 @@
-PROMPT="%F{163}%c%f %F{183}λ%f "
-#PROMPT="%F{163}λ%f "
+PROMPT="%F{142}%c%f %F{183}λ%f "
 #EXPORTS
 export TERM="screen-256color"
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.7.0/share/nvim/runtime # NIGHTLY
