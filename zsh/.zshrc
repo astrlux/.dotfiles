@@ -115,6 +115,11 @@ openLab() {
   cd $LAB
 }
 closeLab() {
+  pushd;
   cd; umount -f $LAB
   rm -rf $LAB
+  popd;
 }
+
+school
+lf

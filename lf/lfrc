@@ -1,0 +1,23 @@
+cmd open ${{
+    test -L $f && f=$(readlink -f $f)
+    case $(file --mime-type $f -b) in
+        text/*) $EDITOR $fx;;
+        *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+# purge the unclean
+cmd remove ${{
+    if [ -z $fs ]; then
+        rm -fr $f
+    else
+        IFS=':'; echo $fs | tr " " "\n"
+        echo 'delete? [y/n]'
+        read ans
+
+        [ $ans = 'y' ] && (echo 'deleting files...' && rm -fr $fs) || (echo 'cancelled...')
+    fi
+}}
+map d
+map dd delete
+map dD push :remove
