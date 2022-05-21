@@ -105,6 +105,8 @@ clean() {
 # ZSH VIM MODE
 bindkey -v
 # LAB
+alias dsmlp='ssh ubhattac@dsmlp-login.ucsd.edu'
+
 LAB=$SCHOOL/127/lab
 alias scppush="scp -P 2222 -r $LAB cse127@127.0.0.1:/home/student"
 alias scppull="scp -P 2222 -r cse127@127.0.0.1:/home/student $LAB"
