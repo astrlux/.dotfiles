@@ -26,10 +26,10 @@ alias clearls='clear && ls'
 alias sl=ls
 alias lsl=ls
 alias llsl=ls
-alias sl='ls -ltG'
-alias ls='ls -ltG'
-alias lsl='ls -ltG'
-alias llsl='ls -ltG'
+#alias ls='ls -ltG'
+alias sl=ls
+alias lsl=ls
+alias llsl=ls
 alias sl=ls
 alias serve='python3 -m http.serve'
 alias jn='jupyter-notebook'
@@ -60,6 +60,7 @@ alias te='open -a TextEdit.app'
 #DOTFILE MANAGEMENT
 alias ss='source ~/.zshrc'
 alias kc='nvim ~/.config/kitty/kitty.conf'
+alias tc='nvim ~/.config/tmux/tmux.conf'
 alias bc='nvim ~/.bashrc'
 alias zc='nvim ~/.zshrc'
 alias init='nvim ~/.config/nvim/init.lua'
@@ -124,5 +125,10 @@ closeLab() {
   popd;
 }
 
-school
-lf
+# LF
+LFCD="$GOPATH/src/github.com/gokcehan/lf/etc/lfcd.sh"  # source
+LFCD="/path/to/lfcd.sh"                                #  pre-built binary, make sure to use absolute path
+if [ -f "$LFCD" ]; then
+    source "$LFCD"
+fi
+
