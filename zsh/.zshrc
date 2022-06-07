@@ -1,5 +1,6 @@
 autoload -U colors && colors
-PROMPT="%{$fg[green]%}%c%{$reset_color%} %F{magenta}λ%f "
+#PROMPT="%{$fg[green]%}%c%{$reset_color%} %F{magenta}λ%f "
+PROMPT="%{$fg[green]%}%c%{$reset_color%} %F{magenta}$%f "
 #EXPORTS
 export TERM="screen-256color"
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.7.0/share/nvim/runtime # NIGHTLY
@@ -26,7 +27,7 @@ alias clearls='clear && ls'
 alias sl=ls
 alias lsl=ls
 alias llsl=ls
-#alias ls='ls -ltG'
+alias ls='ls -G'
 alias sl=ls
 alias lsl=ls
 alias llsl=ls
