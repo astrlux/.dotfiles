@@ -1,6 +1,6 @@
 autoload -U colors && colors
-#PROMPT="%{$fg[green]%}%c%{$reset_color%} %F{magenta}λ%f "
 PROMPT="%{$fg[green]%}%c%{$reset_color%} %F{magenta}$%f "
+PROMPT="%F{magenta}$%f "
 #EXPORTS
 export TERM="screen-256color"
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.7.0/share/nvim/runtime # NIGHTLY
@@ -132,4 +132,20 @@ LFCD="/path/to/lfcd.sh"                                #  pre-built binary, make
 if [ -f "$LFCD" ]; then
     source "$LFCD"
 fi
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+#__conda_setup="$('/Users/astrlux/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ 1 -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/astrlux/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/astrlux/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/astrlux/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
