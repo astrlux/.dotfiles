@@ -3,7 +3,7 @@ PROMPT="%{$fg[green]%}%c%{$reset_color%} %F{magenta}$%f "
 PROMPT="%F{magenta}$%f "
 #EXPORTS
 export TERM="screen-256color"
-export VIMRUNTIME=/usr/local/Cellar/neovim/0.7.0/share/nvim/runtime # NIGHTLY
+export VIMRUNTIME=/usr/local/Cellar/neovim/0.7.2/share/nvim/runtime # NIGHTLY
 export DOTFILES=$HOME/.dotfiles
 export SCHOOL=$HOME/notes/school
 export STOW_FOLDERS="nvim,zsh,kitty"
@@ -72,6 +72,7 @@ alias finder='nvim ~/.config/nvim/lua/m/finder.lua'
 alias maps='nvim ~/.config/nvim/lua/m/maps.lua'
 alias plugins='nvim ~/.config/nvim/lua/m/plugins.lua'
 alias lsp='nvim ~/.config/nvim/lua/m/lsp.lua'
+alias tmux='TERM=screen-256color-bce tmux'
 luaMake() {
   pushd
   cd ~/tools/lua-language-server/3rd/luamake
