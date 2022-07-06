@@ -1,6 +1,5 @@
 autoload -U colors && colors
 PROMPT="%{$fg[green]%}%c%{$reset_color%} %F{magenta}$%f "
-PROMPT="%F{magenta}$%f "
 #EXPORTS
 export TERM="screen-256color"
 export VIMRUNTIME=/usr/local/Cellar/neovim/0.7.2/share/nvim/runtime # NIGHTLY
