@@ -26,7 +26,7 @@ alias clearls='clear && ls'
 alias sl=ls
 alias lsl=ls
 alias llsl=ls
-alias ls='ls -G'
+alias ls='ls --color=auto'
 alias sl=ls
 alias lsl=ls
 alias llsl=ls
