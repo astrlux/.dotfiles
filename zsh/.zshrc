@@ -1,6 +1,6 @@
 autoload -U colors && colors
 #PROMPT="%{$fg[green]%}%c%{$reset_color%} %F{magenta}$%f "
-PROMPT="$ "
+PROMPT="%{$fg[red]%}$%{$reset_color%} "
 #EXPORTS
 export TERM="screen-256color"
 export DOTFILES=$HOME/.dotfiles
